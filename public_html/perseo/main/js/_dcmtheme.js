@@ -3321,6 +3321,7 @@ var centrosInvestigacion = (function () {
                             var sss = $('#ajax-dcm', data);
                             qq.html(sss.html());
                             sss = data = null;
+                            $.Metro.initDropdowns($item);
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
                             initNotiAndvents($item);
@@ -3332,6 +3333,7 @@ var centrosInvestigacion = (function () {
                             console.log("error ajax on centro investigación");
                             $item.data('ajaxLoad', true);
                             //init componentets
+                            $.Metro.initDropdowns($item);
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
                             initNotiAndvents($item);
