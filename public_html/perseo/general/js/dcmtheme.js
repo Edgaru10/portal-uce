@@ -2224,7 +2224,13 @@ var DockPopUp = (function () {
                                     $.Metro.initPdfStack(qq);
                                 } break;
                                 case "biblio": {
-
+                                    //init componentets
+                                    console.log("biblio cargada con exito 2");
+                                    $.Metro.initDropdowns($item);
+                                    $.Metro.initSidebars($item);
+                                    $.Metro.initPagination($item);
+                                    initNotiAndvents($item);
+                                    sidebarUpdate($item);
                                 } break;
                                 default:
 
@@ -2240,6 +2246,7 @@ var DockPopUp = (function () {
                                 } break;
                                 case "biblio": {
                                     //init componentets
+                                    $.Metro.initDropdowns($item);
                                     $.Metro.initSidebars($item);
                                     $.Metro.initPagination($item);
                                     initNotiAndvents($item);
@@ -2344,7 +2351,7 @@ var DockPopUp = (function () {
             });
         });
         $(window).on('debouncedresize', function () {
-            winsize = getWindowSize();
+            winsize = getWindowSize(); 
             // todo : cache the current item
             if (current !== -1) {
                 $($items.eq(current).find('div.rb-overlay')).css('clip', 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)');
@@ -3325,7 +3332,7 @@ if (typeof Liferay === 'undefined' && window.location.href.indexOf("public_html"
     console.log("mode HTML: on");
     var Liferay = {
         ThemeDisplay: {
-            getLayoutId: function () { return "1" }, getLayoutURL: function () { return "http://localhost:49976/public_html/ajax/home" },
+            getLayoutId: function () { return "1" }, getLayoutURL: function () { return "http://www.uce.edu.ec/ajax/home" },
             getPortalURL: function () { return "http://www.uce.edu.ec" }
         },
         on: function (A, G) {
@@ -3364,14 +3371,14 @@ function initx() {
 
                     //mm-menu
                     $('#mm-nav-content').appendTo('#dcmmenu');
-                    
+
                     $("#dcmmenu").mmenu({
                         classes: "mm-slide"
                     });
 
                     console.log("mm-menu creado body:" + $('body').length);
 
-                   
+
                     $('#loader').addClass('animated bounceOutUp');
 
                     setTimeout(function () {

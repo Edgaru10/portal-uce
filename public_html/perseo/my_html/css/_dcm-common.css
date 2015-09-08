@@ -3968,7 +3968,7 @@ html.mm-opening #hamburger:after
     position: fixed;
     /*top: 0;*/
     /*left: 0;*/
-    z-index: 99999999999999;
+    z-index: 999;
 }
 
     #hamburger:before,
@@ -5048,7 +5048,7 @@ a {
 .metro h5,
 .metro h6 {
     padding: 0;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .aui, .metro {
@@ -8251,3 +8251,51 @@ span.date {
     word-break: normal;
     word-break: normal;
 }
+
+/*#region biblio*/
+.cientifica .bas-titulo {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cientifica .full-html {
+    border-right: 2px solid #fff;
+    padding-right: 35px;
+    padding-left: 10px;
+    padding-top: 0;
+    min-height: 1700px;
+}
+
+.cientifica .row-fluid > .span4:last-child .full-html {
+    border: none;
+}
+
+@media only screen and (max-width: 878px) {
+
+    .metro .centrosWrap.biblioWrap {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1169px) {
+    .metro .centrosWrap.biblioWrap {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.cientifica .row-fluid .full-html p {
+    vertical-align: middle;
+}
+
+    .cientifica .row-fluid .full-html p > a {
+        height: 80px;
+        display: block;
+        vertical-align: middle;
+        display: table;
+        margin: auto;
+    }
+
+
+/*#endregion*/

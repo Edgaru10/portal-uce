@@ -1,0 +1,25 @@
+﻿#set($group_id = $getterUtil.getLong($groupId))
+#set($sizex=$Catalogo_id.getSiblings().size())
+#set($count1 = 1)
+<div class="slic height100 eventosWrap" data-cont="cont2">
+    <div class="contentwrap paginacion">
+        #foreach ($cur_Catalogo_id in $Catalogo_id.getSiblings())
+        #set($count1 = $velocityCount%2)
+        #if($velocityCount > 12)
+        #break
+        #end
+        #if($count1==1)        
+        <ul class="abc-list simple-list">
+            #end
+            #set($ix = $sizex - $velocityCount)
+            #set($cur_Catalogo=$Catalogo_id.getSiblings().get($ix))
+            #set($webcontent=$journalContentUtil.getContent($group_id, $cur_Catalogo.getData(), "", "$locale", ""))
+            $webcontent
+            #if($count1==0|| !$velocityHasNext || $velocityCount > 11)
+        </ul>
+        </div>
+        #end
+        #end       
+    </div>
+
+

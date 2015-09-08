@@ -1,0 +1,20 @@
+﻿#set ($FechaObj = $dateUtil.newDate($getterUtil.getLong($evt_fecha.getData())))
+<li>
+    <div class="item-evento row-fluid">
+        <div class="noti-detail #if (!$validator.isNotNull($evt_img.getData())) full-width #end">
+            <h5 class="adequate upper">$evt_titulo.getData()</h5>
+            <span class="date text-right">$dateUtil.getDate($FechaObj, "MMMM dd, yyyy", $locale)</span>
+            <p>$evt_desc.getData()</p>
+            <div class="event-desc">
+                $evt_detalle.getData()
+            </div>
+        </div>
+        #if ($validator.isNotNull($evt_img.getData()))
+        <div class="img-full" style="background-image:url($evt_img.getData());"></div>
+        #end
+
+        <a class="fg-yellow dc" href="#event">desplegar información <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
+        <a class="fg-yellow" href="#event">cerrar <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i></a>
+    </div>
+
+</li>
