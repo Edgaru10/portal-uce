@@ -3322,7 +3322,8 @@ var centrosInvestigacion = (function () {
                             var sss = $('#ajax-dcm', data);
                             qq.html(sss.html());
                             sss = data = null;
-                            $.Metro.initDropdowns($item);
+                            $.Metro.initDropdowns($item);                            
+                            $.Metro.initPulls($item);
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
                             initNotiAndvents($item);

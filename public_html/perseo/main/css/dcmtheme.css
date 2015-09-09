@@ -9009,7 +9009,11 @@ span.date {
 /*centros expanded*/
 .metro .centrosWrap .contentwrap {
     width: 98%;
-    padding-top: 10px;
+    padding-top: 10px;   
+}
+
+.metro .centrosWrap .contentwrap.ctc {
+    margin-left: 100px;
 }
 
 .metro .centrosWrap.og-grid .og-close {
@@ -9086,14 +9090,14 @@ span.date {
 
         /**/
         .centrosWrap .sidebar > ul li.centro1.active h5 {
-            margin-top: 10%;
+            margin-top: 7%;
             font-size: 18px;
         }
 
         .centrosWrap .sidebar > ul li.centro1.active h1 {
             /*font-size: 7rem;
             margin-top: 30px;*/
-            font-size: 3rem;
+            font-size: 4.5rem;
             margin-top: 30px;
             line-height: normal;
         }
@@ -9224,7 +9228,7 @@ span.date {
 
 .centrosWrap .panelRight > h1, .centrosWrap .sidebar > ul li.centro1 h1 {
     margin-bottom: 25px;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3.5rem;
 }
 
@@ -9244,7 +9248,7 @@ span.date {
 .metro .tabsservWrap > h5 {
     margin: 10px 0 0 20px;
     font-weight: bold;
-    line-height: 1.7rem;
+    line-height: 1.7rem; 
     text-align: center;
 }
 

@@ -2225,8 +2225,9 @@ var DockPopUp = (function () {
                                 } break;
                                 case "biblio": {
                                     //init componentets
-                                    console.log("biblio cargada con exito 2");
+                                    console.log("biblio cargada con exito 4");
                                     $.Metro.initDropdowns($item);
+                                    $.Metro.initPulls($item);
                                     $.Metro.initSidebars($item);
                                     $.Metro.initPagination($item);
                                     initNotiAndvents($item);
@@ -2246,7 +2247,7 @@ var DockPopUp = (function () {
                                 } break;
                                 case "biblio": {
                                     //init componentets
-                                    $.Metro.initDropdowns($item);
+                                    //$.Metro.initDropdowns($item);
                                     $.Metro.initSidebars($item);
                                     $.Metro.initPagination($item);
                                     initNotiAndvents($item);
