@@ -7638,7 +7638,7 @@ html > body .metro .sidebar a.dropdown-toggle:after {
         text-indent: 0px;
     }*/
     .rb-close:before {
-        content: "\e604";
+        content: "\e605";
         font-family: 'dcmuce';
         font-weight: 100;
         position: absolute;

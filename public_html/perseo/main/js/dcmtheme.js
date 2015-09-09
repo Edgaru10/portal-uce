@@ -2198,7 +2198,7 @@ var DockPopUp = (function () {
             var $item = $(this),
                     $close = $item.find('span.rb-close'),
                     $overlay = $item.find('div.rb-overlay');
-
+            $item.data("index",ix);
             $item.on('click', function (event) {
                 $item.addClass("no-anim");
                 //if (event.target != this) return;
@@ -2266,7 +2266,7 @@ var DockPopUp = (function () {
                 }
                 $item.data('isExpanded', true);
                 // save current item's index
-                current = $item.index();
+                current = $item.data("index");
                 var layoutProp = getItemLayoutProp($item),
                         clipPropFirst = 'rect(' + layoutProp.top + 'px ' + (layoutProp.left + layoutProp.width) + 'px ' + (layoutProp.top + layoutProp.height) + 'px ' + layoutProp.left + 'px)',
                         clipPropLast = 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)';
@@ -2351,7 +2351,7 @@ var DockPopUp = (function () {
             });
         });
         $(window).on('debouncedresize', function () {
-            winsize = getWindowSize(); 
+            winsize = getWindowSize();
             // todo : cache the current item
             if (current !== -1) {
                 $($items.eq(current).find('div.rb-overlay')).css('clip', 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)');
@@ -4538,6 +4538,7 @@ var NoticiasFull = (function () {
                 $($linkPrev).trigger("click");
                 $close.trigger("click");
             });
+            $item.data("index", ix);
             $item.on('click', function (event) {
                 //if (event.target != this) return;
                 //event.preventDefault();
@@ -4547,7 +4548,7 @@ var NoticiasFull = (function () {
                 }
                 $item.data('isExpanded', true);
                 // save current item's index
-                current = $item.index();
+                current = $item.data("index");
                 var layoutProp = getItemLayoutProp($item),
                         clipPropFirst = 'rect(' + layoutProp.top + 'px ' + (layoutProp.left + layoutProp.width) + 'px ' + (layoutProp.top + layoutProp.height) + 'px ' + layoutProp.left + 'px)',
                         clipPropLast = 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)';

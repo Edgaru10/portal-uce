@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'dcmuce';
-	src:url('fonts/dcmuce.eot?r2kd86');
-	src:url('fonts/dcmuce.eot?#iefixr2kd86') format('embedded-opentype'),
-		url('fonts/dcmuce.ttf?r2kd86') format('truetype'),
-		url('fonts/dcmuce.woff?r2kd86') format('woff'),
-		url('fonts/dcmuce.svg?r2kd86#dcmuce') format('svg');
+	src:url('fonts/dcmuce.eot?-mx0x1d');
+	src:url('fonts/dcmuce.eot?#iefix-mx0x1d') format('embedded-opentype'),
+		url('fonts/dcmuce.ttf?-mx0x1d') format('truetype'),
+		url('fonts/dcmuce.woff?-mx0x1d') format('woff'),
+		url('fonts/dcmuce.svg?-mx0x1d#dcmuce') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,11 +23,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.fa-uce_proyectos_eje:before {
+	content: "\e600";
+}
+.fa-uce_proyectos_en:before {
+	content: "\e601";
+}
 .fa-uce_sau:before {
-	content: "\e622";
+	content: "\e627";
 }
 .fa-uce_resena:before {
-	content: "\e623";
+	content: "\e626";
 }
 .fa-uce_registro:before {
 	content: "\e624";
@@ -36,43 +42,43 @@
 	content: "\e625";
 }
 .fa-uce_sello:before {
-	content: "\e621";
+	content: "\e622";
 }
 .fa-uce_aplicaciones:before {
-	content: "\e600";
+	content: "\e623";
 }
 .fa-uce_bajar_archivo:before {
-	content: "\e601";
-}
-.fa-uce_biblioteca:before {
 	content: "\e602";
 }
-.fa-uce_calendario:before {
+.fa-uce_biblioteca:before {
 	content: "\e603";
 }
-.fa-uce_cerrar:before {
+.fa-uce_calendario:before {
 	content: "\e604";
 }
-.fa-uce_club_andinismo:before {
+.fa-uce_cerrar:before {
 	content: "\e605";
 }
-.fa-uce_club_arte:before {
+.fa-uce_club_andinismo:before {
 	content: "\e606";
 }
-.fa-uce_club_futbol:before {
+.fa-uce_club_arte:before {
 	content: "\e607";
 }
-.fa-uce_club_rugby:before {
+.fa-uce_club_futbol:before {
 	content: "\e608";
 }
-.fa-uce_club_taekwondo:before {
+.fa-uce_club_rugby:before {
 	content: "\e609";
 }
-.fa-uce_contraer:before {
+.fa-uce_club_taekwondo:before {
 	content: "\e60a";
 }
-.fa-uce_contrasea:before {
+.fa-uce_contraer:before {
 	content: "\e60b";
+}
+.fa-uce_contrasea:before {
+	content: "\e615";
 }
 .fa-uce_editar_archivo:before {
 	content: "\e60c";
@@ -102,13 +108,13 @@
 	content: "\e614";
 }
 .fa-uce_pdf:before {
-	content: "\e615";
-}
-.fa-uce_radio:before {
 	content: "\e616";
 }
-.fa-uce_repositorio:before {
+.fa-uce_radio:before {
 	content: "\e617";
+}
+.fa-uce_repositorio:before {
+	content: "\e621";
 }
 .fa-uce_scrool:before {
 	content: "\e618";
