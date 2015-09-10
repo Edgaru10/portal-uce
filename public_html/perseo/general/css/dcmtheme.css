@@ -7682,12 +7682,12 @@ html > body .metro .sidebar a.dropdown-toggle:after {
     background-position: 50% 50%;
     margin-top: 20px;
 }
-
+ 
 .rb-overlay h2.full-title {
     /* clear: both; */
     position: relative;
     color: #4275b9;
-    border-bottom: 2px solid #939393;
+    /*border-bottom: 2px solid #939393;*/
     font-size: 3rem;
     font-family: 'Adequate ExtraLight','Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -9228,7 +9228,7 @@ span.date {
 
 .centrosWrap .panelRight > h1, .centrosWrap .sidebar > ul li.centro1 h1 {
     margin-bottom: 25px;
-    font-size: 3rem;
+    font-size: 2.9rem; 
     line-height: 3.5rem;
 }
 
