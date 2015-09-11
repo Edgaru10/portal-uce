@@ -41,7 +41,7 @@
         }
 
 
-        
+
 .tile-container {
     width: 100%;
     height: auto;
@@ -707,12 +707,12 @@
 /*centros expanded*/
 .metro .centrosWrap .contentwrap {
     width: 98%;
-    padding-top: 10px;   
+    padding-top: 10px;
 }
 
-.metro .centrosWrap .contentwrap.ctc {
-    margin-left: 100px;
-}
+    .metro .centrosWrap .contentwrap.ctc {
+        margin-left: 100px;
+    }
 
 .metro .centrosWrap.og-grid .og-close {
     right: 5px;
@@ -926,7 +926,7 @@
 
 .centrosWrap .panelRight > h1, .centrosWrap .sidebar > ul li.centro1 h1 {
     margin-bottom: 25px;
-    font-size: 2.9rem; 
+    font-size: 2.9rem;
     line-height: 3.5rem;
 }
 
@@ -946,7 +946,7 @@
 .metro .tabsservWrap > h5 {
     margin: 10px 0 0 20px;
     font-weight: bold;
-    line-height: 1.7rem; 
+    line-height: 1.7rem;
     text-align: center;
 }
 
@@ -1172,6 +1172,77 @@
         .metro .proyectosWrap > div h4 {
             font-family: "Segoe UI Ligth";
         }
+
+
+.contentwrap.proyectosWrap.row-fluid.inv {
+    padding-left: 145px;
+    padding-top: 30px;
+    display: none;
+}
+
+.proyecto2 {
+    width: 96%;
+    height: 1500%;
+    background-color: red;
+    position: absolute;
+    /*display: none;*/
+}
+
+.span6.inv {
+    width: 280px !important;
+    height: 450px;
+    text-align: center;
+    padding-top: 150px;
+    border: 3.5px solid #fff !important;
+    margin-left: 50px !important;
+}
+
+    .span6.inv .pro {
+        padding-left: 60px;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        clear: both;
+    }
+
+        .span6.inv .pro > h3 {
+            font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif !important;
+            margin: 5px 0;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+.pro > h3 {
+    text-align: center;
+}
+
+.span6.inv .pro > h4 {
+    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif !important;
+    margin: 2px 0;
+    font-size: 2.1rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.span6.inv .pro .fa-uce_proyectos_en, .span6.inv .pro .fa-uce_proyectos_eje {
+    font-size: 90px;
+}
+
+.noti-detail.pro-eje {
+    padding-left: 180px;
+    width: 900px !important;
+    height: 140px;
+}
+.fg-yellow.pro-eje {
+    padding-left: 180px;
+}
+.centrosWrap .item-evento .img-full.pro-eje {
+    width: 150px;
+    height: 140px;
+    float: initial;
+    margin: 1px 0 0 10px;
+}
+
 /*revistas*/
 
 .centrosWrap .abc-list.revista-list > li:before {
@@ -1238,6 +1309,10 @@
     .biblioWrap .eventosWrap .item-evento .noti-detail {
         height: 140px;
     }
+
+        .biblioWrap .eventosWrap .item-evento .noti-detail.servicio {
+            height: 165px;
+        }
 
 .metro .servicesWrap .og-grid {
     perspective: 500px;

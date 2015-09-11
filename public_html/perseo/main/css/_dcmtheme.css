@@ -271,6 +271,7 @@ html > body .featured a.isobrick {
     position: relative;
     left: 13px;
     cursor: pointer;
+    margin-top: -12px;
 }
 
     #boletinx h5 {
@@ -634,37 +635,6 @@ html > body .featured a.isobrick {
         transform: scale(0.9);
     }
 
-/*#endregion*/
-
-/* #region panel centros*/
-
-.contentwrap.proyectosWrap.row-fluid.inv {
-    margin-left: 145px;
-    padding-top: 30px;
-}
-
-.span6.inv{    
-    width: 280px !important;
-    height: 450px;
-    text-align: center;    
-    padding-top: 180px;
-    border: 3.5px solid #fff !important;
-    margin-left: 50px !important;
-}
-
-.span6.inv .cen > h3 {
-    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif !important;
-    margin: 5px 0;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.span6.inv .cen > h4 {
-    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif !important;
-    margin: 2px 0;
-    font-size: 2rem;
-    font-weight: normal;
-}
-
 
 
 /*#endregion*/
@@ -858,6 +828,24 @@ html > body .featured a.isobrick {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
+/*#endregion*/
+/**Contador de Visitas**/
+
+.contador {
+    text-align: left;   
+    font-size: 2rem;    
+    color: #060606;
+    padding-left: 95px;
+}
+
+.title-contador > h3 {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 90px;
+}
+
+
 
 /*#endregion*/
 
