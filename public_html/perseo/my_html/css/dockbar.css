@@ -1177,7 +1177,7 @@
 .contentwrap.proyectosWrap.row-fluid.inv {
     padding-left: 145px;
     padding-top: 30px;
-    display: none;
+    /*display: none;*/
 }
 
 .proyecto2 {
@@ -1185,7 +1185,7 @@
     height: 1500%;
     background-color: red;
     position: absolute;
-    /*display: none;*/
+    display: none;
 }
 
 .span6.inv {
@@ -1229,9 +1229,7 @@
 }
 
 .noti-detail.pro-eje {
-    padding-left: 180px;
-    width: 900px !important;
-    height: 140px;
+    float:right;
 }
 .fg-yellow.pro-eje {
     padding-left: 180px;

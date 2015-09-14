@@ -2197,7 +2197,7 @@ var DockPopUp = (function () {
             var $item = $(this),
                     $close = $item.find('span.rb-close'),
                     $overlay = $item.find('div.rb-overlay');
-            $item.data("index",ix);
+            $item.data("index", ix);
             $item.on('click', function (event) {
                 $item.addClass("no-anim");
                 //if (event.target != this) return;
@@ -2463,6 +2463,10 @@ var DockPopUp = (function () {
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
+
+
+
+
     }
     return { init: init };
 });//();

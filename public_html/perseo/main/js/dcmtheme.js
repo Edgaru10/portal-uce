@@ -2198,7 +2198,7 @@ var DockPopUp = (function () {
             var $item = $(this),
                     $close = $item.find('span.rb-close'),
                     $overlay = $item.find('div.rb-overlay');
-            $item.data("index",ix);
+            $item.data("index", ix);
             $item.on('click', function (event) {
                 $item.addClass("no-anim");
                 //if (event.target != this) return;
@@ -2464,6 +2464,10 @@ var DockPopUp = (function () {
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
+
+
+
+
     }
     return { init: init };
 });//();
@@ -6916,7 +6920,7 @@ var centrosInvestigacion = (function () {
                             var sss = $('#ajax-dcm', data);
                             qq.html(sss.html());
                             sss = data = null;
-                            $.Metro.initDropdowns($item);                            
+                            $.Metro.initDropdowns($item);
                             $.Metro.initPulls($item);
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
@@ -7104,6 +7108,40 @@ var centrosInvestigacion = (function () {
             });
 
             openx = closex = null;
+        });
+
+        //init proyectos
+        console.log("v 1.0.0");
+        var panelWrap = $(".proyectosWrap");
+        var showProyectos1 = $(".showProyectos1");
+        var showProyectos2 = $(".showProyectos2");
+
+        var panelProyecto1 = $(".panelProyecto1");
+        var panelProyecto2 = $(".panelProyecto2");
+
+        var hidex = $(".hide-proyectos");
+        hidex.click(function (e) {
+
+            panelProyecto1.removeClass("visible").fadeOut();
+            panelProyecto2.removeClass("visible").fadeOut();
+            panelWrap.fadeIn();
+
+        });
+        showProyectos1.click(function (e) {
+
+            panelProyecto2.removeClass("visible animated fadeInLeftBig").fadeOut();
+            panelWrap.fadeOut();
+            panelProyecto1.addClass("visible animated fadeInRightBig").fadeIn();
+
+        });
+
+        showProyectos2.click(function (e) {
+
+            panelProyecto1.removeClass("visible animated fadeInRightBig").fadeOut();
+            panelWrap.fadeOut();
+            panelProyecto2.addClass("visible animated fadeInLeftBig").fadeIn();
+
+
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;

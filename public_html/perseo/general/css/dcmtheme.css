@@ -9479,7 +9479,7 @@ span.date {
 .contentwrap.proyectosWrap.row-fluid.inv {
     padding-left: 145px;
     padding-top: 30px;
-    display: none;
+    /*display: none;*/
 }
 
 .proyecto2 {
@@ -9487,7 +9487,7 @@ span.date {
     height: 1500%;
     background-color: red;
     position: absolute;
-    /*display: none;*/
+    display: none;
 }
 
 .span6.inv {
@@ -9531,9 +9531,7 @@ span.date {
 }
 
 .noti-detail.pro-eje {
-    padding-left: 180px;
-    width: 900px !important;
-    height: 140px;
+    float:right;
 }
 .fg-yellow.pro-eje {
     padding-left: 180px;
