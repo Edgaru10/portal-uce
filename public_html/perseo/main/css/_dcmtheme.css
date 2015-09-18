@@ -836,7 +836,11 @@ html > body .featured a.isobrick {
     text-align: left;   
     font-size: 2rem;    
     color: #060606;
-    padding-left: 95px;
+    padding-left: 70px;
+    width: 300px;
+    height: 50px;
+    pointer-events: none;
+    cursor: default;
 }
 
 .title-contador > h3 {

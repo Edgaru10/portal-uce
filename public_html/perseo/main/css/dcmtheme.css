@@ -9485,7 +9485,7 @@ span.date {
 .proyecto2 {
     width: 96%;
     height: 1500%;
-    background-color: red;
+    background-color: rgb(0, 118, 189);
     position: absolute;
     display: none;
 }
@@ -9529,18 +9529,62 @@ span.date {
 .span6.inv .pro .fa-uce_proyectos_en, .span6.inv .pro .fa-uce_proyectos_eje {
     font-size: 90px;
 }
+.span1.showProyectos1 .fa-uce_proyectos_en, .span1.showProyectos1 .fa-uce_proyectos_eje{
+    font-size: 40px;
+}
 
-.noti-detail.pro-eje {
-    float:right;
+.item-evento.row-fluid .noti-detail.pro-eje {
+    float: right;
+    padding-left: 10px;
+    height: 130px;
 }
+
+.item-evento.row-fluid .noti-detail.pro-eje1 {
+    padding-left: 10px;
+    height: 130px;
+}
+
 .fg-yellow.pro-eje {
-    padding-left: 180px;
+    padding-left: 172px;
 }
+
 .centrosWrap .item-evento .img-full.pro-eje {
-    width: 150px;
-    height: 140px;
+    width: 140px;
+    height: 130px;
     float: initial;
     margin: 1px 0 0 10px;
+}
+
+.centrosWrap .item-evento .img-full.pro-eje1 {
+    width: 140px;
+    height: 130px;
+    float: left;
+    margin: 1px 0 0 10px;
+}
+
+.simple-list.a, .simple-list.a > li {
+    margin-left: 0;
+    list-style: none;
+}
+
+    .simple-list.a .item-evento.row-fluid, .simple-list.a1 .item-evento.row-fluid {
+        padding-top: 20px;
+    }
+
+.simple-list.a1 {
+    list-style: none;
+    width: 840px;
+    padding-left: 20px;
+    margin: 0 !important; 
+}
+
+.span1.showProyectos2, .span1.showProyectos1 {
+    border: 3.5px solid #fff !important;
+    margin-left: 10px;
+    width: 106px !important;
+    height: 156px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 /*revistas*/
@@ -12454,7 +12498,11 @@ html > body .featured a.isobrick {
     text-align: left;   
     font-size: 2rem;    
     color: #060606;
-    padding-left: 95px;
+    padding-left: 70px;
+    width: 300px;
+    height: 50px;
+    pointer-events: none;
+    cursor: default;
 }
 
 .title-contador > h3 {
