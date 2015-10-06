@@ -2435,6 +2435,7 @@ var DockPopUp = (function () {
             that = null;
         });
         notiViewer.html($(noti_items.get(0)).find('.oculto').html());
+
         //init events
         event_items.each(function () {
             var that = $(this), openclose = that.find('a.fg-yellow'),

@@ -4170,10 +4170,8 @@ html.mm-opening #hamburger:after {
     margin: 0;
 }
 /*tag lib noticias pagination*/
-.taglib-page-iterator {
-    /* width: 100%; */
-    /* width: 100%; */
-    max-width: 750px;
+.taglib-page-iterator {   
+    max-width: 650px;
     /* margin: auto; */
     left: 0;
 }
@@ -5157,7 +5155,7 @@ body.metro {
     position: relative;
     width: 90%;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 45px;
     height: auto;
     min-height: 400px;
@@ -7719,6 +7717,32 @@ span.date {
     word-break: normal;
     font-family: "Segoe UI","Open Sans";
 }
+.rb-overlay .full-content1 {
+    text-align: justify;
+    position: relative;
+    padding: 10px;
+    height: 510px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100 !important;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.repositorio .fa.fa-uce_repositorio {
+    font-size: 40px;
+    float: left;
+    margin-left: 360px;
+    width: 40px;
+    height: 30px;
+}
+
+.repositorio .tile-label {
+    margin-left: 345px;
+    font-size: 10px;
+    float: left;
+}
 
 .rb-overlay .full-content {
     text-align: justify;
@@ -7731,15 +7755,7 @@ span.date {
     margin-right: 10px;
     margin-top: 10px;
     padding-top: 0;
-    /*text-align: justify;
-  position: relative;
-  padding: 10px 0 10px 10px;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  z-index: 100 !important;
-  margin-right: -5px;
-  margin-top: 5px;*/
+   
 }
 
 .rb-overlay .full-html, .metro .full-html {
@@ -12355,6 +12371,51 @@ html > body .featured a.isobrick {
     transform: scale(0.95);
     border-top-left-radius: 75%;
 }
+
+/*#region direcs Noticias*/
+
+.Notcs {
+    height: 545px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+    .Notcs .span8.noti-viewer {
+        height: 540px;
+    }
+
+.img-full1 {
+    width: 110px;
+    height: 100px;
+    display: block;
+    position: relative;
+    min-height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: 15px;
+    float: right;
+}
+
+.Notcs .noti-item.row-fluid {
+    height: 160px;
+    border-bottom: 1px solid #080808;
+    opacity: .85;
+    cursor: pointer;
+}
+
+.Notcs .noti-detail p {
+    font-size: 1rem;
+    height: 64px;
+    overflow: hidden;
+    padding-right: 5px;
+    margin-bottom: 2px;
+}
+
+.Notcs .adequate, .Notcs .date.text-right {
+    padding-right: 115px;
+    line-height: 18px;
+}
 /*#endregion*/
 
 /*#region Club*/
@@ -12495,8 +12556,8 @@ html > body .featured a.isobrick {
 /**Contador de Visitas**/
 
 .contador {
-    text-align: left;   
-    font-size: 2rem;    
+    text-align: left;
+    font-size: 2rem;
     color: #060606;
     padding-left: 70px;
     width: 300px;

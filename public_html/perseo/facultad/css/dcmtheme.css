@@ -4170,10 +4170,8 @@ html.mm-opening #hamburger:after {
     margin: 0;
 }
 /*tag lib noticias pagination*/
-.taglib-page-iterator {
-    /* width: 100%; */
-    /* width: 100%; */
-    max-width: 750px;
+.taglib-page-iterator {   
+    max-width: 650px;
     /* margin: auto; */
     left: 0;
 }
@@ -5157,7 +5155,7 @@ body.metro {
     position: relative;
     width: 90%;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 45px;
     height: auto;
     min-height: 400px;
@@ -7719,6 +7717,32 @@ span.date {
     word-break: normal;
     font-family: "Segoe UI","Open Sans";
 }
+.rb-overlay .full-content1 {
+    text-align: justify;
+    position: relative;
+    padding: 10px;
+    height: 510px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100 !important;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.repositorio .fa.fa-uce_repositorio {
+    font-size: 40px;
+    float: left;
+    margin-left: 360px;
+    width: 40px;
+    height: 30px;
+}
+
+.repositorio .tile-label {
+    margin-left: 345px;
+    font-size: 10px;
+    float: left;
+}
 
 .rb-overlay .full-content {
     text-align: justify;
@@ -7731,15 +7755,7 @@ span.date {
     margin-right: 10px;
     margin-top: 10px;
     padding-top: 0;
-    /*text-align: justify;
-  position: relative;
-  padding: 10px 0 10px 10px;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  z-index: 100 !important;
-  margin-right: -5px;
-  margin-top: 5px;*/
+   
 }
 
 .rb-overlay .full-html, .metro .full-html {
