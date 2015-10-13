@@ -2704,7 +2704,9 @@ var ClubFull = (function () {
                             $.Metro.initSidebars($item);
                             $.Metro.initBannerCircle(qq);
                             sidebarUpdate($item);
-                            //aqi declarar las noticias de direcciones 
+
+                            initNotiAndvents($item);
+
                             $item.data('ajaxLoad', true);
                         }
                     });
