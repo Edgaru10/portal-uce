@@ -499,9 +499,12 @@ html > body .featured a.isobrick {
     /*max-width: 80%;*/
     margin: auto;
 }
-/*#endregion*/
 
+
+/*#endregion*/
 /* #region panel facs*/
+
+
 .og-grid .detailx {
     height: 0px;
     width: 0px;
@@ -636,10 +639,108 @@ html > body .featured a.isobrick {
     }
 
 
+/*#endregion*/
+/*#region nucleo de investigadores*/
+
+
+.ndi_menu > ul li {
+    float: left;
+    margin-right: .4%;
+    margin-left: .5%;
+    margin-bottom: 10px;
+    background: rgba(148, 145, 143, 0.15);
+    padding: 11.9px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: "Adequate ExtraLight";
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.ndi_menu > ul {
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 118, 189, 0.85);
+    margin: 10px 5px;
+}
+
+.img-full.ndi {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0 40px 0;
+}
+
+.ndi_text h1 {
+    font-family: "Adequate ExtraLight";
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0;
+    font-size: 3rem;
+    line-height: 4.8rem;
+    font-weight: bolder;
+}
+
+.ndi_text > h4 {
+    font-family: "Adequate ExtraLight";
+    height: 25px;
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    letter-spacing: .02em;
+}
+
+.ndi_text > h2 {
+    font-family: "Adequate ExtraLight";
+    margin-top: 40px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+}
+
+.ndi-mv, .ndi-mv > ul {
+    height: 320px;
+    padding: 0;
+    margin: 40px 0;
+}
+
+    .ndi-mv > ul li {
+        width: 521px;
+        float: left;
+        margin: 0.5%;
+        margin-bottom: 10px;
+        /* background: rgba(148,145,143,.15); */
+        list-style: none;
+        font-size: 1.2rem;
+        border: 2px solid #876823;
+        display: inline-block;
+        padding: 22px 35px;
+    }
+
+.ndi-links {
+    list-style: none;
+    margin: 0 auto !important;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+
+    .ndi-links li {
+        margin: 10px 0;
+        display: inline-block;
+        width: 129px;
+        cursor: pointer;
+    }
+
+        .ndi-links li img {
+            max-width: 60%;
+        }
+
 
 /*#endregion*/
-
 /*#region direcs*/
+
 .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap {
     max-width: 1048px;
 }
