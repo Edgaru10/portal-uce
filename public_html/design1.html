@@ -10,6 +10,7 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="dns-prefetch" href="http://aka-cdn.uce.edu.ec">
 
+
     <meta http-equiv="no-cache">
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Cache-Control" content="no-cache">
@@ -230,7 +231,6 @@ and open the template in the editor.
 
                                                                     <div style="cursor:pointer;" class="one_col double isobrick isotope-item noticeX">
                                                                         <div class="featuredinner">
-
 
                                                                             <h2 class="noti-title">
                                                                                 Noticia destacada de muestra
@@ -790,128 +790,298 @@ and open the template in the editor.
                                                     </div>
 
                                                     <div class="slide" id="slide4" data-slide="4">
-                                                        <div class="panel slidecollapse start-collapsed" data-role="panel">
-                                                            <div class="panel-header">
-                                                                Núcleo de Investigadores
-                                                                <i class="fa stat"></i>
+                                                        <div class="dock-popup" id="popup-ley-trans">
+                                                            <div class="panel">
+                                                                <div class="panel-header">
+                                                                    Núcleo de Investigadores
+                                                                </div>
                                                             </div>
-                                                            <div class="panel-content">
-                                                                <div class="contentwrap row-fluid ndi_menu">
-                                                                    <ul>
-                                                                        <li>
-                                                                            INICIO
-                                                                        </li>
-                                                                        <li>
-                                                                            NOTICIAS
-                                                                        </li>
-                                                                        <li>
-                                                                            INVESTIGADORES
-                                                                        </li>
-                                                                        <li>
-                                                                            GRUPOS DE INVESTIGACIÓN
-                                                                        </li>
-                                                                        <li>
-                                                                            SEMINARIO
-                                                                        </li>
-                                                                        <li>
-                                                                            EVENTOS CIENTÍFICOS
-                                                                        </li>
-                                                                        <li>
-                                                                            CONTACTO
-                                                                        </li>
-                                                                    </ul>
+                                                            <div class="rb-overlay">
+                                                                <div class="row-fluid rb-week" style="max-width:90%; border-width: 10px;">
+                                                                    <span class="rb-close">close</span>
+                                                                    <div class="panel-content full-content">
+                                                                        <div class="tab-panels ndi_menu" id="tabs-ndi">
+                                                                            <ul class="tabs">
+                                                                                <li rel="panel1" class="active">INICIO</li>
+                                                                                <li rel="panel2">NOTICIAS</li>
+                                                                                <li rel="panel3">INVESTIGADORES</li>
+                                                                                <li rel="panel4">GRUPOS DE INVESTIGACIÓN</li>
+                                                                                <li rel="panel5">SEMINARIO</li>
+                                                                                <li rel="panel6">EVENTOS CIENTÍFICOS</li>
+                                                                                <li rel="panel7">CONTACTO</li>
+                                                                            </ul>
 
-                                                                    <div class="img-full ndi" style="background-image:url(tmp/nucleo/nucleoInv.jpg)"></div>
-                                                                    <div class="ndi_text">
-                                                                        <h1>GENERALIDADES</h1>
-                                                                        <h4>Espacio para Subtítulo</h4>
-                                                                        <h2>DESCRIPCIÓN DEL CENTRO DE INVESTIGACIÓN</h2>
-                                                                        <p>
-                                                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-                                                                            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-                                                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.
-                                                                            Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
-                                                                            Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.
-                                                                        </p>
+
+                                                                            <!--Inicio NDI-->
+
+                                                                            <div class="panel active" id="panel1">
+                                                                                <div class="Contiene-ndi">
+                                                                                    <div class="img-full ndi" style="background-image:url(tmp/nucleo/nucleoInv.jpg)"></div>
+                                                                                    <div class="ndi_text">
+                                                                                        <h1>GENERALIDADES</h1>
+                                                                                        <h4>Espacio para Subtítulo</h4>
+                                                                                        <h2>DESCRIPCIÓN DEL CENTRO DE INVESTIGACIÓN</h2>
+                                                                                        <p>
+                                                                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+                                                                                            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
+                                                                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.
+                                                                                            Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+                                                                                            Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="ndi-mv">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <h2>Misión</h2>
+                                                                                                <p>
+                                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+                                                                                                </p>
+                                                                                            </li>
+
+                                                                                            <li>
+                                                                                                <h2>Visión</h2>
+                                                                                                <p>
+                                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="ndi_text">
+                                                                                        <h1>Links de interés</h1>
+
+                                                                                        <ul class="ndi-links">
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l2.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l1.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l3.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l4.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l5.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l6.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l7.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a class="link">
+                                                                                                    <img src="tmp/l8.jpg" alt="link" />
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </ul>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Noticias NDI-->
+
+                                                                            <div class="panel" id="panel2">
+                                                                                <div class="ndiCont">
+                                                                                    <div class="noti-ndi">
+                                                                                        <div class="ndi_text">
+                                                                                            <h1>TÍTULO DE LA NOTICIA </h1>
+                                                                                            <ul class="og-grid sharewrap">
+                                                                                                <li>
+                                                                                                    <a href="#" class="sharex" target="_blank" data-role="sharex" data-sharex-service="t">
+                                                                                                        <i class="bg-hover-darkBlue fa fa-uce_facebook"></i>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="sharex" target="_blank" data-role="sharex" data-sharex-service="f" data-sharex-artid="0001">
+                                                                                                        <i class="bg-hover-darkBlue fa fa-uce_twiter"></i>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="sharex" target="_blank" data-role="sharex" data-sharex-service="y" data-sharex-artid="0001">
+                                                                                                        <i class="bg-hover-darkBlue fa fa-uce_yotube"></i>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                            <span class="date text-right">Abril 03/2015</span>
+                                                                                            <div class="img-full ndi" style="background-image:url(tmp/nucleo/nucleoInv.jpg)"></div>
+                                                                                            <p>
+                                                                                                Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+                                                                                                Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
+                                                                                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.
+                                                                                                Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+                                                                                            </p>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                    <div class="span4 noti-ndi2">
+                                                                                        <div class="img-full" style="background-image:url(tmp/centros/r1.jpg);"></div>
+                                                                                        <div class="">
+                                                                                            <h5 class="adequate">TÍTULO DE LA NOTICIA</h5>
+                                                                                            <p>
+                                                                                                Breve descripción de la noticia, Breve descripción de la noticia Breve descripción de la noticia
+                                                                                                Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia
+                                                                                            </p>
+                                                                                            <span class="date text-right">September 25, 2012</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="span4 noti-ndi2">
+                                                                                        <div class="img-full" style="background-image:url(tmp/centros/r1.jpg);"></div>
+                                                                                        <div class="">
+                                                                                            <h5 class="adequate">TÍTULO DE LA NOTICIA</h5>
+                                                                                            <p>
+                                                                                                Breve descripción de la noticia, Breve descripción de la noticia Breve descripción de la noticia
+                                                                                                Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia
+                                                                                            </p>
+                                                                                            <span class="date text-right">September 25, 2012</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="span4 noti-ndi2">
+                                                                                        <div class="img-full" style="background-image:url(tmp/centros/r1.jpg);"></div>
+                                                                                        <div class="">
+                                                                                            <h5 class="adequate">TÍTULO DE LA NOTICIA</h5>
+                                                                                            <p>
+                                                                                                Breve descripción de la noticia, Breve descripción de la noticia Breve descripción de la noticia
+                                                                                                Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia
+                                                                                            </p>
+                                                                                            <span class="date text-right">September 25, 2012</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="span4 noti-ndi2">
+                                                                                        <div class="img-full" style="background-image:url(tmp/centros/r1.jpg);"></div>
+                                                                                        <div class="">
+                                                                                            <h5 class="adequate">TÍTULO DE LA NOTICIA</h5>
+                                                                                            <p>
+                                                                                                Breve descripción de la noticia, Breve descripción de la noticia Breve descripción de la noticia
+                                                                                                Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia
+                                                                                            </p>
+                                                                                            <span class="date text-right">September 25, 2012</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Investigadores NDI-->
+
+                                                                            <div class="panel" id="panel3">
+                                                                                <div class="ndiCont">
+                                                                                    <div class="investigador1">
+                                                                                        <div class="img-investigador1" style="background-image:url(tmp/nucleo/investigadores.jpg)"></div>
+                                                                                        <h2>EQUIPO DE TRABAJO</h2>
+                                                                                        <p>
+                                                                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+                                                                                            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Nullam accumsan lorem.
+                                                                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Nullam accumsan lorem in dui.
+                                                                                            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="investigador2">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <h2>EQUIPO DE TRABAJO</h2>
+                                                                                                <div class="img-investigador2" style="background-image:url(tmp/nucleo/investigadores.jpg)"></div>
+                                                                                                <p>
+                                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                </p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <h2>EQUIPO DE TRABAJO</h2>
+                                                                                                <div class="img-investigador2" style="background-image:url(tmp/nucleo/investigadores.jpg)"></div>
+                                                                                                <p>
+                                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                </p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <h2>EQUIPO DE TRABAJO</h2>
+                                                                                                <div class="img-investigador2" style="background-image:url(tmp/nucleo/investigadores.jpg)"></div>
+                                                                                                <p>
+                                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <!--Grupos Investigación NDI-->
+
+                                                                            <div class="panel" id="panel4">
+                                                                                <div class="ndiCont">
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Seminarios NDI-->
+
+                                                                            <div class="panel" id="panel5">
+                                                                                <div class="ndiCont">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Eventos Cientificos NDI-->
+
+                                                                            <div class="panel" id="panel6">
+                                                                                <div class="ndiCont">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Contactos NDI-->
+
+                                                                            <div class="panel" id="panel7">
+                                                                                <div class="ndiCont">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--FIN NDI-->
+
+
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="ndi-mv">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <h2>Misión</h2>
-                                                                                <p>
-                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
-                                                                                </p>
-                                                                            </li>
-
-                                                                            <li>
-                                                                                <h2>Visión</h2>
-                                                                                <p>
-                                                                                    Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-                                                                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-                                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="ndi_text">
-                                                                        <h1>Links de interés</h1>
-
-                                                                        <ul class="ndi-links">
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l2.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l1.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l3.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l4.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l5.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l6.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l7.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a class="link">
-                                                                                    <img src="tmp/l8.jpg" alt="link" />
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-
-                                                                    </div>
-
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div>                                                                                       
 
                                                     <div class="slide" id="slide5" data-slide="5" style="background-image:url(tmp/centros/bg.jpg);">
                                                         <div class="contentwrap centrosPanel">
                                                             <h1 class="text-center adequate fg-white">Centros de Investigación</h1>
                                                             <ul class="centrosWrap og-grid">
+
                                                                 <li>
                                                                     <a href="#" class="centro">
                                                                         <div>
@@ -1045,7 +1215,6 @@ and open the template in the editor.
                                                                                                                     <i class="fa fa-uce_twiter"></i>
                                                                                                                 </a>
                                                                                                             </li>
-
                                                                                                         </ul>
 
                                                                                                         <div class="img-full" style="background-image: url(https://dignifiedmushroom.files.wordpress.com/2012/08/padme-amidala_800x600.jpg?w=600);">
@@ -1085,7 +1254,6 @@ and open the template in the editor.
                                                                                                                     <i class="fa fa-uce_twiter"></i>
                                                                                                                 </a>
                                                                                                             </li>
-
                                                                                                         </ul>
 
                                                                                                         <div class="img-full" style="background-image: url(https://dignifiedmushroom.files.wordpress.com/2012/08/padme-amidala_800x600.jpg?w=600);">
@@ -1099,7 +1267,6 @@ and open the template in the editor.
 
                                                                                                         </div>
                                                                                                     </div>
-
                                                                                                 </div>
 
 
@@ -1381,7 +1548,6 @@ and open the template in the editor.
                                                                                         </div>
                                                                                     </div>
 
-
                                                                                     <div class="slic" data-cont="cont4">
                                                                                         <div class="contentwrap ">
                                                                                             <ul class="abc-list simple-list revista-list">
@@ -1439,6 +1605,7 @@ and open the template in the editor.
                                                                                             <p>Diagnóstico tratamiento y control de zoonosis</p>
                                                                                         </div>
                                                                                     </div>
+
                                                                                 </div>
                                                                                 <div class="contacto">
                                                                                 </div>
@@ -1465,6 +1632,7 @@ and open the template in the editor.
                                                                         </div>
                                                                     </div>
                                                                 </li>
+
                                                                 <li>
                                                                     <a href="#" class="centro has-img" style="background-image:url(tmp/ban2.jpg)">
                                                                         <div>
@@ -1473,6 +1641,7 @@ and open the template in the editor.
                                                                         </div>
                                                                     </a>
                                                                 </li>
+
                                                                 <li>
                                                                     <a href="#" class="centro">
                                                                         <div>
@@ -1481,6 +1650,7 @@ and open the template in the editor.
                                                                         </div>
                                                                     </a>
                                                                 </li>
+
                                                                 <li>
                                                                     <a href="#" class="centro">
                                                                         <div>
@@ -1489,6 +1659,7 @@ and open the template in the editor.
                                                                         </div>
                                                                     </a>
                                                                 </li>
+
                                                                 <li>
                                                                     <a href="#" class="centro">
                                                                         <div>
@@ -1558,7 +1729,6 @@ and open the template in the editor.
                                                                                     <div class="full-content carousel" data-role="sidebar-content">
 
                                                                                         <div class="slic" data-cont="cont0">
-
                                                                                             <div class="bannerCircle" data-role="bannerCircle" style="margin: auto;float:none;margin-top:0;padding:0px 60px 0px 60px;">
                                                                                                 <div class="spinner"><div></div><div></div><div></div></div>
                                                                                                 <div class="row-fluid" style="margin-bottom: 2.12766%;">
@@ -1602,13 +1772,13 @@ and open the template in the editor.
                                                                                                         <div class="caption">caption 3</div>
                                                                                                     </div>
                                                                                                     <!--<div class="img">
-                                                                                                        <img src="http://aka-cdn.uce.edu.ec/ares/w/facs/mi_fac/img/10.jpg">
-                                                                                                        <div class="caption">Pensando en tu educación</div>
-                                                                                                    </div>-->
+                                                                            <img src="http://aka-cdn.uce.edu.ec/ares/w/facs/mi_fac/img/10.jpg">
+                                                                            <div class="caption">Pensando en tu educación</div>
+                                                                        </div>-->
                                                                                                     <!--<div class="img">
-                                                                                                        <img src="tmp/fac_banner03.jpg">
-                                                                                                        <div class="caption">caption 2</div>
-                                                                                                    </div>-->
+                                                                            <img src="tmp/fac_banner03.jpg">
+                                                                            <div class="caption">caption 2</div>
+                                                                        </div>-->
 
                                                                                                 </div>
                                                                                             </div>
@@ -1720,17 +1890,17 @@ and open the template in the editor.
                                                                             </div>
                                                                         </li>
                                                                         <!--<li>
-                                                                            <div class="direc">
-                                                                                <h1 class="title">DPU</h1>
-                                                                                <div class="desc adequate">Planificación Universitaria</div>
-                                                                            </div>
-                                                                        </li>-->
+                                                <div class="direc">
+                                                    <h1 class="title">DPU</h1>
+                                                    <div class="desc adequate">Planificación Universitaria</div>
+                                                </div>
+                                            </li>-->
                                                                         <!--<li>
-                                                                            <div class="direc">
-                                                                                <h1 class="title">DRI</h1>
-                                                                                <div class="desc adequate">Dirección de Relaciones Internacionales</div>
-                                                                            </div>
-                                                                        </li>-->
+                                                <div class="direc">
+                                                    <h1 class="title">DRI</h1>
+                                                    <div class="desc adequate">Dirección de Relaciones Internacionales</div>
+                                                </div>
+                                            </li>-->
 
                                                                         <li>
                                                                             <div class="direc">
@@ -1794,11 +1964,11 @@ and open the template in the editor.
                                                                             </div>
                                                                         </li>
                                                                         <!--<li>
-                                                                            <div class="direc">
-                                                                                <h1 class="title">CEIA</h1>
-                                                                                <div class="desc adequate">Comisión de Evaluación Interna y Acreditación</div>
-                                                                            </div>
-                                                                        </li>-->
+                                                <div class="direc">
+                                                    <h1 class="title">CEIA</h1>
+                                                    <div class="desc adequate">Comisión de Evaluación Interna y Acreditación</div>
+                                                </div>
+                                            </li>-->
 
                                                                         <li>
                                                                             <div class="direc">
@@ -2147,33 +2317,33 @@ and open the template in the editor.
                                                                                     <a class="fg-white font3r visible-desktop" href="cont0">Club de Fútbol</a>
                                                                                 </h1>
                                                                                 <!--<ul class="element-menu">
-                                                                                    <li>
-                                                                                        <a class="dropdown-toggle" href="#">Generalidades</a>
-                                                                                        <ul class="dropdown-menu" data-role="dropdown">
-                                                                                            <li><a href="cont1">Introducción</a></li>
-                                                                                            <li><a href="cont2">Misión y Visión</a></li>
-                                                                                            <li><a href="cont3">Valores</a></li>
-                                                                                        </ul>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a class="dropdown-toggle" href="#">Datos históricos</a>
-                                                                                        <ul class="dropdown-menu" data-role="dropdown">
-                                                                                            <li><a href="cont4">Nivel Global</a></li>
-                                                                                            <li><a href="cont5">Nivel país</a></li>
-                                                                                            <li><a href="cont6">Nivel UCE</a></li>
-                                                                                        </ul>
-                                                                                    </li>
-                                                                                    <li><a href="cont7">Características especiales del grupo</a></li>
-                                                                                    <li>
-                                                                                        <a class="dropdown-toggle" href="#">Grupo activo</a>
-                                                                                        <ul class="dropdown-menu" data-role="dropdown">
-                                                                                            <li><a href="cont8">Autoridades</a></li>
-                                                                                            <li><a href="cont9">Miembros</a></li>
-                                                                                        </ul>
-                                                                                    </li>
-                                                                                    <li><a href="cont10">Actividades</a></li>
-                                                                                    <li><a href="cont11">Contactos</a></li>
-                                                                                </ul>-->
+                                                        <li>
+                                                            <a class="dropdown-toggle" href="#">Generalidades</a>
+                                                            <ul class="dropdown-menu" data-role="dropdown">
+                                                                <li><a href="cont1">Introducción</a></li>
+                                                                <li><a href="cont2">Misión y Visión</a></li>
+                                                                <li><a href="cont3">Valores</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-toggle" href="#">Datos históricos</a>
+                                                            <ul class="dropdown-menu" data-role="dropdown">
+                                                                <li><a href="cont4">Nivel Global</a></li>
+                                                                <li><a href="cont5">Nivel país</a></li>
+                                                                <li><a href="cont6">Nivel UCE</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="cont7">Características especiales del grupo</a></li>
+                                                        <li>
+                                                            <a class="dropdown-toggle" href="#">Grupo activo</a>
+                                                            <ul class="dropdown-menu" data-role="dropdown">
+                                                                <li><a href="cont8">Autoridades</a></li>
+                                                                <li><a href="cont9">Miembros</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="cont10">Actividades</a></li>
+                                                        <li><a href="cont11">Contactos</a></li>
+                                                    </ul>-->
                                                                                 <ul class="element-menu">
                                                                                     <li>
                                                                                         <a class="dropdown-toggle" href="#">Generalidades</a>

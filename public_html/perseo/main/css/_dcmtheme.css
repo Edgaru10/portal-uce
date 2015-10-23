@@ -642,14 +642,44 @@ html > body .featured a.isobrick {
 /*#endregion*/
 /*#region nucleo de investigadores*/
 
+.tab-panels.ndi_menu {
+    position: relative;
+    width: 1085px;
+    height: auto;
+    min-height: 500px;
+    overflow: hidden;
+    padding: 45px 25px 45px 20px;
+}
+
+.tab-panels .panel {
+    display: none;
+}
+
+    .tab-panels .panel.active {
+        display: block;
+    }
+
+.tab-panels > ul li:hover {
+    color: #fff;
+    background: #d5d5d5;
+}
+
+.tab-panels ul li.active {
+    background: #48B1F0;
+    color: #fff;
+}
+
+.ndiCont {
+    height: 700px;
+    background-color: rgba(177,177,175,.3);
+    padding: 30px 40px 20px 50px;
+}
+
 
 .ndi_menu > ul li {
     float: left;
-    margin-right: .4%;
-    margin-left: .5%;
     margin-bottom: 10px;
-    background: rgba(148, 145, 143, 0.15);
-    padding: 11.9px;
+    padding: 11.9px 15.65px 16px 15.65px;
     list-style: none;
     font-size: 1.2rem;
     font-family: "Adequate ExtraLight";
@@ -660,24 +690,24 @@ html > body .featured a.isobrick {
 
 .ndi_menu > ul {
     height: 50px;
-    border-bottom: 2px solid rgba(0, 118, 189, 0.85);
-    margin: 10px 5px;
+    border-bottom: 2px solid #48B1F0;
+    margin: 20px 0;
 }
 
 .img-full.ndi {
     width: 100%;
     height: 300px;
-    margin: 20px 0 40px 0;
+    margin: 0 0 40px 0;
+    background-position: 0 0;
 }
 
 .ndi_text h1 {
     font-family: "Adequate ExtraLight";
-    font-weight: 500;
+    font-weight: bolder;
     color: #000;
     letter-spacing: 0;
     font-size: 3rem;
     line-height: 4.8rem;
-    font-weight: bolder;
 }
 
 .ndi_text > h4 {
@@ -706,7 +736,7 @@ html > body .featured a.isobrick {
 }
 
     .ndi-mv > ul li {
-        width: 521px;
+        width: 509px;
         float: left;
         margin: 0.5%;
         margin-bottom: 10px;
@@ -737,7 +767,161 @@ html > body .featured a.isobrick {
             max-width: 60%;
         }
 
+/*NDI Noticias*/
 
+.noti-ndi {
+    height: 650px;
+    width: 620px;
+    float: left;
+    padding-right: 30px;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+    .noti-ndi h1 {
+        font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: 0;
+        font-size: 2rem;
+        line-height: 4.8rem;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .noti-ndi .ndi_text {
+        height: 65px;
+        border-bottom: 2px solid rgba(0, 118, 189, 0.34);
+    }
+
+.ndi_text .date.text-right {
+    font-size: 14px;
+    line-height: 0;
+    display: block;
+    opacity: .9;
+    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.noti-ndi .ndi_text .sharex i {
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: #FDFAFA;
+    width: 25px;
+    height: 25px;
+    color: #d5d5d5;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+.noti-ndi .ndi_text ul {
+    display: inline-block;
+    width: 100px;
+    float: right;
+    padding-top: 30px !important;
+}
+
+.span4.noti-ndi2 {
+    float: right !important;
+    width: 300px !important;
+    margin-left: 0 !important;
+    height: 160px !important;
+    border-bottom: 2px solid rgba(0, 118, 189, 0.34);
+    cursor: pointer;
+    height: 115px;
+}
+
+    .span4.noti-ndi2 .img-full {
+        margin-right: 0;
+        width: 110px;
+        height: auto;
+        display: block;
+        position: relative;
+        min-height: 115px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-top: 20px;
+        float: inherit;
+    }
+
+    .span4.noti-ndi2 h5 {
+        margin: 20px 130px 10px 0;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .span4.noti-ndi2 p {
+        overflow: hidden;
+        height: 48px;
+        font-size: 1rem;
+        margin-right: 130px;
+        margin-bottom: 8px;
+    }
+
+    .span4.noti-ndi2 .date.text-right {
+        text-align: center;
+        margin-right: 130px;
+    }
+
+/*NDI Investigadores*/
+
+.investigador1 {
+    width: 290px;
+    height: 650px;
+    float: left;
+    padding-top: 20px;
+}
+
+.img-investigador1 {
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.investigador1 h2, .investigador2 h2 {
+    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    letter-spacing: -.02em;
+    font-weight: 600;
+}
+
+.investigador1 p, .investigador2 p {
+    font-size: 1.25rem;
+}
+
+
+.investigador2 {
+    width: 660px;
+    height: 650px;
+    float: right;
+    padding-left: 10px;
+}
+
+    .investigador2 ul {
+        list-style: none;
+    }
+
+        .investigador2 ul li {
+            height: 195px;
+        }
+
+    .investigador2 p {
+        font-size: 1.25rem;
+        width: 510px;
+        height: 150px;
+        float: right;
+    }
+
+.img-investigador2 {
+    height: 130px;
+    width: 110px;
+    background-size: cover;
+    background-position: 50% 50%;
+    float: left;
+}
 /*#endregion*/
 /*#region direcs*/
 

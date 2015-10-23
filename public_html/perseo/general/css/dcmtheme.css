@@ -5997,7 +5997,8 @@ html > body .metro .sidebar a.dropdown-toggle:after {
         font-size: 3.5rem;
         line-height: 2.2rem;
         color: #1d1d1d;
-        cursor: default;       
+        cursor: default;
+        text-align: center;     
     }
 
     .metro .panel .panel-content {
