@@ -2198,7 +2198,7 @@ var DockPopUp = (function () {
             var $item = $(this),
                     $close = $item.find('span.rb-close'),
                     $overlay = $item.find('div.rb-overlay');
-            $item.data("index", ix);
+            $item.data("index",ix);
             $item.on('click', function (event) {
                 $item.addClass("no-anim");
                 //if (event.target != this) return;
@@ -2435,7 +2435,6 @@ var DockPopUp = (function () {
             that = null;
         });
         notiViewer.html($(noti_items.get(0)).find('.oculto').html());
-
         //init events
         event_items.each(function () {
             var that = $(this), openclose = that.find('a.fg-yellow'),
@@ -2465,10 +2464,6 @@ var DockPopUp = (function () {
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
-
-
-
-
     }
     return { init: init };
 });//();
@@ -3317,35 +3312,6 @@ $(function () {
         }
     })
 })(jQuery);
-
-//inicio nucleo de investigadores>
-$(function () {
-
-    $('.tab-panels .tabs li').on('click', function () {
-
-        var $panel = $(this).closest('.tab-panels');
-
-        $panel.find('.tabs li.active').removeClass('active');
-        $(this).addClass('active');
-
-        //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
-        //hide current panel
-        $panel.find('.panel.active').slideUp(800, showNextPanel);
-
-        //show next panel
-        function showNextPanel() {
-            $(this).removeClass('active');
-
-            $('#' + panelToShow).slideDown(800, function () {
-                $(this).addClass('active');
-            });
-        }
-    });
-
-
-});
 
 $(function () {
     $.Metro.initSidebars = function (area) {

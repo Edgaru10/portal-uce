@@ -5162,6 +5162,28 @@ body.metro {
     overflow: hidden;
 }
 
+    .metro .contentwrap.centrosPanel {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        padding-top: 120px;
+        padding-bottom: 45px;
+        height: auto;
+        min-height: 400px;
+        overflow: hidden;
+    }
+
+    .metro .contentwrap.facWrap {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 120px;
+        height: auto;
+        min-height: 400px;
+        overflow: hidden;
+    }
+
 .metro .img-cover {
     background-size: cover;
     background-position: 50% 50%;
@@ -5958,24 +5980,22 @@ html > body .metro .sidebar a.dropdown-toggle:after {
 /*#region Metro Panel*/
 .metro .panel {
     border: none;
-    margin-bottom: 10px;
+    height: 100%;
 }
 
     .metro .panel .panel-header {
-        padding: 10px;
+        padding: 20px;
         background-color: #eeeeee;
         width: 100%;
-        font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Adequate ExtraLight','Segoe UI_','Open Sans',Verdana,Arial,Helvetica,sans-serif;
         font-weight: 300;
         letter-spacing: 0.00em;
-        font-size: 2.5rem;
+        font-size: 4rem;
         line-height: 2.5rem;
-        letter-spacing: 0.01em;
         color: #000000;
-        font-size: 2.2rem;
-        line-height: 2.2rem;
         color: #1d1d1d;
-        cursor: default;
+        cursor: pointer;
+        text-align: center;
     }
 
     .metro .panel .panel-content {

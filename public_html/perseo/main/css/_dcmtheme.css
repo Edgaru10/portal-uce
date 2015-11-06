@@ -641,14 +641,29 @@ html > body .featured a.isobrick {
 
 /*#endregion*/
 /*#region nucleo de investigadores*/
+.panel .panel-header > h2 {
+    font-size: 4.2rem;
+    line-height: 1.2;
+}
+
+.panel-content {
+    height: 100%;
+}
 
 .tab-panels.ndi_menu {
     position: relative;
-    width: 1085px;
-    height: auto;
-    min-height: 500px;
+    width: 96%;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    height: 100%;
     overflow: hidden;
-    padding: 45px 25px 45px 20px;
+}
+
+.ndi_menu .divider.bg-gray {
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: #0076BD !important;
 }
 
 .tab-panels .panel {
@@ -665,46 +680,81 @@ html > body .featured a.isobrick {
 }
 
 .tab-panels ul li.active {
-    background: #48B1F0;
+    background-color: #0076bd;
     color: #fff;
 }
 
 .ndiCont {
-    height: 700px;
+    height: 100%;
     background-color: rgba(177,177,175,.3);
-    padding: 30px 40px 20px 50px;
+    padding: 30px 40px 30px 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
-
-.ndi_menu > ul li {
-    float: left;
-    margin-bottom: 10px;
-    padding: 11.9px 15.65px 16px 15.65px;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: "Adequate ExtraLight";
-    font-weight: bold;
-    cursor: pointer;
-}
-
 
 .ndi_menu > ul {
-    height: 50px;
-    border-bottom: 2px solid #48B1F0;
-    margin: 20px 0;
+    height: 45px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
+
+    .ndi_menu > ul li {
+        float: left;
+        color: #000;
+        padding: 10px 0 15px 0;
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: "Adequate ExtraLight";
+        width: 13%;
+        text-align: center;
+        margin: auto;
+    }
+
+.ndi_menu .lineas {
+    line-height: 1.5rem;
+    width: 17%;
+    padding: 16px 0 15px 0;
+}
+
+.ndi_menu .lineas1 {
+    padding: 8px 0 15px 0;
+    line-height: 1.5rem;
+    width: 17%;
+}
+
+.ndi_menu .lineas2 {
+    padding: 8px 0 15px 0;
+    line-height: 1.5rem;
+    width: 14%;
+}
+
+/*NDI Inicio*/
+.full-contentn {
+    text-align: justify;
+    position: relative;
+    height: 100%;
+    z-index: 100 !important;
+    padding-top: 0;
+}
+
+    .full-contentn .panel {
+        height: 100%;
+    }
 
 .img-full.ndi {
     width: 100%;
-    height: 300px;
-    margin: 0 0 40px 0;
+    height: 300px !important;
+    margin: auto;
     background-position: 0 0;
 }
 
 .ndi_text h1 {
     font-family: "Adequate ExtraLight";
     font-weight: bolder;
-    color: #000;
     letter-spacing: 0;
     font-size: 3rem;
     line-height: 4.8rem;
@@ -727,6 +777,7 @@ html > body .featured a.isobrick {
     line-height: 1.8rem;
     letter-spacing: -0.05em;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .ndi-mv, .ndi-mv > ul {
@@ -736,14 +787,13 @@ html > body .featured a.isobrick {
 }
 
     .ndi-mv > ul li {
-        width: 509px;
+        width: 49%;
         float: left;
         margin: 0.5%;
         margin-bottom: 10px;
-        /* background: rgba(148,145,143,.15); */
         list-style: none;
         font-size: 1.2rem;
-        border: 2px solid #876823;
+        border: 2px solid #9C9B9B;
         display: inline-block;
         padding: 22px 35px;
     }
@@ -753,6 +803,7 @@ html > body .featured a.isobrick {
     margin: 0 auto !important;
     text-align: center;
     width: 100%;
+    height: 50px;
     padding: 15px;
 }
 
@@ -761,78 +812,93 @@ html > body .featured a.isobrick {
         display: inline-block;
         width: 129px;
         cursor: pointer;
+        height: 35px;
     }
 
         .ndi-links li img {
             max-width: 60%;
+            height: 35px;
+        }
+
+        .ndi-links li a {
+            width: 180px;
+            height: 35px !important;
         }
 
 /*NDI Noticias*/
 
-.noti-ndi {
+.ndiCont .span8 {
     height: 650px;
     width: 620px;
     float: left;
-    padding-right: 30px;
+    padding: 0 30px 30px 0;
     border-right: 2px solid rgb(255, 255, 255);
 }
 
-    .noti-ndi h1 {
+    .ndiCont .span8 h1 {
         font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
         font-weight: bold;
         color: #000;
         letter-spacing: 0;
         font-size: 2rem;
-        line-height: 4.8rem;
-        margin-top: 10px;
+        line-height: 2rem;
+        margin-top: 0;
         display: inline-block;
     }
 
-    .noti-ndi .ndi_text {
-        height: 65px;
+    .ndiCont .span8 > div:first-child {
+        height: 55px;
         border-bottom: 2px solid rgba(0, 118, 189, 0.34);
     }
 
-.ndi_text .date.text-right {
-    font-size: 14px;
-    line-height: 0;
-    display: block;
-    opacity: .9;
-    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
-    font-weight: bold;
-    padding-bottom: 30px;
-}
+    .ndiCont .span8 .date.text-right {
+        font-size: 14px;
+        line-height: 0;
+        display: block;
+        opacity: .9;
+        font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
 
-.noti-ndi .ndi_text .sharex i {
-    font-size: 15px;
-    border-radius: 50%;
-    background-color: #FDFAFA;
-    width: 25px;
-    height: 25px;
-    color: #d5d5d5;
-    padding: 5px;
-    display: block;
-    text-align: center;
-}
+    .ndiCont .span8 ul {
+        display: inline-block;
+        width: 100px;
+        float: right;
+        padding-top: 15px !important;
+    }
 
-.noti-ndi .ndi_text ul {
-    display: inline-block;
-    width: 100px;
-    float: right;
-    padding-top: 30px !important;
-}
+    .ndiCont .span8 .og-grid.sharewrap .sharex i {
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 25px;
+        height: 25px;
+        color: #d5d5d5;
+        padding: 5px;
+        display: block;
+        text-align: center;
+    }
 
-.span4.noti-ndi2 {
+    .ndiCont .span8 .img-full {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+.span4 .noti-ndi2 {
     float: right !important;
     width: 300px !important;
     margin-left: 0 !important;
-    height: 160px !important;
+    height: 150px !important;
     border-bottom: 2px solid rgba(0, 118, 189, 0.34);
     cursor: pointer;
-    height: 115px;
 }
 
-    .span4.noti-ndi2 .img-full {
+    .span4 .noti-ndi2 .img-full {
         margin-right: 0;
         width: 110px;
         height: auto;
@@ -842,17 +908,17 @@ html > body .featured a.isobrick {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
-        margin-top: 20px;
+        margin-top: 15px;
         float: inherit;
     }
 
-    .span4.noti-ndi2 h5 {
-        margin: 20px 130px 10px 0;
+    .span4 .noti-ndi2 h5 {
+        margin: 15px 130px 10px 0;
         font-size: 1.4rem;
         line-height: 1.7rem;
     }
 
-    .span4.noti-ndi2 p {
+    .span4 .noti-ndi2 p {
         overflow: hidden;
         height: 48px;
         font-size: 1rem;
@@ -860,18 +926,23 @@ html > body .featured a.isobrick {
         margin-bottom: 8px;
     }
 
-    .span4.noti-ndi2 .date.text-right {
+    .span4 .noti-ndi2 .date.text-right {
         text-align: center;
         margin-right: 130px;
     }
+
+    .span4 .noti-ndi2 .oculto {
+        display: none;
+    }
+
 
 /*NDI Investigadores*/
 
 .investigador1 {
     width: 290px;
-    height: 650px;
+    height: 100%;
     float: left;
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
 }
 
 .img-investigador1 {
@@ -890,6 +961,7 @@ html > body .featured a.isobrick {
 
 .investigador1 p, .investigador2 p {
     font-size: 1.25rem;
+    padding-bottom: 30px;
 }
 
 
@@ -905,7 +977,7 @@ html > body .featured a.isobrick {
     }
 
         .investigador2 ul li {
-            height: 195px;
+            height: 200px;
         }
 
     .investigador2 p {
@@ -921,7 +993,30 @@ html > body .featured a.isobrick {
     background-size: cover;
     background-position: 50% 50%;
     float: left;
+    margin-top: 5px;
 }
+
+/*NDI Grupos de Investigación*/
+
+.ndiCont .page > ul li:hover {
+    background: #d5d5d5;
+}
+
+.ndiCont .item-evento {
+    border-bottom: 2px solid #0076BD;
+}
+
+    .ndiCont .item-evento > a {
+        opacity: .8;
+        float: left;
+        clear: both;
+        color: #0076BD !important;
+    }
+
+.ndiCont .page .adequate.upper {
+    text-align: initial;
+}
+
 /*#endregion*/
 /*#region direcs*/
 

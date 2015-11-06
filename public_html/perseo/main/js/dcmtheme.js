@@ -3332,13 +3332,13 @@ $(function () {
         var panelToShow = $(this).attr('rel');
 
         //hide current panel
-        $panel.find('.panel.active').slideUp(800, showNextPanel);
+        $panel.find('.panel.active').fadeOut(200, showNextPanel);
 
         //show next panel
         function showNextPanel() {
             $(this).removeClass('active');
 
-            $('#' + panelToShow).slideDown(800, function () {
+            $('#' + panelToShow).fadeIn(200, function () {
                 $(this).addClass('active');
             });
         }
@@ -6905,7 +6905,7 @@ var centrosInvestigacionz = (function () {
 //#region centros investigaci�n
 var centrosInvestigacion = (function () {
 
-    var $items = $('.centrosWrap > li'),
+    var $items = $('.centrosWrap > li, .nucleoWrap'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',

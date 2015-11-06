@@ -3277,7 +3277,7 @@ var centrosInvestigacionz = (function () {
 //#region centros investigación
 var centrosInvestigacion = (function () {
 
-    var $items = $('.centrosWrap > li'),
+    var $items = $('.centrosWrap > li, .nucleoWrap'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',
