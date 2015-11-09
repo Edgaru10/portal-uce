@@ -733,6 +733,7 @@ html > body .featured a.isobrick {
 }
 
 /*NDI Inicio*/
+/*#region Inicio nucleo de investigadores*/
 .full-contentn {
     text-align: justify;
     position: relative;
@@ -826,7 +827,7 @@ html > body .featured a.isobrick {
         }
 
 /*NDI Noticias*/
-
+/*#region Noticias nucleo de investigadores*/
 .ndiCont .span8 {
     height: 650px;
     width: 620px;
@@ -937,7 +938,7 @@ html > body .featured a.isobrick {
 
 
 /*NDI Investigadores*/
-
+/*#region Investigadores nucleo de investigadores*/
 .investigador1 {
     width: 290px;
     height: 100%;
@@ -997,7 +998,7 @@ html > body .featured a.isobrick {
 }
 
 /*NDI Grupos de Investigación*/
-
+/*#region Grupos de Investigación nucleo de investigadores*/
 .ndiCont .page > ul li:hover {
     background: #d5d5d5;
 }
@@ -1016,6 +1017,30 @@ html > body .featured a.isobrick {
 .ndiCont .page .adequate.upper {
     text-align: initial;
 }
+
+/*NDI Seminario*/
+/*#region Seminario nucleo de investigadores*/
+
+.ndiCont .seminario {
+    list-style: none;
+    margin: 0;
+}
+
+    .ndiCont .seminario > li {
+        width: auto;
+        height: 100%;
+        text-align: center;
+        background-color: beige;
+        border-bottom: 1px solid rgba(8, 8, 8, 0.15);
+        cursor: pointer;
+        padding: 5px 0;
+    }
+
+.seminario > li > h2 {
+    margin: 5px 0;
+    line-height: 3.5rem;
+}
+
 
 /*#endregion*/
 /*#region direcs*/
