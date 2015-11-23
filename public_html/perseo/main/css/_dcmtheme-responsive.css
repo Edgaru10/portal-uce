@@ -235,14 +235,12 @@
     }
 }
 
-
 @media (max-width: 1169px) {
     /*direcciones*/
     .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .centrosWrap {
         max-width: 800px;
     }
 }
-
 
 @media only screen and (max-width: 878px) {
     /*direcciones*/

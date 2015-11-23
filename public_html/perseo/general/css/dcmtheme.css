@@ -5772,6 +5772,7 @@ body.metro {
     padding-top: 60px;
     padding-left: 20px;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .metro .sidebar {
@@ -5993,7 +5994,6 @@ html > body .metro .sidebar a.dropdown-toggle:after {
         font-size: 4rem;
         line-height: 2.5rem;
         color: #000000;
-        color: #1d1d1d;
         cursor: pointer;
         text-align: center;
     }
@@ -7742,7 +7742,7 @@ span.date {
     text-align: justify;
     position: relative;
     padding: 10px;
-    height: 510px;
+    height: 90%;
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 100 !important;
@@ -7751,19 +7751,29 @@ span.date {
     padding-top: 0;
 }
 
-.repositorio .fa.fa-uce_repositorio {
-    font-size: 40px;
-    float: left;
-    margin-left: 360px;
-    width: 40px;
-    height: 30px;
+.repositorio {
+    width: 100%;
+    height: 10%;
+    text-align: center;
 }
 
-.repositorio .tile-label {
-    margin-left: 345px;
-    font-size: 10px;
-    float: left;
-}
+    .repositorio .fa.fa-uce_repositorio {
+        font-size: 40px;
+        width: 40px;
+        height: 30px;
+    }
+
+    .repositorio .tile-label {
+        margin: 0px;
+        color: #00AAFF;
+        line-height: 0px;
+        font-size: 9px;
+        text-align: center !important;
+    }
+
+        .repositorio .tile-label > h5:hover {
+            color: black;
+        }
 
 .rb-overlay .full-content {
     text-align: justify;

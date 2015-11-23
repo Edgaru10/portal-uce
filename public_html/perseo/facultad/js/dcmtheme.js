@@ -2198,7 +2198,7 @@ var DockPopUp = (function () {
             var $item = $(this),
                     $close = $item.find('span.rb-close'),
                     $overlay = $item.find('div.rb-overlay');
-            $item.data("index",ix);
+            $item.data("index", ix);
             $item.on('click', function (event) {
                 $item.addClass("no-anim");
                 //if (event.target != this) return;
@@ -2435,6 +2435,7 @@ var DockPopUp = (function () {
             that = null;
         });
         notiViewer.html($(noti_items.get(0)).find('.oculto').html());
+
         //init events
         event_items.each(function () {
             var that = $(this), openclose = that.find('a.fg-yellow'),
@@ -2464,6 +2465,10 @@ var DockPopUp = (function () {
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
+
+
+
+
     }
     return { init: init };
 });//();
@@ -3313,6 +3318,7 @@ $(function () {
     })
 })(jQuery);
 
+
 $(function () {
     $.Metro.initSidebars = function (area) {
         if (area != undefined) {
@@ -3591,6 +3597,7 @@ $.fn.randomize = function (selector) {
 
 //$('ul').randomize();
 console.log("fin dcm_common, body: " + $('body').length);
+
 ///#source 1 1 /public_html/perseo/facultad/js/_dcmtheme.js
 var debug = false, noti_slide_num = 5, allPortletsReady = false;
 

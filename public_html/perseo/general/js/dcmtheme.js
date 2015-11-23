@@ -3318,34 +3318,6 @@ $(function () {
     })
 })(jQuery);
 
-//inicio nucleo de investigadores>
-$(function () {
-
-    $('.tab-panels .tabs li').on('click', function () {
-
-        var $panel = $(this).closest('.tab-panels');
-
-        $panel.find('.tabs li.active').removeClass('active');
-        $(this).addClass('active');
-
-        //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
-        //hide current panel
-        $panel.find('.panel.active').fadeOut(200, showNextPanel);
-
-        //show next panel
-        function showNextPanel() {
-            $(this).removeClass('active');
-
-            $('#' + panelToShow).fadeIn(200, function () {
-                $(this).addClass('active');
-            });
-        }
-    });
-
-
-});
 
 $(function () {
     $.Metro.initSidebars = function (area) {
@@ -3625,6 +3597,7 @@ $.fn.randomize = function (selector) {
 
 //$('ul').randomize();
 console.log("fin dcm_common, body: " + $('body').length);
+
 ///#source 1 1 /public_html/perseo/general/js/_dcmtheme.js
 var debug = false, allPortletsReady = false, reg = /.*\/.*\//g;
 
@@ -6395,7 +6368,7 @@ function onloadX() {
         click: function (m, y) {
             //alert(m + "/" + y);
             var qq = Liferay.ThemeDisplay.getLayoutURL();
-            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : "archive_noticias?month="));
+            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_nucleoinvestigadores?month=" : "archive_noticias?month="));
             var srcx = portal + m + "&year=" + y;
             window.location = srcx;
 

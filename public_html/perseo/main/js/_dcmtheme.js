@@ -3274,6 +3274,119 @@ var centrosInvestigacionz = (function () {
 });//();
 //#endregion
 
+//#region nucleo de investigadores
+$(function () {
+
+    $('.tab-panels .tabs li').on('click', function () {
+        var $panel = $(this).closest('.tab-panels');
+
+        $panel.find('.tabs li.active').removeClass('active');
+        $(this).addClass('active');
+
+        //figure out which panel to show
+        var panelToShow = $(this).attr('rel');
+
+        //hide current panel
+        $panel.find('.panel.active').fadeOut(200, showNextPanel);
+
+        //show next panel
+        function showNextPanel() {
+            $(this).removeClass('active');
+
+            $('#' + panelToShow).fadeIn(200, function () {
+                $(this).addClass('active');
+            });
+        }
+    });
+});
+//Banner inicio NDI
+$(function () {
+    //settings for slider
+    var width = 990;
+    var animationSpeed = 1000;
+    var pause = 8000;
+    var currentSlide = 1;
+    //cache DOM elements
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.sli', $slider);
+    var interval;
+    function startSlider() {
+        interval = setInterval(function () {
+            $slideContainer.animate({ 'margin-left': '-=' + width }, animationSpeed, function () {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+});
+//Desplegar seminario NDI
+$(function () {
+    $('#collapsible .cuerpo').hide();
+    $('#collapsible .cabecera').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).next().slideUp();
+        } else {
+            $('#collapsible .cabecera').removeClass('active');
+            $(this).addClass('active');
+            $('#collapsible .cuerpo').slideUp();
+            $(this).next().slideDown();
+        }
+
+    });
+});
+//Banner Seminario NDI
+$(function () {
+    $('.fa-angle-right').click(function () {
+        $('.slide-carro').show().animate({ 'margin-left': '-335px' }, 1000);
+        $('.fa-angle-left').show();
+        $('.fa-angle-right').hide();
+    });
+
+    $('.fa-angle-left').click(function () {
+        $('.slide-carro').show().animate({ 'margin-left': '0px' }, 1000);
+        $('.fa-angle-left').hide();
+        $('.fa-angle-right').show();
+
+    });
+});
+
+function initImage(e) {
+    var notiWrap = e.find('.imagenesWrap'),
+        notiViewer = notiWrap.find('.img-viewer'),
+        noti_items = notiWrap.find('.img-item');
+
+    //init notis
+    noti_items.each(function () {
+        var that = $(this);
+        that.click(function () {
+            var that2 = $(this);
+            notiViewer.fadeOut(function () {
+                notiViewer.html(that2.find('.oculto').html()).fadeIn();
+                that2 = null;
+            });
+        });
+        that = null;
+    });
+    notiViewer.html($(noti_items.get(0)).find('.oculto').html());
+    noti_items = notiWrap = null;
+}
+
+
+//#endregion
+
 //#region centros investigación
 var centrosInvestigacion = (function () {
 
@@ -3342,6 +3455,7 @@ var centrosInvestigacion = (function () {
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
                             initNotiAndvents($item);
+                            initImage($item);
                             sidebarUpdate($item);
                             qq = null;
                         }
@@ -3458,6 +3572,7 @@ var centrosInvestigacion = (function () {
         sidebar = full_viewx = tabs = cssx = null;
 
     }
+
     function initNotiAndvents(itemx) {
         var notiWrap = itemx.find('.noticiasWrap'),
             notiViewer = notiWrap.find('.noti-viewer'),
@@ -3552,6 +3667,9 @@ var centrosInvestigacion = (function () {
 
         noti_items = eventWrap = event_items = notiWrap = null;
     }
+
+    
+
     function getItemLayoutProp($item) {
 
         var scrollT = $window.scrollTop(),
