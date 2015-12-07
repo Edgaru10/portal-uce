@@ -3548,7 +3548,7 @@ function fixedUrls(that) {
     var icox = '<i class="fa fa-share-alt"></i>';
     var t1 = 'https://twitter.com/intent/tweet?text=%E2%80%9C';
     var t2 = '%E2%80%9D&url=';
-    var t3 = '&via=UCentralEcuador';
+    var t3 = '&via=lacentralec';
     var f1 = 'http://www.facebook.com/sharer.php?u=';
 
     var service = that.data("sharex-service");
@@ -3597,7 +3597,6 @@ $.fn.randomize = function (selector) {
 
 //$('ul').randomize();
 console.log("fin dcm_common, body: " + $('body').length);
-
 ///#source 1 1 /public_html/perseo/general/js/_dcmtheme.js
 var debug = false, allPortletsReady = false, reg = /.*\/.*\//g;
 
@@ -6384,4 +6383,5 @@ function onloadX() {
         that = null;
     });
 }
+
 

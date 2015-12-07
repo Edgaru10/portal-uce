@@ -1,0 +1,92 @@
+<div class="panel" id="panel5">
+    <div class="ndiCont imagenesWrap">
+        <p>$sem_des.getData()</p>
+        <ul class="seminario">
+            #if (!$sem_contenedor_id.getSiblings().isEmpty())
+            #foreach ($cur_sem_contenedor_id in $sem_contenedor_id.getSiblings())
+            <li id="collapsible">
+                <div class="cabecera" style="width: 100%;">
+                    <h2>$cur_sem_contenedor_id.sem_periodo.getData()</h2>
+                </div>
+                #set ($group_id = $getterUtil.getLong($groupId))
+                <div class="panel-content cuerpo">
+                    <div class="contentwrap row-fluid">
+                        <div class="eventosWrap centrosWrap">
+                            <ul class="abc-list simple-list">
+                                #set($sisex=$sem_contenedor_id.getSiblings().size())
+
+                                #if (!$sem_contenedor_id.getSiblings().isEmpty())
+                                #foreach ($cur_sem_contenedor_idx in $sem_contenedor_id.getSiblings())
+
+                                #set( $ix =  $sisex - $velocityCount)
+                                #set($cur_sem_contenedor_id=$sem_contenedor_id.getSiblings().get($ix))
+
+                                #set ($webcontent=$journalContentUtil.getContent($group_id, $cur_sem_contenedor_id.getData(), "", "$locale", ""))
+                                $webcontent
+
+                                #if($velocityCount > 5)
+                                #break
+                                #end
+
+                                #end
+                                #end
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            #end
+            #end
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<li>
+    <div class="item-evento row-fluid">
+        <div class="img-full active" style="background-image:url(tmp/centros/r1.jpg);"></div>
+        <div class="noti-detail full-width">
+            <h5 class="adequate upper">SEMINARIO 1</h5>
+            <span class="date text-right">September 25, 2012</span>
+            <p>Breve descripción de la noticia, Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia Breve descripción de la noticia</p>
+            <div class="event-desc">
+                <div class="contentwrap row-fluid">
+                    <div class="span6 sem1">
+                        <div class="img-full img-viewer">
+
+                        </div>
+                        <div class="elastislide">
+                            <span class="icon fa fa-angle-left"></span>
+                            <span class="icon fa fa-angle-right"></span>
+                            <div class="slide-content">
+                                <div class="slide-carro">
+                                    <div class="img-sem img-item" style="background-image:url(tmp/centros/r1.jpg);">
+                                        <div class="oculto">
+                                            <div class="img-full" style="background-image:url(tmp/centros/r1.jpg);"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="img-sem img-item" style="background-image:url(tmp/comunicado3.jpg);">
+                                        <div class="oculto">
+                                            <div class="img-full" style="background-image:url(tmp/comunicado3.jpg);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6 sem2">
+                        <h5 class="adequate upper">SEMINARIO 1</h5>
+                        <span class="date">September 25, 2012</span>
+                        <p>Breve descripción de la noticia, Breve descripción de la noticia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="fg-yellow dc" href="#event">leer más  <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a>
+        <a class="fg-yellow" href="#event">cerrar <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i></a>
+    </div>
+</li>      

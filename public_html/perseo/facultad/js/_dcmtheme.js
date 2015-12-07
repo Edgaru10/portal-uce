@@ -3218,3 +3218,20 @@ function onloadX() {
     }
     //*/    
 }
+
+
+$(function () {
+    $('#collapsible .cuerpo').hide();
+    $('#collapsible .cabecera').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).next().slideUp();
+        } else {
+            $('#collapsible .cabecera').removeClass('active');
+            $(this).addClass('active');
+            $('#collapsible .cuerpo').slideUp();
+            $(this).next().slideDown();
+        }
+
+    });
+});

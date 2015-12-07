@@ -874,13 +874,18 @@ html > body .featured a.isobrick {
         color: #000;
         letter-spacing: 0;
         font-size: 2rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         margin-top: 0;
         display: inline-block;
+        min-height: 26px;
+        overflow: hidden;
+        max-height: 55px;
+        width: 80%;
+        text-transform: uppercase;
     }
 
     .ndiCont .span8 > div:first-child {
-        height: 55px;
+        height: 58px;
         border-bottom: 2px solid rgba(0, 118, 189, 0.34);
     }
 
@@ -954,6 +959,8 @@ html > body .featured a.isobrick {
     margin: 15px 130px 10px 0;
     font-size: 1.4rem;
     line-height: 1.7rem;
+    height: 40px;
+    overflow: hidden;
 }
 
 .span4 .noti-ndi2 p {
@@ -977,7 +984,7 @@ html > body .featured a.isobrick {
 /*NDI Investigadores*/
 /*#region Investigadores nucleo de investigadores*/
 .investigador1 {
-    width: 290px;
+    width: 32%;
     height: 100%;
     float: left;
     padding: 20px 0 20px 0;
@@ -987,6 +994,8 @@ html > body .featured a.isobrick {
     height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 30px;
 }
 
 .investigador1 h2, .investigador2 h2 {
@@ -995,39 +1004,40 @@ html > body .featured a.isobrick {
     line-height: 1.8rem;
     letter-spacing: -.02em;
     font-weight: 600;
+    margin: 15px 0;
+    text-transform: uppercase;
 }
-
-.investigador1 p, .investigador2 p {
-    font-size: 1.25rem;
-    padding-bottom: 30px;
-}
-
 
 .investigador2 {
-    width: 660px;
+    width: 68%;
     height: 650px;
-    float: right;
-    padding-left: 10px;
+    float: left;
 }
 
     .investigador2 ul {
         list-style: none;
+        margin: 0 0 0 40px;
     }
 
         .investigador2 ul li {
-            height: 200px;
+            height: auto;
+            float: left;
+            margin-bottom: 30px;
+            min-height: 210px;
+            min-width: 590px;
         }
 
     .investigador2 p {
         font-size: 1.25rem;
-        width: 510px;
-        height: 150px;
+        width: 80%;
+        height: 100%;
         float: right;
+        margin: 0;
     }
 
 .img-investigador2 {
     height: 130px;
-    width: 110px;
+    width: 120px;
     background-size: cover;
     background-position: 50% 50%;
     float: left;
@@ -1111,7 +1121,7 @@ html > body .featured a.isobrick {
         padding-top: 20px;
         padding-bottom: 45px;
         height: auto;
-        min-height: 400px;
+        min-height: 200px;
         overflow: hidden;
     }
 
@@ -1250,6 +1260,29 @@ html > body .featured a.isobrick {
     padding: 0;
 }
 
+.seminario .span6.sem1 .nucleo-img {
+    float: right;
+    width: 100%;
+    height: 210px;
+    margin-top: 10px;
+}
+
+    .seminario .span6.sem1 .nucleo-img .img-sem {
+        width: 32%;
+        height: 100px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: inherit;
+        background-size: cover;
+        float: left;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+
+    .seminario .span6.sem1 .nucleo-img div:nth-child(1), .seminario .span6.sem1 .nucleo-img div:nth-child(4) {
+        margin: 0;
+    }
+
 /*#Contacto Nucleo de Investigadores*/
 .ndiCont .contentwrap.row-fluid .info {
     border-right: 2px solid #fff;
@@ -1271,7 +1304,7 @@ html > body .featured a.isobrick {
         border-radius: 50%;
         background-color: #fff;
         padding: 5px;
-        margin: 20px 20px 15px 0;
+        margin: 25px 25px;
     }
 
         .ndiCont .contentwrap.row-fluid .social li i {
@@ -1723,4 +1756,9 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 .metro .map-wrap .rb-week {
     max-width: 100%;
+}
+
+.span6.info.blogs h5 a:hover {
+    color: #0076bd;
+    font-weight: bold;
 }

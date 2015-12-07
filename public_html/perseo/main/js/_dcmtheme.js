@@ -3347,8 +3347,9 @@ $(function () {
 
     });
 });
+
 //Banner Seminario NDI
-$(function () {
+/* $(function () {
     $('.fa-angle-right').click(function () {
         $('.slide-carro').show().animate({ 'margin-left': '-335px' }, 1000);
         $('.fa-angle-left').show();
@@ -3361,7 +3362,7 @@ $(function () {
         $('.fa-angle-right').show();
 
     });
-});
+}); */
 
 function initImage(e) {
     var notiWrap = e.find('.imagenesWrap'),
@@ -3383,7 +3384,6 @@ function initImage(e) {
     notiViewer.html($(noti_items.get(0)).find('.oculto').html());
     noti_items = notiWrap = null;
 }
-
 
 //#endregion
 
