@@ -3347,7 +3347,6 @@ $(function () {
 
     });
 });
-
 //Banner Seminario NDI
 /* $(function () {
     $('.fa-angle-right').click(function () {
@@ -3365,24 +3364,25 @@ $(function () {
 }); */
 
 function initImage(e) {
-    var notiWrap = e.find('.imagenesWrap'),
-        notiViewer = notiWrap.find('.img-viewer'),
-        noti_items = notiWrap.find('.img-item');
+    var imgWrap = e.find('.imagenesWrap'),
+        imgViewer = imgWrap.find('.img-viewer'),
+        img_items = imgWrap.find('.img-item');
 
     //init notis
-    noti_items.each(function () {
+    img_items.each(function () {
         var that = $(this);
         that.click(function () {
             var that2 = $(this);
-            notiViewer.fadeOut(function () {
-                notiViewer.html(that2.find('.oculto').html()).fadeIn();
+
+            imgViewer.fadeOut(function () {
+                imgViewer.html(that2.find('.oculto').html()).fadeIn();
                 that2 = null;
             });
         });
         that = null;
     });
-    notiViewer.html($(noti_items.get(0)).find('.oculto').html());
-    noti_items = notiWrap = null;
+    imgViewer.html($(img_items.get(0)).find('.oculto').html());
+    img_items = imgWrap = null;
 }
 
 //#endregion
