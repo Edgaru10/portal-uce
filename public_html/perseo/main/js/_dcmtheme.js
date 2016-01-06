@@ -3347,44 +3347,78 @@ $(function () {
 
     });
 });
-//Banner Seminario NDI
-/* $(function () {
-    $('.fa-angle-right').click(function () {
-        $('.slide-carro').show().animate({ 'margin-left': '-335px' }, 1000);
-        $('.fa-angle-left').show();
-        $('.fa-angle-right').hide();
-    });
+//Desplegar Noticias Especiales
+$(function () {
+    $('.noticias .noti').slideUp();
+    $('.noticias .tabla li').on('click', function () {
 
-    $('.fa-angle-left').click(function () {
-        $('.slide-carro').show().animate({ 'margin-left': '0px' }, 1000);
-        $('.fa-angle-left').hide();
-        $('.fa-angle-right').show();
+        var $panel = $(this).closest('.noticias');
 
-    });
-}); */
+        if ($(this).hasClass('activado')) {
+            $('.noticias .tabla li').removeClass('activado');
+            $panel.find('.noti.activado').slideUp(300);
+            return;
+        }
 
-function initImage(e) {
-    var imgWrap = e.find('.imagenesWrap'),
-        imgViewer = imgWrap.find('.img-viewer'),
-        img_items = imgWrap.find('.img-item');
+        $panel.find('.tabla li.activado').removeClass('activado');
+        $(this).addClass('activado');
 
-    //init notis
-    img_items.each(function () {
-        var that = $(this);
-        that.click(function () {
-            var that2 = $(this);
+        //figure out which panel to show
+        var panelToShow = $(this).attr('rel');
 
-            imgViewer.fadeOut(function () {
-                imgViewer.html(that2.find('.oculto').html()).fadeIn();
-                that2 = null;
+        //hide current panel
+        $panel.find('.noti.activado').slideUp(300, showNextPanel);
+
+        //show next panel
+        function showNextPanel() {
+            $(this).removeClass('activado');
+
+            $('#' + panelToShow).slideDown(500, function () {
+                $(this).addClass('activado');
             });
-        });
-        that = null;
+        }
     });
-    imgViewer.html($(img_items.get(0)).find('.oculto').html());
-    img_items = imgWrap = null;
-}
 
+});
+//Noticias Especiales secciones
+$(function () {
+    var c = $('.contenedor');
+    var s = c.find('.inner');
+    var n = s.length;
+    var ci = $('.slider-inner');
+
+    ci.css('width', 100 * n + '%');
+    s.css('width', 100 / n + '%');
+
+    var prev = $('#anterior');
+    var next = $('#siguiente');
+    //Funcion para mover las secciones
+    var i = 0;
+    function mover() {
+        if (i === 0) {
+            ci.css('left', 0);
+        } else if (i > 0) {
+            ci.css('left', '-' + 100 * i + '%');
+        }
+    }
+
+    next.on('click', function () {
+        if (i < n - 1) {
+            i++;
+            mover();
+        }
+
+    });
+
+    prev.on('click', function () {
+        if (i > 0) {
+            i--;
+            mover();
+        }
+
+    });
+
+});
 //#endregion
 
 //#region centros investigación
@@ -3455,7 +3489,6 @@ var centrosInvestigacion = (function () {
                             $.Metro.initSidebars($item);
                             $.Metro.initPagination($item);
                             initNotiAndvents($item);
-                            initImage($item);
                             sidebarUpdate($item);
                             qq = null;
                         }
@@ -3620,7 +3653,6 @@ var centrosInvestigacion = (function () {
             closex.click(function () {
                 var event_desc = that.find('.event-desc');
                 that.data("opened", false);
-
                 event_desc.slideToggle(function () {
                     that.removeClass("active");
                 });
@@ -3668,7 +3700,7 @@ var centrosInvestigacion = (function () {
         noti_items = eventWrap = event_items = notiWrap = null;
     }
 
-    
+
 
     function getItemLayoutProp($item) {
 
