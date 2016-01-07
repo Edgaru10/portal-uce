@@ -879,46 +879,62 @@ html > body .featured a.isobrick {
 .noticias .noti {
     display: none;
     background: #c9c9c9;
+    position: relative;
 }
 
-.noticias .noti .contenedor {
-    overflow: hidden;
-    padding-top: 20px;
-}
+    .noticias .noti .contenedor {
+        overflow: hidden;
+        padding-top: 20px;
+    }
 
     .noticias .noti.activado {
         display: block;
     }
 
-.contenedor-noticias .noticias .noti .slider-inner {
+.noticias .noti .slider-inner, .noticias .noti .slider-inner1,.noticias .noti .slider-inner2 {
     /*width: 400%;*/
     position: relative;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    -webkit-transition: all .8s;
+    transition: all .8s;
     left: 0;
-   
 }
 
-.contenedor-noticias .noticias .noti .inner {
+.noti .inner, .noti .inner1, .noti .inner2 {
     float: left;
     /*width: 25%;*/
     padding-bottom: 30px;
 }
 
 .contenedor-noticias .noticias .noti h5 {
+    font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 2rem;
     text-transform: uppercase;
 }
 
-.contenedor-noticias .noticias .noti .boton {
-    text-align: center;
+.noti .anterior, .noti .siguiente, .noti .anterior1, .noti .siguiente1, .noti .anterior2, .noti .siguiente2 {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: .7;
+    color: #252525;
 }
 
-.contenedor-noticias .noticias .noti .boton button {
-    padding: 5px;
+.noti .anterior:hover, .noti .siguiente:hover, .noti .anterior1:hover, .noti .siguiente1:hover, .noti .anterior2:hover, .noti .siguiente2:hover {
+    opacity: unset;    
+}
+
+.noti .anterior, .noti .anterior1, .noti .anterior2 {
+    left: 10px;
+}
+
+.noti .siguiente, .noti .siguiente1, .noti .siguiente2 {
+    right: 10px;
 }
 
 .noticias ul {

@@ -6989,9 +6989,11 @@ $(function () {
 
     ci.css('width', 100 * n + '%');
     s.css('width', 100 / n + '%');
+    s.css('padding', '10px');
 
-    var prev = $('#anterior');
-    var next = $('#siguiente');
+    var prev = $('.anterior');
+    var next = $('.siguiente');
+
     //Funcion para mover las secciones
     var i = 0;
     function mover() {
@@ -7002,22 +7004,99 @@ $(function () {
         }
     }
 
-    next.on('click', function () {
+   next.on('click', function () {
         if (i < n - 1) {
             i++;
             mover();
+            mover1();
         }
-
     });
 
     prev.on('click', function () {
         if (i > 0) {
             i--;
             mover();
+            mover1();
         }
+    });
+});
+$(function () {
+    var c = $('.contenedor');
 
+    var s1 = c.find('.inner1');
+    var n1 = s1.length;
+    var ci1 = $('.slider-inner1');
+
+    ci1.css('width', 100 * n1 + '%');
+    s1.css('width', 100 / n1 + '%');
+    s1.css('padding', '10px');
+
+    var prev = $('.anterior1');
+    var next = $('.siguiente1');
+
+    //Funcion para mover las secciones
+    var j = 0;
+    
+    function mover1() {
+        if (j === 0) {
+            ci1.css('left', 0);
+        } else if (j > 0) {
+            ci1.css('left', '-' + 100 * j + '%');
+        }
+    }
+
+    next.on('click', function () {
+        if (j < n1 - 1) {
+            j++;            
+            mover1();
+        }
     });
 
+    prev.on('click', function () {
+        if (j > 0) {
+            j--;
+            mover1();
+        }
+    });
+});
+$(function () {
+    var c = $('.contenedor');
+
+    var s2 = c.find('.inner2');
+    var n2 = s2.length;
+    var ci2 = $('.slider-inner2');
+
+    ci2.css('width', 100 * n2 + '%');
+    s2.css('width', 100 / n2 + '%');
+    s2.css('padding', '10px');
+
+    var prev = $('.anterior2');
+    var next = $('.siguiente2');
+
+    //Funcion para mover las secciones
+    var j = 0;
+
+    function mover2() {
+        if (j === 0) {
+            ci2.css('left', 0);
+        } else if (j > 0) {
+            ci2.css('left', '-' + 100 * j + '%');
+        }
+    }
+
+    next.on('click', function () {
+        if (j < n2 - 1) {
+            j++;
+            mover2();
+        }
+    });
+
+    prev.on('click', function () {
+        if (j > 0) {
+            j--;
+            mover2();
+        }
+    });
 });
 //#endregion
 
