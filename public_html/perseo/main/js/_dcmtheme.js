@@ -3369,12 +3369,15 @@ $(function () {
         //hide current panel
         $panel.find('.noti.activado').slideUp(300, showNextPanel);
 
+
+
         //show next panel
         function showNextPanel() {
             $(this).removeClass('activado');
 
             $('#' + panelToShow).slideDown(500, function () {
                 $(this).addClass('activado');
+
             });
         }
     });
@@ -3382,44 +3385,55 @@ $(function () {
 });
 //Noticias Especiales secciones
 $(function () {
-    var c = $('.contenedor');
-    var s = c.find('.inner');
-    var n = s.length;
-    var ci = $('.slider-inner');
 
-    ci.css('width', 100 * n + '%');
-    s.css('width', 100 / n + '%');
-    s.css('padding', '10px');
+    if ($('.noticias').hasClass('noti activado')) {
 
-    var prev = $('.anterior');
-    var next = $('.siguiente');
+        alert('entroooooo 111');
+        var c = $('.contenedor');
+        alert('11111111111111'+ c);
+        var s = c.find('.inner');
+        alert('222222222222' +s);
+        var n = s.length;
+        alert('33333333333333333')
+        var ci = $('.slider-inner');
+        alert('444444444444444')
+        ci.css('width', 100 * n + '%');
+        alert('length' + n);
+        s.css('width', 100 / n + '%');
+        s.css('padding', '10px');
 
-    //Funcion para mover las secciones
-    var i = 0;
-    function mover() {
-        if (i === 0) {
-            ci.css('left', 0);
-        } else if (i > 0) {
-            ci.css('left', '-' + 100 * i + '%');
+        var prev = $('.anterior');
+        var next = $('.siguiente');
+
+   
+        //Funcion para mover las secciones
+        var i = 0;
+        function mover() {
+            if (i === 0) {
+                ci.css('left', 0);
+            } else if (i > 0) {
+                ci.css('left', '-' + 100 * i + '%');
+            }
         }
+  
+        next.on('click', function () {
+            if (i < n - 1) {
+                i++;
+                mover();
+               
+            }
+        });
+
+        prev.on('click', function () {
+            if (i > 0) {
+                i--;
+                mover();
+                
+            }
+        });
     }
-
-   next.on('click', function () {
-        if (i < n - 1) {
-            i++;
-            mover();
-            mover1();
-        }
-    });
-
-    prev.on('click', function () {
-        if (i > 0) {
-            i--;
-            mover();
-            mover1();
-        }
-    });
 });
+
 $(function () {
     var c = $('.contenedor');
 
@@ -3436,7 +3450,7 @@ $(function () {
 
     //Funcion para mover las secciones
     var j = 0;
-    
+
     function mover1() {
         if (j === 0) {
             ci1.css('left', 0);
@@ -3447,7 +3461,7 @@ $(function () {
 
     next.on('click', function () {
         if (j < n1 - 1) {
-            j++;            
+            j++;
             mover1();
         }
     });
