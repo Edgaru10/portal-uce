@@ -3352,6 +3352,23 @@ $(function () {
     $('.noticias .noti').slideUp();
     $('.noticias .tabla li').on('click', function () {
 
+        /****************************************************************************/
+        //Funcion para calcular el numero de secciones que tiene el slider-inner
+        var c = $('.noticias .noti.activado div.contenedor');
+        var s = c.find('.inner');
+        var n = s.length;
+        var ci = $('.slider-inner');
+        ci.css('width', 100 * n + '%');
+        s.css('width', 100 / n + '%');
+        s.css('padding', '10px');
+
+        var prev = $('.anterior');
+        var next = $('.siguiente');
+
+        if ($('.noticias div.noti.activado')) {
+            ci.css('left', 0);
+        }
+        /****************************************************************************/
         var $panel = $(this).closest('.noticias');
 
         if ($(this).hasClass('activado')) {
@@ -3366,17 +3383,60 @@ $(function () {
         //figure out which panel to show
         var panelToShow = $(this).attr('rel');
 
+
         //hide current panel
         $panel.find('.noti.activado').slideUp(300, showNextPanel);
-
-
 
         //show next panel
         function showNextPanel() {
             $(this).removeClass('activado');
-
             $('#' + panelToShow).slideDown(500, function () {
                 $(this).addClass('activado');
+
+                /****************************************************************************/
+                //Funcion para calcular el numero de secciones que tiene el slider-inner
+                var c = $('.noticias .noti.activado div.contenedor');
+                var s = c.find('.inner');
+                var n = s.length;
+                var ci = $('.slider-inner');
+                ci.css('width', 100 * n + '%');
+                s.css('width', 100 / n + '%');
+                s.css('padding', '10px');
+
+                var prev = $('.anterior');
+                var next = $('.siguiente');
+                
+                if ($('.noticias div.noti.activado')) {
+                    ci.css('left', 0);
+                }
+                
+                //Funcion para mover las secciones
+                    var i = 0;
+                    function mover() {
+                        if (i === 0) {
+                            ci.css('left', 0);
+                        } else if (i > 0) {
+                            ci.css('left', '-' + 100 * i + '%');
+                        }
+                    }
+
+                    next.on('click', function () {
+                        if (i < n - 1) {
+                            i++;
+                            mover();
+
+                        }
+                    });
+
+                    prev.on('click', function () {
+                        if (i > 0) {
+                            i--;
+                            mover();
+
+                        }
+                    });
+               /*********************************************************/
+                
 
             });
         }
@@ -3384,19 +3444,14 @@ $(function () {
 
 });
 //Noticias Especiales secciones
-$(function () {
+/*$(function () {
 
-    if ($('.noticias').hasClass('noti activado')) {
-
-        alert('entroooooo 111');
+    if ($('.noticias .noti').hasClass('activado')) {
+       
         var c = $('.contenedor');
-        alert('11111111111111'+ c);
         var s = c.find('.inner');
-        alert('222222222222' +s);
         var n = s.length;
-        alert('33333333333333333')
         var ci = $('.slider-inner');
-        alert('444444444444444')
         ci.css('width', 100 * n + '%');
         alert('length' + n);
         s.css('width', 100 / n + '%');
@@ -3433,85 +3488,8 @@ $(function () {
         });
     }
 });
+*/
 
-$(function () {
-    var c = $('.contenedor');
-
-    var s1 = c.find('.inner1');
-    var n1 = s1.length;
-    var ci1 = $('.slider-inner1');
-
-    ci1.css('width', 100 * n1 + '%');
-    s1.css('width', 100 / n1 + '%');
-    s1.css('padding', '10px');
-
-    var prev = $('.anterior1');
-    var next = $('.siguiente1');
-
-    //Funcion para mover las secciones
-    var j = 0;
-
-    function mover1() {
-        if (j === 0) {
-            ci1.css('left', 0);
-        } else if (j > 0) {
-            ci1.css('left', '-' + 100 * j + '%');
-        }
-    }
-
-    next.on('click', function () {
-        if (j < n1 - 1) {
-            j++;
-            mover1();
-        }
-    });
-
-    prev.on('click', function () {
-        if (j > 0) {
-            j--;
-            mover1();
-        }
-    });
-});
-$(function () {
-    var c = $('.contenedor');
-
-    var s2 = c.find('.inner2');
-    var n2 = s2.length;
-    var ci2 = $('.slider-inner2');
-
-    ci2.css('width', 100 * n2 + '%');
-    s2.css('width', 100 / n2 + '%');
-    s2.css('padding', '10px');
-
-    var prev = $('.anterior2');
-    var next = $('.siguiente2');
-
-    //Funcion para mover las secciones
-    var j = 0;
-
-    function mover2() {
-        if (j === 0) {
-            ci2.css('left', 0);
-        } else if (j > 0) {
-            ci2.css('left', '-' + 100 * j + '%');
-        }
-    }
-
-    next.on('click', function () {
-        if (j < n2 - 1) {
-            j++;
-            mover2();
-        }
-    });
-
-    prev.on('click', function () {
-        if (j > 0) {
-            j--;
-            mover2();
-        }
-    });
-});
 //#endregion
 
 //#region centros investigación

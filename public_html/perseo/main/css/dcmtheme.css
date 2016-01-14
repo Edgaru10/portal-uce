@@ -12614,27 +12614,44 @@ html > body .featured a.isobrick {
 
     .noticias .noti .contenedor {
         overflow: hidden;
-        padding-top: 20px;
+            padding: 20px 0;
     }
 
     .noticias .noti.activado {
         display: block;
     }
 
-.noticias .noti .slider-inner, .noticias .noti .slider-inner1,.noticias .noti .slider-inner2 {
-    /*width: 400%;*/
-    position: relative;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
-    -webkit-transition: all .8s;
-    transition: all .8s;
-    left: 0;
-}
+    .noticias .noti .slider-inner {
+        /*width: 400%;*/
+        position: relative;
+        -moz-transition: all .8s;
+        -o-transition: all .8s;
+        -webkit-transition: all .8s;
+        transition: all .8s;
+        left: 0;
+    }
 
-.noti .inner, .noti .inner1, .noti .inner2 {
+.noti .inner {
     float: left;
     /*width: 25%;*/
     padding-bottom: 30px;
+}
+
+    .noti .inner .divider {
+        background-color: #9C9B9B !important;
+    }
+
+    .noti .inner .og-grid {
+        text-align: right !important;
+    }
+
+     .noti .inner .og-grid > li {
+        border-radius: 50%;
+    }    
+
+.noticias .noti .contenedor .inner .img-full {
+    max-height: 350px !important;
+    margin-bottom: 40px;
 }
 
 .contenedor-noticias .noticias .noti h5 {
@@ -12645,7 +12662,7 @@ html > body .featured a.isobrick {
     text-transform: uppercase;
 }
 
-.noti .anterior, .noti .siguiente, .noti .anterior1, .noti .siguiente1, .noti .anterior2, .noti .siguiente2 {
+.noti .anterior, .noti .siguiente, .noti .anterior1, .noti .siguiente1 {
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -12655,25 +12672,25 @@ html > body .featured a.isobrick {
     color: #252525;
 }
 
-.noti .anterior:hover, .noti .siguiente:hover, .noti .anterior1:hover, .noti .siguiente1:hover, .noti .anterior2:hover, .noti .siguiente2:hover {
-    opacity: unset;    
-}
+    .noti .anterior:hover, .noti .siguiente:hover, .noti .anterior1:hover, .noti .siguiente1:hover {
+        opacity: unset;
+    }
 
-.noti .anterior, .noti .anterior1, .noti .anterior2 {
+.noti .anterior, .noti .anterior1 {
     left: 10px;
 }
 
-.noti .siguiente, .noti .siguiente1, .noti .siguiente2 {
+.noti .siguiente, .noti .siguiente1 {
     right: 10px;
 }
 
-.noticias ul {
+.noticias ul:first-child {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-    .noticias ul li {
+    .noticias ul:first-child li {
         list-style-type: none;
         background: #9C9B9B;
         padding: 3px 10px;
@@ -12684,15 +12701,15 @@ html > body .featured a.isobrick {
         text-align: center;
     }
 
-        .noticias ul li:hover {
-            color: #fff;
-            background: #666;
-        }
+.noticias ul li:hover {
+    color: #fff;
+    background: #666;
+}
 
-        .noticias ul li.activado {
-            color: #fff;
-            background: #666;
-        }
+.noticias ul li.activado {
+    color: #fff;
+    background: #666;
+}
 
 
 
@@ -13032,8 +13049,12 @@ html > body .featured a.isobrick {
     }
     */
 
-.span6.sem11 {
-    width: 100%;
+.event-desc .contentwrap .contenedor:first-child {
+    position: relative;
+    margin-bottom: 50px;
+    -moz-box-shadow: 0 0 15px;
+    -webkit-box-shadow: 0 0 15px;
+    box-shadow: 0 0 15px;
 }
 
 .span6.sem22 {
@@ -13042,12 +13063,43 @@ html > body .featured a.isobrick {
 
 .galeria {
     width: 100%;
-    height: 100%;
+    height: 280px;
+    overflow: hidden;
 }
+
+    .galeria .rotacion {
+        width: 1000%;
+        height: 100%;
+        display: flex;
+    }
 
     .galeria .img-sem {
         width: 100%;
+        height: 100%;
+        display: block;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+.event-desc .anterior1, .event-desc .siguiente1 {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.event-desc .anterior1 {
+    left: -30px;
+}
+
+.event-desc .siguiente1 {
+    right: -30px;
+}
 
 /*#Contacto Nucleo de Investigadores*/
 .ndiCont .contentwrap.row-fluid .info {
