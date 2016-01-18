@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'dcmuce';
-	src:url('fonts/dcmuce.eot?-mx0x1d');
-	src:url('fonts/dcmuce.eot?#iefix-mx0x1d') format('embedded-opentype'),
-		url('fonts/dcmuce.ttf?-mx0x1d') format('truetype'),
-		url('fonts/dcmuce.woff?-mx0x1d') format('woff'),
-		url('fonts/dcmuce.svg?-mx0x1d#dcmuce') format('svg');
+	src:url('fonts/dcmuce.eot?s87265');
+	src:url('fonts/dcmuce.eot?s87265#iefix') format('embedded-opentype'),
+		url('fonts/dcmuce.ttf?s87265') format('truetype'),
+		url('fonts/dcmuce.woff?s87265') format('woff'),
+		url('fonts/dcmuce.svg?s87265#dcmuce') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,11 +23,32 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.fa-siuce_1:before {
+	content: "\e900";
+}
+.fa-siuce_2:before {
+	content: "\e901";
+}
+.fa-siuce_3:before {
+	content: "\e902";
+}
+.fa-siuce_4:before {
+	content: "\e903";
+}
+.fa-siuce_5:before {
+	content: "\e904";
+}
+.fa-siuce_6:before {
+	content: "\e905";
+}
+.fa-uce_en_cifras:before {
+	content: "\e906";
+}
 .fa-uce_proyectos_eje:before {
-	content: "\e600";
+	content: "\e907";
 }
 .fa-uce_proyectos_en:before {
-	content: "\e601";
+	content: "\e908";
 }
 .fa-uce_sau:before {
 	content: "\e627";
@@ -1922,3 +1943,4 @@
 .fa-medium:before {
 	content: "\f23a";
 }
+

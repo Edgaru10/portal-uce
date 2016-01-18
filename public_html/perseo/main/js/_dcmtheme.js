@@ -3350,25 +3350,26 @@ $(function () {
 //Desplegar Noticias Especiales
 $(function () {
     $('.noticias .noti').slideUp();
+    /****************************************************************************/
+    //Funcion para calcular el numero de secciones que tiene el slider-inner
+    var c = $('.noticias .noti.activado div.contenedor');
+    var s = c.find('.inner');
+    var n = s.length;
+    var ci = $('.slider-inner');
+    ci.css('width', 100 * n + '%');
+    s.css('width', 100 / n + '%');
+    s.css('padding', '10px');
+
+    var prev = $('.anterior');
+    var next = $('.siguiente');
+
+    if ($('.noticias div.noti.activado')) {
+        ci.css('left', 0);
+    }
+    /****************************************************************************/
     $('.noticias .tabla li').on('click', function () {
 
-        /****************************************************************************/
-        //Funcion para calcular el numero de secciones que tiene el slider-inner
-        var c = $('.noticias .noti.activado div.contenedor');
-        var s = c.find('.inner');
-        var n = s.length;
-        var ci = $('.slider-inner');
-        ci.css('width', 100 * n + '%');
-        s.css('width', 100 / n + '%');
-        s.css('padding', '10px');
-
-        var prev = $('.anterior');
-        var next = $('.siguiente');
-
-        if ($('.noticias div.noti.activado')) {
-            ci.css('left', 0);
-        }
-        /****************************************************************************/
+       
         var $panel = $(this).closest('.noticias');
 
         if ($(this).hasClass('activado')) {
@@ -3444,10 +3445,9 @@ $(function () {
 
 });
 //Noticias Especiales secciones
-/*$(function () {
-
-    if ($('.noticias .noti').hasClass('activado')) {
-       
+/*
+$(function () {
+    if ($('.noticias .noti').hasClass('activado')) {       
         var c = $('.contenedor');
         var s = c.find('.inner');
         var n = s.length;
@@ -3459,8 +3459,7 @@ $(function () {
 
         var prev = $('.anterior');
         var next = $('.siguiente');
-
-   
+           
         //Funcion para mover las secciones
         var i = 0;
         function mover() {
