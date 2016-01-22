@@ -6949,146 +6949,34 @@ $(function () {
 });
 //Desplegar Noticias Especiales
 $(function () {
-    $('.noticias .noti').slideUp();
-    /****************************************************************************/
-    //Funcion para calcular el numero de secciones que tiene el slider-inner
-    var c = $('.noticias .noti.activado div.contenedor');
-    var s = c.find('.inner');
-    var n = s.length;
-    var ci = $('.slider-inner');
-    ci.css('width', 100 * n + '%');
-    s.css('width', 100 / n + '%');
-    s.css('padding', '10px');
-
-    var prev = $('.anterior');
-    var next = $('.siguiente');
-
-    if ($('.noticias div.noti.activado')) {
-        ci.css('left', 0);
-    }
-    /****************************************************************************/
-    $('.noticias .tabla li').on('click', function () {
-
-       
+    $('.noticias .noti').slideUp();  
+    $('.noticias .tabla li').on('click', function () {       
         var $panel = $(this).closest('.noticias');
-
         if ($(this).hasClass('activado')) {
             $('.noticias .tabla li').removeClass('activado');
-            $panel.find('.noti.activado').slideUp(300);
-            return;
+            $panel.find('.noti.activado').slideUp(500);
+            return;           
         }
-
+       
         $panel.find('.tabla li.activado').removeClass('activado');
-        $(this).addClass('activado');
+        $(this).addClass('activado');    
 
         //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
+        var panelToShow = $(this).attr('rel');       
 
         //hide current panel
-        $panel.find('.noti.activado').slideUp(300, showNextPanel);
-
+        $panel.find('.noti').slideUp(500, showNextPanel);
+       
         //show next panel
         function showNextPanel() {
             $(this).removeClass('activado');
+            
             $('#' + panelToShow).slideDown(500, function () {
-                $(this).addClass('activado');
-
-                /****************************************************************************/
-                //Funcion para calcular el numero de secciones que tiene el slider-inner
-                var c = $('.noticias .noti.activado div.contenedor');
-                var s = c.find('.inner');
-                var n = s.length;
-                var ci = $('.slider-inner');
-                ci.css('width', 100 * n + '%');
-                s.css('width', 100 / n + '%');
-                s.css('padding', '10px');
-
-                var prev = $('.anterior');
-                var next = $('.siguiente');
-                
-                if ($('.noticias div.noti.activado')) {
-                    ci.css('left', 0);
-                }
-                
-                //Funcion para mover las secciones
-                    var i = 0;
-                    function mover() {
-                        if (i === 0) {
-                            ci.css('left', 0);
-                        } else if (i > 0) {
-                            ci.css('left', '-' + 100 * i + '%');
-                        }
-                    }
-
-                    next.on('click', function () {
-                        if (i < n - 1) {
-                            i++;
-                            mover();
-
-                        }
-                    });
-
-                    prev.on('click', function () {
-                        if (i > 0) {
-                            i--;
-                            mover();
-
-                        }
-                    });
-               /*********************************************************/
-                
-
+                $(this).addClass('activado'); 
             });
         }
     });
-
 });
-//Noticias Especiales secciones
-/*
-$(function () {
-    if ($('.noticias .noti').hasClass('activado')) {       
-        var c = $('.contenedor');
-        var s = c.find('.inner');
-        var n = s.length;
-        var ci = $('.slider-inner');
-        ci.css('width', 100 * n + '%');
-        alert('length' + n);
-        s.css('width', 100 / n + '%');
-        s.css('padding', '10px');
-
-        var prev = $('.anterior');
-        var next = $('.siguiente');
-           
-        //Funcion para mover las secciones
-        var i = 0;
-        function mover() {
-            if (i === 0) {
-                ci.css('left', 0);
-            } else if (i > 0) {
-                ci.css('left', '-' + 100 * i + '%');
-            }
-        }
-  
-        next.on('click', function () {
-            if (i < n - 1) {
-                i++;
-                mover();
-               
-            }
-        });
-
-        prev.on('click', function () {
-            if (i > 0) {
-                i--;
-                mover();
-                
-            }
-        });
-    }
-});
-*/
-
 //#endregion
 
 //#region centros investigaci�n
@@ -7404,6 +7292,7 @@ function onloadX() {
         $('#logo1').addClass("animated zoomOutUp");
         $('#logo2').removeClass("oculto");
         $('#logo2').addClass("animated zoomIn");
+        $('.scrollbut').css('top', 90 + '%');
     }, 4500);
 
 

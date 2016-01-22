@@ -12630,79 +12630,77 @@ html > body .featured a.isobrick {
 .noticias .noti {
     display: none;
     background: #c9c9c9;
-    position: relative;
+    position: initial;
 }
 
-    .noticias .noti .contenedor {
-        overflow: hidden;
-            padding: 20px 0;
+    .noticias .noti .contentwrap {
+        padding-top: 50px;
     }
+
+    .noticias .noti.paginacion .page {
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .noticias .noti.paginacion .controls .rb-prev {
+        left: 0.5%;
+    }
+
+    .noticias .noti.paginacion .controls .rb-next {
+        right: 0.5%;
+    }
+
+    .noticias .noti.paginacion .controls .counter {
+        left: 48%;
+        top: 22%;
+    }
+
+    .noticias .noti.paginacion .controls .rb-next i, .noticias .noti.paginacion .controls .rb-prev i {
+        color: #0E0E0E;
+        border: 1px solid #0E0E0E;
+        border-radius: 50%;
+        padding: 3px;
+        font-size: 20px;
+    }
+
 
     .noticias .noti.activado {
         display: block;
     }
 
-    .noticias .noti .slider-inner {
-        /*width: 400%;*/
-        position: relative;
-        -moz-transition: all .8s;
-        -o-transition: all .8s;
-        -webkit-transition: all .8s;
-        transition: all .8s;
-        left: 0;
-    }
-
-.noti .inner {
+.noti .page {
     float: left;
-    /*width: 25%;*/
     padding-bottom: 30px;
 }
 
-    .noti .inner .divider {
+    .noti .page .divider {
         background-color: #9C9B9B !important;
     }
 
-    .noti .inner .og-grid {
-        text-align: right !important;
+    .noti .page .date {
+        text-transform: capitalize;
     }
 
-     .noti .inner .og-grid > li {
-        border-radius: 50%;
-    }    
+    .noti .page .og-grid {
+        text-align: right !important;
+        margin: 20px 0 !important;
+    }
 
-.noticias .noti .contenedor .inner .img-full {
+        .noti .page .og-grid > li {
+            border-radius: 50%;
+        }
+
+.noticias .noti .contentwrap .page .img-full {
     max-height: 350px !important;
     margin-bottom: 40px;
 }
 
-.contenedor-noticias .noticias .noti h5 {
+.contenedor-noticias .noticias .noti .page h5 {
     font-family: 'Segoe UI Light','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
-}
-
-.noti .anterior, .noti .siguiente, .noti .anterior1, .noti .siguiente1 {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 30px;
-    opacity: .7;
-    color: #252525;
-}
-
-    .noti .anterior:hover, .noti .siguiente:hover, .noti .anterior1:hover, .noti .siguiente1:hover {
-        opacity: unset;
-    }
-
-.noti .anterior, .noti .anterior1 {
-    left: 10px;
-}
-
-.noti .siguiente, .noti .siguiente1 {
-    right: 10px;
 }
 
 .noticias ul:first-child {
@@ -12731,8 +12729,6 @@ html > body .featured a.isobrick {
     color: #fff;
     background: #666;
 }
-
-
 
 /*noticias generales*/
 .ndiCont .span8 {
@@ -12938,8 +12934,7 @@ html > body .featured a.isobrick {
     line-height: 1.8rem;
 }
 
-.ndiCont .page p {
-    height: 45px;
+.ndiCont .page p {    
     overflow: hidden;
     font-size: 11pt;
 }
@@ -13031,7 +13026,7 @@ html > body .featured a.isobrick {
     background-color: white !important;
 }
 
-.sem1 {
+/*.sem1 {
     width: 80%;
     max-width: 420px;
     margin: auto;
@@ -13051,7 +13046,7 @@ html > body .featured a.isobrick {
     }
 
 
-/*.galeria {
+.galeria {
     width: 97%;
     margin: auto;
     box-sizing: border-box;
@@ -13073,13 +13068,6 @@ html > body .featured a.isobrick {
 .event-desc .contentwrap .contenedor:first-child {
     position: relative;
     margin-bottom: 50px;
-    -moz-box-shadow: 0 0 15px;
-    -webkit-box-shadow: 0 0 15px;
-    box-shadow: 0 0 15px;
-}
-
-.span6.sem22 {
-    width: 100%;
 }
 
 .galeria {
@@ -13103,23 +13091,29 @@ html > body .featured a.isobrick {
         background-size: cover;
     }
 
-.event-desc .anterior1, .event-desc .siguiente1 {
-    position: absolute;
-    font-size: 30px;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.event-desc .rb-prev i, .event-desc .rb-next i {
+    font-size: 18px !important;
+    color: #333 !important;
+    border: 1px solid #333 !important;
 }
 
-.event-desc .anterior1 {
-    left: -30px;
+.event-desc .rb-prev {
+    left: -55px !important;
 }
 
-.event-desc .siguiente1 {
-    right: -30px;
+.event-desc .rb-next {
+    right: -38px !important;
+}
+
+.event-desc .contenedor h5 {
+    text-align: left;
+    margin: 40px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.event-desc .contenedor span {
+    margin-bottom: 20px;
 }
 
 /*#Contacto Nucleo de Investigadores*/
@@ -13528,10 +13522,11 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 #wrapperscroll .scrollbut {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 130px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
+    top: 80%;
     left: 50%;
     margin-left: -25px;
     background-color: transparent;
@@ -13547,12 +13542,17 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    color: white !important;
+    color: #0076BD !important;
     font-size: 200%;
     line-height: 200%;
     vertical-align: middle;
     text-align: center;
 }
+
+    #wrapperscroll .scrollbut .fa-uce_scrool {
+        color: #0076BD;
+        font-size: 60px;
+    }
 
     #wrapperscroll .scrollbut:hover {
         background-color: rgba(255,255,255,0.6);
