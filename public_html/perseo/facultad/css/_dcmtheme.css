@@ -267,7 +267,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     background-repeat: no-repeat;
     background-position: center center;
     transition-duration: 0.7s;
-    -webkit-transition-duration: 0.7s; /* Safari */    
+    -webkit-transition-duration: 0.7s; /* Safari */
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -650,7 +650,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     margin-left: 540px;
 }
 
-    #slide1 .detail h2, #slide1 .detail h1, #slide1 .detail h4 .og-expander-inner h2, .postgrados h2.h2, h2.h2, h3.h3, h4.h4, .metro .panel .panel-header {
+    #slide1 .detail h2, #slide1 .detail h1, #slide1 .detail h4 .og-expander-inner h2, .postgrados h2.h2, h2.h2, h3.h3, h4.h4, .metro .panel .panel-header, #slide3 .detail h2 {
         color: #4275b9;
         font-family: "Adequate ExtraLight",'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -823,6 +823,91 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     position: absolute;
 }
 
+/* #region carreras posgrado 
+===================================================*/
+#slide3 .detail .jefes {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    width: 48%;
+    float: left;
+}
+
+#slide3 .detail h3 {
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+
+#slide3.postgradox .contentwrap.row-fluid {
+    margin: 0 0 0 5%;
+    width: 95%;
+}
+
+#slide3.postgradox .contentwrap.row-fluid .title {
+    top: 135px;
+}
+
+#slide3.postgradox .detail {
+    width: 85%;
+    height: 100%;
+    min-height: 400px;
+    margin: auto 0 auto auto;
+}
+
+#slide3.postgradox .detail .facultad-in {
+    width: 55%;
+    margin: auto 0 auto auto;
+    float: right;
+}
+
+#slide3.postgradox .detail .slic {
+    width: 45%;
+    margin: auto 0 auto auto;
+    float: right;
+}
+
+    #slide3.postgradox .detail .slic > h2, #slide3.postgradox .detail .slic .jefes > h2 {
+        margin: 0 14px 15px 0;
+        letter-spacing: 1px;
+    }
+
+    #slide3.postgradox .detail .slic .docs {
+        float: left;
+        width: 52%;
+    }
+
+        #slide3.postgradox .detail .slic .docs > div {
+            width: 100px;
+            height: 130px;
+        }
+
+        #slide3.postgradox .detail .slic .docs .doc i.fa-uce_pdf {
+            font-size: 125px;
+            padding: 0;
+        }
+
+    #slide3.postgradox .detail .slic .content1 {
+        padding: 0 10% 20px 0;
+    }
+
+.postgradox .carreraWrap .carrera {
+    background-color: #48B1F0;
+}
+
+    .postgradox .carreraWrap .carrera .btox:after {
+        background-color: #48B1F0;
+    }
+
+#slide4.postgradox {
+    background-color: rgba(29, 29, 29, 0.9);
+}
+
+    #slide4.postgradox .title {
+        color: #fff;
+    }
 
 /* #Contenido generalidades
 ================================================== */
@@ -1135,6 +1220,25 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 .footer .social .og-grid {
     text-align: left;
+}
+
+.footer .social .soporte h5 {
+    text-align: left;
+}
+
+.footer .social .soporte > div {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.footer .social .soporte div span {
+    margin: 7px;
+}
+
+.footer .social .soporte div h5 {
+    margin: 8px 0px;
 }
 
 .footer .social li {

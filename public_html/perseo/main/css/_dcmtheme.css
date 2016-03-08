@@ -502,6 +502,7 @@ html > body .featured a.isobrick {
 
 
 /*#endregion*/
+
 /* #region panel facs*/
 
 
@@ -640,7 +641,194 @@ html > body .featured a.isobrick {
 
 
 /*#endregion*/
+
+/*#Posgrdos*/
+
+.posWrap > ul {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .posWrap > ul > li {
+        margin-bottom: 40px;
+    }
+
+
+.posWrap .og-box {
+    height: 50px !important;
+    display: flex;
+    background-color: #48B1F0 !important;
+    margin-bottom: 15px;
+}
+
+    .posWrap .og-box h5 {
+        background-color: #eee;
+        padding: 17px 10px;
+        font-size: 10px;
+        min-width: 90px;
+        max-width: 90px;
+        border-radius: 0 124px 280px 0;
+        -moz-border-radius: 0 124px 280px 0;
+        -webkit-border-radius: 0 124px 280px 0;
+        border: 0 solid #000;
+    }
+
+    .posWrap .og-box h4 {
+        background-color: #48b1f0;
+        padding: 0;
+        min-width: 220px;
+        max-width: 220px;
+        text-align: right;
+        font-size: 12.8px;
+        margin: 10px 12px;
+    }
+
+.posWrap .red ul {
+    list-style: none;
+    margin: 8px;
+}
+
+    .posWrap .red ul li {
+        margin-bottom: 5px;
+    }
+
+    .posWrap .red ul span {
+        color: #E20613;
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    /*.posWrap .red ul li:before {
+        content: "•";
+        color: red;
+    }*/
+
+    .posWrap .red ul li a {
+        color: #000;
+    }
+
+/*#endregion*/
+
 /*#region nucleo de investigadores*/
+
+/*# nucleo de investigadores NUEVO*/
+#slide5 .centrosWrap .panelRight {
+    margin-top: 0;
+    margin: 6px;
+    margin-right: -8px;
+}
+
+    #slide5 .centrosWrap .panelRight .row-fluid {
+        background-color: rgba(177,177,175,.3);
+    }
+
+#slide5 .centrosWrap .contentwrap {
+    background-color: rgba(177,177,175,.3);
+    margin-left: 9px;
+    width: 99%;
+}
+
+#slide5 .centrosWrap .pan-l, #slide5 .centrosWrap .pan-l .full-content {
+    background-color: #fff !important;
+}
+
+#slide5 .centrosWrap .rb-close {
+    color: #000000;
+}
+
+#slide5 .centrosWrap .divider {
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: #0076bd !important;
+    width: 94%;
+    margin: auto;
+}
+
+#slide5 .centrosWrap .sidebar {
+    width: 100%;
+    margin: auto;
+}
+
+    #slide5 .centrosWrap .sidebar > ul {
+        width: 94%;
+        height: 50px;
+        margin: 5% auto 0 auto;
+    }
+
+        #slide5 .centrosWrap .sidebar > ul li {
+            width: 13%;
+            height: 50px;
+        }
+
+            #slide5 .centrosWrap .sidebar > ul li.active a {
+                background-color: #0076BD !important;
+                color: #FFFFFF !important;
+            }
+
+            #slide5 .centrosWrap .sidebar > ul li a {
+                width: 100%;
+                height: 100%;
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                font-family: "Adequate ExtraLight";
+                text-indent: 0;
+                color: black;
+                padding: 16px 5px;
+                text-align: center;
+                text-rendering: auto;
+                -moz-box-shadow: 0 0 0 !important;
+                -webkit-box-shadow: 0 0 0 !important;
+                box-shadow: 0 0 0 !important;
+            }
+
+                #slide5 .centrosWrap .sidebar > ul li a:hover {
+                    background-color: #dedede !important;
+                    color: white;
+                    padding: 20px !important;
+                }
+
+                #slide5 .centrosWrap .sidebar > ul li a.lineas1:hover, #slide5 .centrosWrap .sidebar > ul li a.lineas2:hover {
+                    background-color: #dedede !important;
+                    color: white;
+                    padding: 12px !important;
+                }
+
+#slide5 .centrosWrap .lineas {
+    line-height: 1.5rem;
+    padding: 16px 0 15px 0 !important;
+}
+
+#slide5 .centrosWrap .lineas1 {
+    padding: 8px 0 15px 0 !important;
+    line-height: 1.5rem;
+    width: 17%;
+}
+
+#slide5 .centrosWrap .lineas2 {
+    padding: 8px 0 15px 0 !important;
+    line-height: 1.5rem;
+    width: 14%;
+}
+
+#slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(3) {
+    width: 17%;
+}
+
+#slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(4) {
+    width: 17%;
+}
+
+#slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(6) {
+    width: 14%;
+}
+
+/*# nucleo de investigadores NUEVO*/
+
+
 .panel .panel-header > h2 {
     font-size: 4.2rem;
     line-height: 1.2;
@@ -651,12 +839,11 @@ html > body .featured a.isobrick {
 }
 
 .tab-panels.ndi_menu {
-    position: relative;
+    position: absolute;
     width: 96%;
     margin: auto;
-    padding-top: 45px;
-    padding-bottom: 70px;
-    height: 100%;
+    padding: 45px 0 60px 20px;
+    height: 94%;
     overflow: hidden;
 }
 
@@ -693,7 +880,7 @@ html > body .featured a.isobrick {
 }
 
 .contenedor {
-    width: 90%;
+    width: 98%;
     height: 100%;
     margin: auto;
 }
@@ -738,19 +925,11 @@ html > body .featured a.isobrick {
     width: 14%;
 }
 
-/*NDI Inicio*/
-/*#region Inicio nucleo de investigadores*/
-.full-contentn {
-    text-align: justify;
-    position: relative;
-    height: 100%;
-    z-index: 100 !important;
-    padding-top: 0;
+#slide5 .centrosWrap .pan-l .full-content .contentwrap p, #slide5 .centrosWrap .pan-l .full-content .contentwrap h1, #slide5 .centrosWrap .pan-l .full-content .contentwrap h2, #slide5 .centrosWrap .pan-l .full-content .contentwrap h3, #slide5 .centrosWrap .pan-l .full-content .contentwrap h4, #slide5 .centrosWrap .pan-l .full-content .contentwrap h5, #slide5 .centrosWrap .pan-l .full-content .contentwrap span, #slide5 .centrosWrap .pan-l .full-content .contentwrap div {
+    color: #000000 !important;
 }
-
-    .full-contentn .panel {
-        height: 100%;
-    }
+/*NDI Inicio*/
+/*region Inicio nucleo de investigadores*/
 
 #slider {
     width: 100%;
@@ -774,13 +953,6 @@ html > body .featured a.isobrick {
         background-position: 50% 50%;
         background-size: cover;
     }
-
-.img-full.ndi {
-    width: 100%;
-    height: 300px !important;
-    margin: auto;
-    background-position: 0 0;
-}
 
 .ndi_text h1 {
     font-family: "Adequate ExtraLight";
@@ -810,33 +982,32 @@ html > body .featured a.isobrick {
     text-transform: uppercase;
 }
 
-.ndi-mv, .ndi-mv > ul {
+/*.ndi-mv, .ndi-mv > ul {
     padding: 0;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     width: 100%;
     height: 70%;
+}*/
+.ndi-mv, .ndi-mv > ul {
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
 }
 
-    .ndi-mv > ul li:first-child {
-        width: 50%;
-        float: left;
-        margin-bottom: 10px;
+    .ndi-mv > ul {
+        display: flex;
         list-style: none;
-        font-size: 1.2rem;
-        display: inline-block;
-        padding-right: 30px;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-
-    .ndi-mv > ul li:last-child {
-        width: 50%;
+.ndi-mv > ul li:first-child, .ndi-mv > ul li:last-child {
+        max-width: 450px;
         float: left;
-        margin-bottom: 10px;
-        list-style: none;
-        font-size: 1.2rem;
-        display: inline-block;
-        padding-left: 30px;
+        
     }
-
+   
 .ndi-links {
     list-style: none;
     margin: 0 auto !important;
@@ -865,7 +1036,7 @@ html > body .featured a.isobrick {
         }
 
 /*NDI Noticias*/
-/*#region Noticias nucleo de investigadores*/
+/*region Noticias nucleo de investigadores*/
 
 .contenedor-noticias {
     width: 90%;
@@ -911,7 +1082,6 @@ html > body .featured a.isobrick {
         padding: 3px;
         font-size: 20px;
     }
-
 
     .noticias .noti.activado {
         display: block;
@@ -1023,7 +1193,7 @@ html > body .featured a.isobrick {
 
     .ndiCont .span8 ul {
         display: inline-block;
-        width: 100px;
+        width: 105px;
         float: right;
         padding-top: 15px !important;
     }
@@ -1102,7 +1272,7 @@ html > body .featured a.isobrick {
 
 
 /*NDI Investigadores*/
-/*#region Investigadores nucleo de investigadores*/
+/*region Investigadores nucleo de investigadores*/
 .investigador1 {
     width: 32%;
     height: 100%;
@@ -1157,7 +1327,7 @@ html > body .featured a.isobrick {
 
 
 /*NDI Grupos de Investigación*/
-/*#region Grupos de Investigación nucleo de investigadores*/
+/*region Grupos de Investigación nucleo de investigadores*/
 .ndiCont .page > ul li:hover {
     /*background: #d5d5d5;*/
 }
@@ -1183,13 +1353,13 @@ html > body .featured a.isobrick {
     line-height: 1.8rem;
 }
 
-.ndiCont .page p {    
+.ndiCont .page p {
     overflow: hidden;
     font-size: 11pt;
 }
 
 /*NDI Seminario*/
-/*#region Seminario nucleo de investigadores*/
+/*region Seminario nucleo de investigadores*/
 
 .ndiCont .seminario {
     list-style: none;
@@ -1275,45 +1445,6 @@ html > body .featured a.isobrick {
     background-color: white !important;
 }
 
-/*.sem1 {
-    width: 80%;
-    max-width: 420px;
-    margin: auto;
-}
-
-.sem2 {
-    width: 80%;
-    max-width: 420px;
-    margin: auto;
-}
-
-    .sem2 > h5 {
-        margin: 5px 0 30px 0;
-        font-weight: bold !important;
-        font-size: 2rem;
-        text-align: left;
-    }
-
-
-.galeria {
-    width: 97%;
-    margin: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-    .galeria .img-sem {
-        width: 120px;
-        height: 100px;
-        margin: 5px;
-        background-position: 50% 50%;
-        background-size: cover;
-        cursor: pointer;
-    }
-    */
-
 .event-desc .contentwrap .contenedor:first-child {
     position: relative;
     margin-bottom: 50px;
@@ -1365,7 +1496,7 @@ html > body .featured a.isobrick {
     margin-bottom: 20px;
 }
 
-/*#Contacto Nucleo de Investigadores*/
+/*Contacto Nucleo de Investigadores*/
 .ndiCont .contentwrap.row-fluid .info {
     border-right: 2px solid #fff;
     padding-right: 30px;
@@ -1772,7 +1903,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 #wrapperscroll .scrollbut {
     display: block;
     width: 60px;
-    height: 130px;
+    //height: 130px;
     position: absolute;
     bottom: 0;
     top: 80%;
@@ -1796,28 +1927,71 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     line-height: 200%;
     vertical-align: middle;
     text-align: center;
+    animation-duration: 3s;
+    animation-name: slideindown;
+    animation-iteration-count: infinite;
 }
 
-    #wrapperscroll .scrollbut .fa-uce_scrool {
-        color: #0076BD;
-        font-size: 60px;
+@keyframes slideindown {
+    from {
+        margin-bottom: 80%;
+        height: 100%;
     }
 
-    #wrapperscroll .scrollbut:hover {
-        background-color: rgba(255,255,255,0.6);
-        cursor: pointer;
-        transition-duration: 0.7s;
-        -webkit-transition-duration: 0.7s; /* Safari */
-        text-decoration: none !important;
+    to {
+        margin-top: 5%;
+        height: 200%;
+    }
+}
+
+@-moz-keyframes slideindown {
+    from {
+        margin-bottom: 80%;
+        height: 100%;
     }
 
-    #wrapperscroll .scrollbut.last {
-        -ms-transform: rotate(180deg); /* IE 9 */
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg); /* Safari and Chrome */
+    to {
+        margin-top: 5%;
+        height: 200%;
     }
+}
+
+@-webkit-keyframes slideindown {
+    from {
+        margin-bottom: 80%;
+        height: 100%;
+    }
+
+    to {
+        margin-top: 5%;
+        height: 200%;
+    }
+}
+
+
+
+
+
+#wrapperscroll .scrollbut .fa-uce_scrool {
+    color: #0076BD;
+    font-size: 60px;
+}
+
+#wrapperscroll .scrollbut:hover {
+    background-color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    text-decoration: none !important;
+}
+
+#wrapperscroll .scrollbut.last {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); /* Safari and Chrome */
+}
 
 /* SLIDES */
 

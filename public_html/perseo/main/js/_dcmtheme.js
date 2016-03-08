@@ -3349,30 +3349,30 @@ $(function () {
 });
 //Desplegar Noticias Especiales
 $(function () {
-    $('.noticias .noti').slideUp();  
-    $('.noticias .tabla li').on('click', function () {       
+    $('.noticias .noti').slideUp();
+    $('.noticias .tabla li').on('click', function () {
         var $panel = $(this).closest('.noticias');
         if ($(this).hasClass('activado')) {
             $('.noticias .tabla li').removeClass('activado');
             $panel.find('.noti.activado').slideUp(500);
-            return;           
+            return;
         }
-       
+
         $panel.find('.tabla li.activado').removeClass('activado');
-        $(this).addClass('activado');    
+        $(this).addClass('activado');
 
         //figure out which panel to show
-        var panelToShow = $(this).attr('rel');       
+        var panelToShow = $(this).attr('rel');
 
         //hide current panel
         $panel.find('.noti').slideUp(500, showNextPanel);
-       
+
         //show next panel
         function showNextPanel() {
             $(this).removeClass('activado');
-            
+
             $('#' + panelToShow).slideDown(500, function () {
-                $(this).addClass('activado'); 
+                $(this).addClass('activado');
             });
         }
     });
@@ -3382,7 +3382,7 @@ $(function () {
 //#region centros investigación
 var centrosInvestigacion = (function () {
 
-    var $items = $('.centrosWrap > li, .nucleoWrap'),
+    var $items = $('.centrosWrap > li, .centrosWrap'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',
@@ -3688,13 +3688,14 @@ var centrosInvestigacion = (function () {
 //#endregion 
 
 function onloadX() {
+
     setTimeout(function () {
         $('#logo1').addClass("animated zoomOutUp");
         $('#logo2').removeClass("oculto");
         $('#logo2').addClass("animated zoomIn");
-        $('.scrollbut').css('top', 90 + '%');
+        //$('.scrollbut').css('top', 90 + '%');
+        //$('.scrollbut').addClass("oculto");           
     }, 4500);
-
 
     NoticiasFull().init();
     ClubFull().init();
@@ -3937,5 +3938,5 @@ function onloadX() {
     //*/    
 }
 
-//youutube thumbail http://img.youtube.com/vi/qx89ylJyeKU/0.jpg
+//youtube thumbail http://img.youtube.com/vi/qx89ylJyeKU/0.jpg
 console.log("dcmtheme reand execute; and porlets: " + typeof Liferay.allPortletsReady + ", and body: " + $('body').length);

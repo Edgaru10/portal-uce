@@ -402,7 +402,29 @@
             padding: 20px !important;
             max-width: 800px;
         }
-    
+
+    /*Posgrado*/
+    #slide3.postgradox .contentwrap.row-fluid, #slide3.postgradox .detail, #slide3.postgradox .detail .facultad-in, #slide3.postgradox .detail .slic, #slide3.postgradox .detail .jefes, #slide3.postgradox .detail .slic .docs {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+        #slide3.postgradox .detail .slic .jefes {
+            border-left: 0;
+        }
+
+        #slide3.postgradox .detail .slic .docs {
+            padding: 20px;
+        }
+
+        #slide3.postgradox .detail .slic .content1 {
+            padding: 0px 40px 20px 40px;
+        }
+
+        #slide3.postgradox .contentwrap.row-fluid .title {
+            top: 0;
+        }
 }
 
 /*<editor-fold defaultstate="collapsed" desc="menu figure">*/

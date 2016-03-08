@@ -240,6 +240,10 @@
     .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .centrosWrap {
         max-width: 800px;
     }
+
+    #slide5 .centrosWrap {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 878px) {
@@ -377,6 +381,10 @@
         margin-right: auto;
     }
 
+        .metro .sidebar .element-menu li.lineas, .metro .sidebar .element-menu li.lineas1, .metro .sidebar .element-menu li.lineas2 {
+            width: 100% !important;
+        }
+
         .metro .sidebar .element-menu li a {
             text-align: center !important;
         }
@@ -415,6 +423,38 @@
         }
 
     /*centros sidebar*/
+    #slide5 .centrosWrap .rb-close {
+        color: #fff;
+    }
+
+    #slide5 .centrosWrap .sidebar.nucleo > ul {
+        width: 100%;
+    }
+
+        #slide5 .centrosWrap .sidebar.nucleo > ul li {
+            border-bottom: 1px solid black;
+        }
+
+    #slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6) {
+        width: 100% !important;
+    }
+
+    #slide5 .centrosWrap .sidebar > ul li a {
+        padding: 7px 5px;
+    }
+
+        #slide5 .centrosWrap .sidebar > ul li a:hover {
+            padding: 20px;
+        }
+
+    #slide5 .centrosWrap .lineas1, #slide5 .centrosWrap .lineas2 {
+        padding: 20px 0 15px 0 !important;
+    }
+
+    .ndi-mv > ul {
+        justify-content: space-around;
+    }
+
     .centrosWrap .sidebar > ul li a {
         font-size: 14px;
         line-height: 40px;
@@ -435,13 +475,14 @@
 
     .centrosWrap .sidebar, .centrosWrap .sidebar > ul li {
         background-image: none !important;
+        width: 100% !important;
     }
 
         .centrosWrap .sidebar > ul li.active a {
             width: 100% !important;
         }
 
-        .centrosWrap .sidebar .element-menu {
+        .centrosWrap .sidebar .element-menu, .nucleoWrap .sidebar .element-menu {
             display: none;
             margin-top: 45px;
             width: 100%;
