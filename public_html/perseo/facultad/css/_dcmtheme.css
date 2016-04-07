@@ -841,14 +841,18 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     line-height: 18px;
 }
 
+#slide3 .detail .slic .cargox {
+    text-transform: uppercase;
+}
+
 #slide3.postgradox .contentwrap.row-fluid {
     margin: 0 0 0 5%;
     width: 95%;
 }
 
-#slide3.postgradox .contentwrap.row-fluid .title {
-    top: 135px;
-}
+    #slide3.postgradox .contentwrap.row-fluid .title {
+        top: 135px;
+    }
 
 #slide3.postgradox .detail {
     width: 85%;
@@ -857,41 +861,42 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     margin: auto 0 auto auto;
 }
 
-#slide3.postgradox .detail .facultad-in {
-    width: 55%;
-    margin: auto 0 auto auto;
-    float: right;
-}
-
-#slide3.postgradox .detail .slic {
-    width: 45%;
-    margin: auto 0 auto auto;
-    float: right;
-}
-
-    #slide3.postgradox .detail .slic > h2, #slide3.postgradox .detail .slic .jefes > h2 {
-        margin: 0 14px 15px 0;
-        letter-spacing: 1px;
+    #slide3.postgradox .detail .facultad-in {
+        width: 55%;
+        margin: auto 0 auto auto;
+        float: right;
     }
 
-    #slide3.postgradox .detail .slic .docs {
-        float: left;
-        width: 52%;
+    #slide3.postgradox .detail .slic {
+        width: 45%;
+        margin: auto 0 auto auto;
+        float: right;
     }
 
-        #slide3.postgradox .detail .slic .docs > div {
-            width: 100px;
-            height: 130px;
+        #slide3.postgradox .detail .slic > h2, #slide3.postgradox .detail .slic .jefes > h2 {
+            margin: 0 14px 15px 0;
+            letter-spacing: 1px;
         }
 
-        #slide3.postgradox .detail .slic .docs .doc i.fa-uce_pdf {
-            font-size: 125px;
-            padding: 0;
+        #slide3.postgradox .detail .slic .docs {
+            float: left;
+            width: 52%;
         }
 
-    #slide3.postgradox .detail .slic .content1 {
-        padding: 0 10% 20px 0;
-    }
+            #slide3.postgradox .detail .slic .docs > div {
+                width: 100px;
+                height: 130px;
+            }
+
+            #slide3.postgradox .detail .slic .docs .doc i.fa-uce_pdf {
+                font-size: 125px;
+                padding: 0;
+                color: black;
+            }
+
+        #slide3.postgradox .detail .slic .content1 {
+            padding: 0 10% 20px 0;
+        }
 
 .postgradox .carreraWrap .carrera {
     background-color: #48B1F0;

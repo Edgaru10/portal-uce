@@ -9,8 +9,6 @@
         margin: auto;
     }
 
-
-
 #loader, #loader2 {
     background-color: #fff;
     width: 100%;
@@ -131,7 +129,7 @@
     color: orange;
     font-size: 100px;
     line-height: 1;
-    -moz-animation: circle 5s linear infinite;
+    /*-moz-animation: circle 5s linear infinite;
     -o-animation: circle 5s linear infinite;
     -webkit-animation: circle 5s linear infinite;
     animation: circle 5s linear infinite;
@@ -140,14 +138,14 @@
     -o-transform-origin: 50% 51%;
     -webkit-transform-origin: 50% 51%;
     transform-origin: 50% 51%;
-    -moz-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;*/
 }
 
 #div2 {
-    -moz-animation: inner-circle 5s linear infinite;
+    /*-moz-animation: inner-circle 5s linear infinite;
     -o-animation: inner-circle 5s linear infinite;
     -webkit-animation: inner-circle 5s linear infinite;
-    animation: inner-circle 5s linear infinite;
+    animation: inner-circle 5s linear infinite;*/
 }
 
 .spinner {

@@ -3317,145 +3317,6 @@ $(function () {
     })
 })(jQuery);
 
-//(function ($) {
-//    $.widget("metro.sidebar.nucleo", {
-//        version: "1.0.0",
-//        options: {
-//            effect: 'switch'
-//            , _index: 0,
-//            typex: 0
-//        },
-//        _create: function () {
-//            var that = this,
-//                    element = this.element,
-//                    tabs = $(element.children("nav")).find("a"),
-//                    frames = $(element.children(".full-content")).children(".slic"),
-//                    fullview = $(element.children(".full-content")),
-//                    pull = $(element.children("nav")).find(".pull-menu");
-
-//            if (element.data('effect') != undefined) {
-//                this.options.effect = element.data('effect');
-//            }
-//            if (element.data('sidebar-typex') != undefined) {
-//                this.options.typex = element.data('typex');
-//            }
-
-//            $(element.children("nav")).perfectScrollbar(); //scrolllbar nav
-
-
-//            this.init(tabs, frames);
-//            tabs.on("click", function (e) {
-
-//                e.preventDefault();
-//                e.stopPropagation();
-
-//                if ($(this).parent().hasClass('disabled')) {
-//                    return false;
-//                }
-
-//                var hrefx = $(this).attr("href");
-//                if (hrefx === '#')
-//                    return false;
-
-
-//                var current_frame = $(fullview.find("[data-cont=" + hrefx + "]"));
-
-//                if (current_frame.size() < 1)
-//                    return false;
-
-//                tabs.each(function () {
-//                    $($(this).parent()).removeClass("active");
-//                });
-
-
-//                frames.hide();
-//                $(this).parent().addClass("active");
-
-//                //si es responsive cerramos menu cuando cambiamos contenido
-//                var device_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-//                if (device_width <= 1200) {
-//                    $(pull).click();
-//                }
-
-//                //alert(current_frame);
-//                switch (that.options.effect) {
-//                    case 'slide':
-//                        current_frame.slideDown();
-//                        break;
-//                    case 'fade':
-//                        current_frame.fadeIn();
-//                        break;
-//                    case 'switch':
-//                        current_frame.fadeIn();
-//                        $(current_frame)
-//                                .css({ left: 0 })
-//                                .show();
-//                        $(current_frame)
-//                                .css('left', current_frame.width())
-//                                .show()
-//                                .animate({ left: 0 }, 500);
-//                        break;
-//                    default:
-//                        current_frame.show();
-//                }
-
-//                //reiniciamos scrollbar
-//                //fullview.perfectScrollbar('update');
-//                fullview.scrollTop(0);
-//                //apagamos nivo
-//                var first_frame = $(fullview.find("[data-cont=cont0]"));
-//                if (that.options.typex == 0) {
-//                    if (current_frame.index() == 0) {
-//                        $(fullview.parent()).addClass("grilla-dark");
-
-//                        if (!isMobileBrowser()) {
-//                            first_frame.find(".bannerCircle").each(function () {
-//                                $(this).data('bannerCircle').start();
-//                            });
-//                        }
-
-//                    } else {
-//                        $(fullview.parent()).removeClass("grilla-dark");
-//                        if (!isMobileBrowser()) {
-//                            first_frame.find(".bannerCircle").each(function () {
-//                                $(this).data('bannerCircle').stop();
-//                            });
-//                        }
-//                    }
-//                }
-//                //else {
-//                //    var cssx = $(this).css("background-color");
-//                //    element.css("background-color", cssx);
-//                //    fullview.css("background-color", cssx);
-//                //    cssx = null;
-//                //}
-
-//                hrefx = current_frame = device_width = first_frame = null;
-
-//                return true;
-//            });
-
-//        },
-//        init: function (tabs, frames) {
-//            tabs.each(function () {
-//                if ($(this).hasClass("active")) {
-//                    var current_frame = $($($(this).children("a")).attr("href"));
-//                    frames.hide();
-//                    current_frame.show();
-//                }
-//            });
-//            tabs = null;
-//            frames = null;
-//        },
-//        _destroy: function () {
-
-//        },
-//        _setOption: function (key, value) {
-//            this._super('_setOption', key, value);
-//        }
-//    })
-//})(jQuery);
-
 $(function () {
     $.Metro.initSidebars = function (area) {
         if (area != undefined) {
@@ -3489,6 +3350,7 @@ $(window).load(function () {
     console.log("window on load eventx body:" + $('body').length);
     initx();
     createSharex();
+    
 });
 
 function initx() {
@@ -3567,9 +3429,6 @@ function initx() {
                     //$('#popup01').trigger("click");
 
                     console.log("fin onloadX");
-
-
-
 
                 }
             },
@@ -7012,30 +6871,6 @@ var centrosInvestigacionz = (function () {
 //#endregion
 
 //#region nucleo de investigadores
-$(function () {
-
-    $('.tab-panels .tabs li').on('click', function () {
-        var $panel = $(this).closest('.tab-panels');
-
-        $panel.find('.tabs li.active').removeClass('active');
-        $(this).addClass('active');
-
-        //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
-        //hide current panel
-        $panel.find('.panel.active').fadeOut(200, showNextPanel);
-
-        //show next panel
-        function showNextPanel() {
-            $(this).removeClass('active');
-
-            $('#' + panelToShow).fadeIn(200, function () {
-                $(this).addClass('active');
-            });
-        }
-    });
-});
 //Banner inicio NDI
 $(function () {
     //settings for slider
@@ -7081,9 +6916,54 @@ $(function () {
             $('#collapsible .cuerpo').slideUp();
             $(this).next().slideDown();
         }
-
     });
 });
+
+(function ($) {
+    $.widget("metro.panel", {
+        version: "1.0.0",
+        options: {
+            onCollapse: function () {
+            },
+            onExpand: function () {
+            }
+        },
+        _create: function () {
+            var element = this.element, o = this.options,
+                    header = element.children('.panel-header'),
+                    content = element.children('.panel-content');
+            header.on('click', function () {
+                content.slideToggle(
+                        'fast',
+                        function () {
+                            element.toggleClass('collapsed');
+                            if (element.hasClass('collapsed')) {
+                                o.onCollapse();
+
+                            } else {
+                                o.onExpand();                               
+                            }
+                        }
+                );
+            });
+            if (element.hasClass('start-collapsed')) {
+                if (element.hasClass('collapsed')) {
+                    //element.removeClass('collapsed');
+                }
+                else {
+                    header.click();
+                }
+            }
+        },
+        _destroy: function () {
+
+        },
+        _setOption: function (key, value) {
+            this._super('_setOption', key, value);
+        }
+    })
+})(jQuery);
+
 //Desplegar Noticias Especiales
 $(function () {
     $('.noticias .noti').slideUp();
@@ -7119,7 +6999,7 @@ $(function () {
 //#region centros investigaci�n
 var centrosInvestigacion = (function () {
 
-    var $items = $('.centrosWrap > li, .centrosWrap'),
+    var $items = $('.centrosWrap > li'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',
@@ -7276,6 +7156,7 @@ var centrosInvestigacion = (function () {
             }
         });
     }
+
     function sidebarUpdate(itemx) {
 
         //sidebar update
@@ -7295,10 +7176,8 @@ var centrosInvestigacion = (function () {
 
         sidebar.css("background-color", cssx);
         full_viewx.css("background-color", cssx);
-
-
+        
         sidebar = full_viewx = tabs = cssx = null;
-
     }
 
     function initNotiAndvents(itemx) {
@@ -7368,34 +7247,27 @@ var centrosInvestigacion = (function () {
         var panelProyecto2 = $(".panelProyecto2");
 
         var hidex = $(".hide-proyectos");
-        hidex.click(function (e) {
 
+        hidex.click(function (e) {
             panelProyecto1.removeClass("visible").fadeOut();
             panelProyecto2.removeClass("visible").fadeOut();
             panelWrap.fadeIn();
-
         });
-        showProyectos1.click(function (e) {
 
+        showProyectos1.click(function (e) {
             panelProyecto2.removeClass("visible animated fadeInLeftBig").fadeOut();
             panelWrap.fadeOut();
             panelProyecto1.addClass("visible animated fadeInRightBig").fadeIn();
-
         });
 
         showProyectos2.click(function (e) {
-
             panelProyecto1.removeClass("visible animated fadeInRightBig").fadeOut();
             panelWrap.fadeOut();
             panelProyecto2.addClass("visible animated fadeInLeftBig").fadeIn();
-
-
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
     }
-
-
 
     function getItemLayoutProp($item) {
 
@@ -7425,6 +7297,13 @@ var centrosInvestigacion = (function () {
 //#endregion 
 
 function onloadX() {
+
+    $('.botonF1').hover(function () {
+        $('.btn_radio').addClass('animacionVer');
+    })
+    $('.radio').mouseleave(function () {
+        $('.btn_radio').removeClass('animacionVer');
+    })
 
     setTimeout(function () {
         $('#logo1').addClass("animated zoomOutUp");
@@ -7674,6 +7553,8 @@ function onloadX() {
     }
     //*/    
 }
+
+
 
 //youtube thumbail http://img.youtube.com/vi/qx89ylJyeKU/0.jpg
 console.log("dcmtheme reand execute; and porlets: " + typeof Liferay.allPortletsReady + ", and body: " + $('body').length);

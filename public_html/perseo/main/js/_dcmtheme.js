@@ -3275,30 +3275,6 @@ var centrosInvestigacionz = (function () {
 //#endregion
 
 //#region nucleo de investigadores
-$(function () {
-
-    $('.tab-panels .tabs li').on('click', function () {
-        var $panel = $(this).closest('.tab-panels');
-
-        $panel.find('.tabs li.active').removeClass('active');
-        $(this).addClass('active');
-
-        //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
-        //hide current panel
-        $panel.find('.panel.active').fadeOut(200, showNextPanel);
-
-        //show next panel
-        function showNextPanel() {
-            $(this).removeClass('active');
-
-            $('#' + panelToShow).fadeIn(200, function () {
-                $(this).addClass('active');
-            });
-        }
-    });
-});
 //Banner inicio NDI
 $(function () {
     //settings for slider
@@ -3344,9 +3320,54 @@ $(function () {
             $('#collapsible .cuerpo').slideUp();
             $(this).next().slideDown();
         }
-
     });
 });
+
+(function ($) {
+    $.widget("metro.panel", {
+        version: "1.0.0",
+        options: {
+            onCollapse: function () {
+            },
+            onExpand: function () {
+            }
+        },
+        _create: function () {
+            var element = this.element, o = this.options,
+                    header = element.children('.panel-header'),
+                    content = element.children('.panel-content');
+            header.on('click', function () {
+                content.slideToggle(
+                        'fast',
+                        function () {
+                            element.toggleClass('collapsed');
+                            if (element.hasClass('collapsed')) {
+                                o.onCollapse();
+
+                            } else {
+                                o.onExpand();                               
+                            }
+                        }
+                );
+            });
+            if (element.hasClass('start-collapsed')) {
+                if (element.hasClass('collapsed')) {
+                    //element.removeClass('collapsed');
+                }
+                else {
+                    header.click();
+                }
+            }
+        },
+        _destroy: function () {
+
+        },
+        _setOption: function (key, value) {
+            this._super('_setOption', key, value);
+        }
+    })
+})(jQuery);
+
 //Desplegar Noticias Especiales
 $(function () {
     $('.noticias .noti').slideUp();
@@ -3382,7 +3403,7 @@ $(function () {
 //#region centros investigación
 var centrosInvestigacion = (function () {
 
-    var $items = $('.centrosWrap > li, .centrosWrap'),
+    var $items = $('.centrosWrap > li'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',
@@ -3539,6 +3560,7 @@ var centrosInvestigacion = (function () {
             }
         });
     }
+
     function sidebarUpdate(itemx) {
 
         //sidebar update
@@ -3558,10 +3580,8 @@ var centrosInvestigacion = (function () {
 
         sidebar.css("background-color", cssx);
         full_viewx.css("background-color", cssx);
-
-
+        
         sidebar = full_viewx = tabs = cssx = null;
-
     }
 
     function initNotiAndvents(itemx) {
@@ -3631,34 +3651,27 @@ var centrosInvestigacion = (function () {
         var panelProyecto2 = $(".panelProyecto2");
 
         var hidex = $(".hide-proyectos");
-        hidex.click(function (e) {
 
+        hidex.click(function (e) {
             panelProyecto1.removeClass("visible").fadeOut();
             panelProyecto2.removeClass("visible").fadeOut();
             panelWrap.fadeIn();
-
         });
-        showProyectos1.click(function (e) {
 
+        showProyectos1.click(function (e) {
             panelProyecto2.removeClass("visible animated fadeInLeftBig").fadeOut();
             panelWrap.fadeOut();
             panelProyecto1.addClass("visible animated fadeInRightBig").fadeIn();
-
         });
 
         showProyectos2.click(function (e) {
-
             panelProyecto1.removeClass("visible animated fadeInRightBig").fadeOut();
             panelWrap.fadeOut();
             panelProyecto2.addClass("visible animated fadeInLeftBig").fadeIn();
-
-
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
     }
-
-
 
     function getItemLayoutProp($item) {
 
@@ -3688,6 +3701,13 @@ var centrosInvestigacion = (function () {
 //#endregion 
 
 function onloadX() {
+
+    $('.botonF1').hover(function () {
+        $('.btn_radio').addClass('animacionVer');
+    })
+    $('.radio').mouseleave(function () {
+        $('.btn_radio').removeClass('animacionVer');
+    })
 
     setTimeout(function () {
         $('#logo1').addClass("animated zoomOutUp");
@@ -3937,6 +3957,8 @@ function onloadX() {
     }
     //*/    
 }
+
+
 
 //youtube thumbail http://img.youtube.com/vi/qx89ylJyeKU/0.jpg
 console.log("dcmtheme reand execute; and porlets: " + typeof Liferay.allPortletsReady + ", and body: " + $('body').length);

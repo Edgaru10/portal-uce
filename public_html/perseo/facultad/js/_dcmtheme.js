@@ -1219,6 +1219,7 @@ var CarreraFull = (function () {
             }
         });
     }
+
     function sidebarUpdate(itemx) {
         //sidebar update
         var sidebar = itemx.find('[data-role=sidebar]'),
@@ -1244,6 +1245,7 @@ var CarreraFull = (function () {
             }
         }, 1000);
     }
+
     function getItemLayoutProp($item) {
 
         var scrollT = $window.scrollTop(),
@@ -1335,7 +1337,6 @@ function touch2Mouse(e) {
 
     e.preventDefault();
 }
-
 
 /* To add touch support for element need create listeners for component dom element
  if (hasTouch) {
@@ -2980,7 +2981,6 @@ $(window).load(function () {
     console.log("window on load eventx");
 });
 
-
 function onloadX() {
 
     $('#logo3').removeClass("oculto zoomOut").addClass("animated zoomIn");
@@ -3218,7 +3218,6 @@ function onloadX() {
     }
     //*/    
 }
-
 
 $(function () {
     $('#collapsible .cuerpo').hide();

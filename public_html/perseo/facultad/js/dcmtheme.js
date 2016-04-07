@@ -3317,145 +3317,6 @@ $(function () {
     })
 })(jQuery);
 
-//(function ($) {
-//    $.widget("metro.sidebar.nucleo", {
-//        version: "1.0.0",
-//        options: {
-//            effect: 'switch'
-//            , _index: 0,
-//            typex: 0
-//        },
-//        _create: function () {
-//            var that = this,
-//                    element = this.element,
-//                    tabs = $(element.children("nav")).find("a"),
-//                    frames = $(element.children(".full-content")).children(".slic"),
-//                    fullview = $(element.children(".full-content")),
-//                    pull = $(element.children("nav")).find(".pull-menu");
-
-//            if (element.data('effect') != undefined) {
-//                this.options.effect = element.data('effect');
-//            }
-//            if (element.data('sidebar-typex') != undefined) {
-//                this.options.typex = element.data('typex');
-//            }
-
-//            $(element.children("nav")).perfectScrollbar(); //scrolllbar nav
-
-
-//            this.init(tabs, frames);
-//            tabs.on("click", function (e) {
-
-//                e.preventDefault();
-//                e.stopPropagation();
-
-//                if ($(this).parent().hasClass('disabled')) {
-//                    return false;
-//                }
-
-//                var hrefx = $(this).attr("href");
-//                if (hrefx === '#')
-//                    return false;
-
-
-//                var current_frame = $(fullview.find("[data-cont=" + hrefx + "]"));
-
-//                if (current_frame.size() < 1)
-//                    return false;
-
-//                tabs.each(function () {
-//                    $($(this).parent()).removeClass("active");
-//                });
-
-
-//                frames.hide();
-//                $(this).parent().addClass("active");
-
-//                //si es responsive cerramos menu cuando cambiamos contenido
-//                var device_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-//                if (device_width <= 1200) {
-//                    $(pull).click();
-//                }
-
-//                //alert(current_frame);
-//                switch (that.options.effect) {
-//                    case 'slide':
-//                        current_frame.slideDown();
-//                        break;
-//                    case 'fade':
-//                        current_frame.fadeIn();
-//                        break;
-//                    case 'switch':
-//                        current_frame.fadeIn();
-//                        $(current_frame)
-//                                .css({ left: 0 })
-//                                .show();
-//                        $(current_frame)
-//                                .css('left', current_frame.width())
-//                                .show()
-//                                .animate({ left: 0 }, 500);
-//                        break;
-//                    default:
-//                        current_frame.show();
-//                }
-
-//                //reiniciamos scrollbar
-//                //fullview.perfectScrollbar('update');
-//                fullview.scrollTop(0);
-//                //apagamos nivo
-//                var first_frame = $(fullview.find("[data-cont=cont0]"));
-//                if (that.options.typex == 0) {
-//                    if (current_frame.index() == 0) {
-//                        $(fullview.parent()).addClass("grilla-dark");
-
-//                        if (!isMobileBrowser()) {
-//                            first_frame.find(".bannerCircle").each(function () {
-//                                $(this).data('bannerCircle').start();
-//                            });
-//                        }
-
-//                    } else {
-//                        $(fullview.parent()).removeClass("grilla-dark");
-//                        if (!isMobileBrowser()) {
-//                            first_frame.find(".bannerCircle").each(function () {
-//                                $(this).data('bannerCircle').stop();
-//                            });
-//                        }
-//                    }
-//                }
-//                //else {
-//                //    var cssx = $(this).css("background-color");
-//                //    element.css("background-color", cssx);
-//                //    fullview.css("background-color", cssx);
-//                //    cssx = null;
-//                //}
-
-//                hrefx = current_frame = device_width = first_frame = null;
-
-//                return true;
-//            });
-
-//        },
-//        init: function (tabs, frames) {
-//            tabs.each(function () {
-//                if ($(this).hasClass("active")) {
-//                    var current_frame = $($($(this).children("a")).attr("href"));
-//                    frames.hide();
-//                    current_frame.show();
-//                }
-//            });
-//            tabs = null;
-//            frames = null;
-//        },
-//        _destroy: function () {
-
-//        },
-//        _setOption: function (key, value) {
-//            this._super('_setOption', key, value);
-//        }
-//    })
-//})(jQuery);
-
 $(function () {
     $.Metro.initSidebars = function (area) {
         if (area != undefined) {
@@ -3489,6 +3350,7 @@ $(window).load(function () {
     console.log("window on load eventx body:" + $('body').length);
     initx();
     createSharex();
+    
 });
 
 function initx() {
@@ -3567,9 +3429,6 @@ function initx() {
                     //$('#popup01').trigger("click");
 
                     console.log("fin onloadX");
-
-
-
 
                 }
             },
@@ -4956,6 +4815,7 @@ var CarreraFull = (function () {
             }
         });
     }
+
     function sidebarUpdate(itemx) {
         //sidebar update
         var sidebar = itemx.find('[data-role=sidebar]'),
@@ -4981,6 +4841,7 @@ var CarreraFull = (function () {
             }
         }, 1000);
     }
+
     function getItemLayoutProp($item) {
 
         var scrollT = $window.scrollTop(),
@@ -5072,7 +4933,6 @@ function touch2Mouse(e) {
 
     e.preventDefault();
 }
-
 
 /* To add touch support for element need create listeners for component dom element
  if (hasTouch) {
@@ -6717,7 +6577,6 @@ $(window).load(function () {
     console.log("window on load eventx");
 });
 
-
 function onloadX() {
 
     $('#logo3').removeClass("oculto zoomOut").addClass("animated zoomIn");
@@ -6955,7 +6814,6 @@ function onloadX() {
     }
     //*/    
 }
-
 
 $(function () {
     $('#collapsible .cuerpo').hide();

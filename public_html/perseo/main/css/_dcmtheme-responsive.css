@@ -255,6 +255,7 @@
 
         .metro .contentwrap.direcWrap .og-grid, .metro .contentwrap.facWrap .og-grid, .metro .og-grid {
             text-align: center;
+            justify-content: space-around;
         }
 
             .metro .og-grid.fac .og-a, .metro .direc, .centrosWrap .centro {
@@ -422,13 +423,19 @@
             max-width: 800px;
         }
 
-    /*centros sidebar*/
+
+
+    /*nucleo de investigadores sidebar*/
     #slide5 .centrosWrap .rb-close {
         color: #fff;
     }
 
     #slide5 .centrosWrap .sidebar.nucleo > ul {
         width: 100%;
+    }
+
+    #slide5 .centrosWrap .pan-l .full-content .slic {
+        padding: 0 10px 0 0;
     }
 
         #slide5 .centrosWrap .sidebar.nucleo > ul li {
@@ -454,6 +461,22 @@
     .ndi-mv > ul {
         justify-content: space-around;
     }
+
+    .ndi-mv ul > li {
+        max-width: 100% !important;
+    }
+
+    .investigador1, .investigador2 {
+        width: 100%;
+    }
+
+        .investigador2 > ul, .investigador2 ul > li {
+            margin: 0 0 30px 0;
+        }
+
+
+
+    /*centros sidebar*/
 
     .centrosWrap .sidebar > ul li a {
         font-size: 14px;

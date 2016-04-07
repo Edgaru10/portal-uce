@@ -8265,9 +8265,7 @@ span.date {
 .paginacion {
     display: block;
     width: 100%;
-    position: relative;
-    min-height: 100px;
-    /*overflow: hidden;*/
+    position: relative;   
 }
 
 .metro .paginacion .page {
