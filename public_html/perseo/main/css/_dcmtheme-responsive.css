@@ -346,9 +346,28 @@
 }
 
 @media (max-width:1200px) {
+    .centrosWrap .rb-week {
+        max-width: 100%;
+    }
+
+    .metro .rb-overlay .full-content {
+        height: 90%;
+        top: 8%;
+    }
+
+    .centrosWrap .pan-l .full-content {
+        margin-bottom: 70px;
+    }
+
+    .rb-close {
+        color: #fff;
+        font-size: 2rem;
+    }
+
     .metro .sidebar .pull-menu {
         display: block !important;
         top: 0;
+        left: 0;
     }
 
     .metro .sidebarWrap .navx .date {
@@ -363,14 +382,13 @@
         left: 0px;
         z-index: 999;
         top: 0px;
-        padding-top: 0px;
         width: 100%;
-        padding-bottom: 20px;
+        padding: 0 0 30px 0;
         background-color: rgba(0,118,189,.93);
     }
 
     .metro .sidebarWrap .sidebar.opened .ps-scrollbar-y-rail {
-        opacity: 1;
+        opacity: 0;
     }
 
     .metro .sidebar .element-menu {
@@ -415,7 +433,7 @@
         }
 
     .metro .sidebarWrap {
-        padding: 5px !important;
+        padding: 0 !important;
     }
 
         .metro .sidebarWrap .bannerCircle {
@@ -432,15 +450,16 @@
 
     #slide5 .centrosWrap .sidebar.nucleo > ul {
         width: 100%;
+        margin-top: 40px;
     }
 
     #slide5 .centrosWrap .pan-l .full-content .slic {
         padding: 0 10px 0 0;
     }
 
-        #slide5 .centrosWrap .sidebar.nucleo > ul li {
-            border-bottom: 1px solid black;
-        }
+    #slide5 .centrosWrap .sidebar.nucleo > ul li {
+        border-bottom: 1px solid black;
+    }
 
     #slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6) {
         width: 100% !important;
@@ -512,8 +531,9 @@
             max-width: 100%;
         }
 
-    .centrosWrap .pan-l .full-content {
-        margin-top: 40px;
+        /*direc uni_acade*/
+    .metro .sidebarWrap .contentwrap {
+        padding-right: 20px;
     }
 }
 

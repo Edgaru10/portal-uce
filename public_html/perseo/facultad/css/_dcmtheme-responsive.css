@@ -341,7 +341,8 @@
 @media (max-width:1200px) {
     .metro .sidebar .pull-menu {
         display: block !important;
-        top: 0px;
+        top: 0;
+        left: 0;
     }
 
     .metro .sidebarWrap .navx .date {
@@ -353,17 +354,16 @@
         height: auto;
         max-height: 100%;
         position: absolute;
-        left: 0px;
+        left: 0;
         z-index: 999;
-        top: 0px;
-        padding-top: 0px;
+        top: 0;
+        padding: 0 0 20px 0 ;
         width: 100%;
-        padding-bottom: 20px;
         background-color: rgba(0,118,189,.93);
     }
 
     .metro .sidebarWrap .sidebar.opened .ps-scrollbar-y-rail {
-        opacity: 1;
+        opacity: 0;
     }
 
     .metro .sidebar .element-menu {

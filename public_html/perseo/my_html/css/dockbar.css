@@ -739,7 +739,7 @@
 }
 
 .centrosWrap .rb-week {
-    max-width: 1046px;
+    max-width: 90%;
     padding: 0;
 }
 /*sidebar*/
@@ -943,8 +943,11 @@
 }
 
 .metro .tabsserv {
-    display: block;
-    white-space: nowrap;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: inherit;
+    flex-wrap: wrap;    
+    justify-content: space-around;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
