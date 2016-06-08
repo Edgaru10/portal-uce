@@ -915,6 +915,17 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 /*#endregion*/
 
+
+/*#region Slide4 Departamentos*/
+/*#slide4 {
+    background-color: #575756;
+}*/
+
+    #slide4 .contentwrap {
+        min-height: 450px;
+    }
+/*#endregion*/
+
 /*#region Slide3*/
 #slide3 .ipp {
     padding-left: 0;

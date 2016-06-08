@@ -728,6 +728,7 @@
 
 .centrosWrap .height100, .centrosWrap .pan-l, .centrosWrap .pan-l .full-content {
     height: 100%;
+    top: 0;
 }
 
 .centrosWrap .og-close {
@@ -1428,4 +1429,19 @@
 
 /*#endregion*/
 
+/*#region AUTORIDADES*/
+.metro #full-view-07 .panel-content h2, .metro #full-view-07 .panel-content h3, .metro #full-view-07 .panel-content h4, .metro #full-view-07 .panel-content h5 {
+    font-family: 'Adequate ExtraLight','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+    line-height: 0.8rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.metro #full-view-07 .panel-content h4 {
+    color: #0076BD;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2.2rem;
+}
+/*#endregion*/
 

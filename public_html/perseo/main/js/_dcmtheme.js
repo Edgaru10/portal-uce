@@ -3494,7 +3494,7 @@ var centrosInvestigacion = (function () {
 
         sidebar.css("background-color", cssx);
         full_viewx.css("background-color", cssx);
-        
+
         sidebar = full_viewx = tabs = cssx = null;
     }
 
@@ -3631,19 +3631,27 @@ var centrosInvestigacion = (function () {
 //#endregion 
 
 function onloadX() {
-   
-    $('.botonF1').hover(function () {
-        $('.btn_radio').addClass('animacionVer');
+    
+    $('#kast-play').hover(function () {
+        if (!$('#kast-play').hasClass('kast-playing')) {
+            $('#kast-play').addClass('kast-paused');
+            $(this).removeClass('fa fa-uce_radio').css({ 'font-size': '30px' });
+        }
+      
     })
-    $('.radio').mouseleave(function () {
-        $('.btn_radio').removeClass('animacionVer');
+    $('#kast-play').mouseleave(function () {
+        if (!$('#kast-play').hasClass('kast-playing')) {
+            $('#kast-play').removeClass('kast-paused');
+            $('#kast-play').addClass('fa fa-uce_radio');
+        }
+        
     })
 
     setTimeout(function () {
         $('#logo1').addClass("animated zoomOutUp");
         $('#logo2').removeClass("oculto");
         $('#logo2').addClass("animated zoomIn");
-            
+
     }, 4500);
 
     NoticiasFull().init();

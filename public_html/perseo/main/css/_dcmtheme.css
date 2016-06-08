@@ -1848,6 +1848,10 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     background-color: #fff;
 }
 
+#wrapperscroll #slide1 {
+    height: 100vh;
+}
+
 #wrapperscroll .scrollbut {
     display: block;
     width: 60px;

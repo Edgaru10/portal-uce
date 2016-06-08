@@ -155,6 +155,9 @@
 }
 .fa-uce_radio:before {
     content: "\e617";
+    position: absolute;
+    right: 20%;
+    bottom: -10%;
 }
 .fa-uce_repositorio:before {
     content: "\e621";

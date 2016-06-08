@@ -310,7 +310,10 @@
             top: 21rem;
         }
 
-
+            .fac-title .title.investiga.departamento {
+                top: 24rem;
+                color: #fff;
+            }
 
     .noticiesWrap .fac-title .title {
         top: 128px;
@@ -357,7 +360,7 @@
         left: 0;
         z-index: 999;
         top: 0;
-        padding: 0 0 20px 0 ;
+        padding: 0 0 20px 0;
         width: 100%;
         background-color: rgba(0,118,189,.93);
     }
