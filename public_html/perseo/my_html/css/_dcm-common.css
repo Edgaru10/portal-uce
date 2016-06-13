@@ -5162,6 +5162,7 @@ body.metro {
     padding-top: 50px;
     padding-bottom: 45px;
     height: auto;
+    min-height: 500px;
     overflow: hidden;
 }
 

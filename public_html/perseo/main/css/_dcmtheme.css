@@ -728,9 +728,10 @@ html > body .featured a.isobrick {
 
 /*#region nucleo de investigadores*/
 /*NDI Inicio*/
-.panel .panel-header > h2 {
-    font-size: 4.2rem;
-    line-height: 1.2;
+#slide5 .contentwrap .rb-overlay .text-center.adequate {
+    width: 80%;
+    margin: 30px auto;
+    line-height: 1.1em;
 }
 
 .contenedor {
@@ -974,6 +975,7 @@ html > body .featured a.isobrick {
         margin-top: 0;
         margin: 9px;
         margin-right: -6px;
+        overflow: hidden;
     }
 
         #slide5 .centrosWrap .panelRight .row-fluid {
@@ -1623,7 +1625,7 @@ html > body .featured a.isobrick {
 }
 
 .metro .club {
-    width: 160px;
+    width: 210px;
     height: 120px;
     background-color: #ffffff;
     position: relative;
