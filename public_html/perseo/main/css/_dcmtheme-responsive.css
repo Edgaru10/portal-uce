@@ -359,6 +359,11 @@
         margin-bottom: 70px;
     }
 
+    .dock-popup .rb-close, .has-full-view-content .rb-close {
+        color: #000;
+        font-size: 2rem;
+    }
+
     .rb-close {
         color: #fff;
         font-size: 2rem;

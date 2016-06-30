@@ -847,7 +847,7 @@ html > body .featured a.isobrick {
     font-family: 'Adequate ExtraLight','Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
     font-weight: bold;
     /*padding-top: 150px;*/
-    padding-top: 45px;
+    padding-top: 15px;
     letter-spacing: 1px;
     /*padding-bottom: 150px;*/
     z-index: 3;
@@ -963,7 +963,7 @@ html > body .featured a.isobrick {
 
 /*# nucleo de investigadores NUEVO NUEVO*/
 #slide5 .centrosWrap {
-    padding: 0 !important;
+    padding: 20px !important;
     text-align: center;
 }
 
