@@ -5220,7 +5220,7 @@ body.metro {
         font-family: "Open Sans","Segoe UI";
     }
 
-    .metro .topBar-content > a {
+    .metro .topBar-content > a, .metro .topBar-content .dock-popup {
         /*padding-top: 11px;*/
         padding-top: 4px;
         line-height: 15px;
@@ -5233,7 +5233,7 @@ body.metro {
         margin-right: 10px;
     }
 
-        .metro .topBar-content > a:hover {
+        .metro .topBar-content > a:hover, .metro .topBar-content .dock-popup:hover {
             background-color: #004671;
         }
 
