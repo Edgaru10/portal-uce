@@ -3742,7 +3742,7 @@ if (typeof Liferay === 'undefined' && window.location.href.indexOf("public_html"
 $(window).load(function () {
     console.log("window on load eventx body:" + $('body').length);
     initx();
-    createSharex();
+    createSharex();    
     
 });
 
@@ -3820,7 +3820,7 @@ function initx() {
                     onloadX();
                     //show popup
                     //$('#popup01').trigger("click");
-
+                    $("#popup-onload").trigger("click");
                     console.log("fin onloadX");
 
                 }
