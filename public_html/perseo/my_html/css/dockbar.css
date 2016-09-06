@@ -366,14 +366,15 @@
 }
 
 .ley .ley-item {
-    /*height: 92px;*/
-    height: 103px;
+    /*height: 103px;*/
+    height: 145px;
     margin-bottom: 20px;
     border-bottom: 1px #4275b8 solid;
     position: relative;
 }
 
     .ley .ley-item h4 {
+        width: 100%;
         position: absolute;
         bottom: 0;
         font-weight: normal;
@@ -381,17 +382,20 @@
         text-align: left;
         margin-bottom: 0;
         min-height: 25px !important;
+        top: 0;
+        margin: 0;
+        line-height: 1.8rem;
     }
 
     .ley .ley-item .pdfx h5 {
         font-weight: normal;
         font-family: "Open Sans";
         position: absolute;
-        right: 90px;
+        left: 100px;
         min-width: 200px;
-        text-align: right;
-        top: -10px;
-        font-size: 13px;
+        text-align: left;
+        top: -3px;
+        font-size: 12px;
         opacity: 1;
     }
 
@@ -402,9 +406,11 @@
 .ley .docs {
     width: 80px;
     height: 80px;
-    margin-right: 0;
-    margin-left: auto;
+    /*margin-right: 0;
+    margin-left: auto;*/
     position: relative;
+    top: 30%;
+    margin: 0 35px;
 }
 
 .ley .date {
@@ -414,7 +420,7 @@
 .ley .docs .leftx, .ley .docs .rigthtx {
     position: absolute;
     vertical-align: middle;
-    left: -20px;
+    left: -30px;
     top: 33px;
     cursor: pointer;
     opacity: .7;
@@ -425,7 +431,7 @@
     }
 
 .ley .docs .rigthtx {
-    right: -11px;
+    right: -5px;
     left: auto;
 }
 
@@ -443,8 +449,8 @@
     position: absolute;
     right: 0;
     z-index: 2;
-    background-image: url(../dcmtheme/images/carrera_info.jpg);
     cursor: pointer;
+    /*background-image: url(../dcmtheme/images/carrera_info.jpg);*/
 }
 
     .ley .pdfx i {
@@ -947,7 +953,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: inherit;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: space-around;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

@@ -3820,7 +3820,7 @@ function initx() {
                     onloadX();
                     //show popup
                     //$('#popup01').trigger("click");
-                    $("#popup-onload").trigger("click");
+                    //$("#popup-onload").trigger("click");
                     console.log("fin onloadX");
 
                 }
