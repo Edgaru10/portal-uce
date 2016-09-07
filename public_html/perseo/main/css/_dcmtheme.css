@@ -1630,6 +1630,7 @@ html > body .featured a.isobrick {
     background-color: #ffffff;
     position: relative;
     cursor: pointer;
+    margin: auto;
 }
 
     .metro .club i {
@@ -1944,106 +1945,9 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     transform: rotate(180deg); /* Safari and Chrome */
 }
 
+/*#region RADIO*/
 
-/* RADIO */
-.radio {
-    width: 90px;
-    height: 240px;
-    position: fixed;
-    right: 0;
-    top: 50%;
-    z-index: 9;
-    padding-left: 0 !important;
-}
-
-.botonF1 {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    background: #0076BD;
-    right: 0;
-    top: 50%;
-    position: fixed;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    border: none;
-    outline: none;
-    color: #FFF;
-    font-size: 36px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    -moz-transition: .3s;
-    -o-transition: .3s;
-    -webkit-transition: inherit;
-    transition: .3s;
-}
-
-    .botonF1 .fa-uce_radio {
-        padding: 10px 12px;
-        position: absolute;
-    }
-
-.fa-play {
-    padding: 12px 15px;
-    position: absolute;
-    font-size: 15px;
-}
-
-.fa-pause, .fa-stop {
-    padding: 13px 14px;
-    position: absolute;
-    font-size: 14px;
-}
-
-span {
-    transition: .5s;
-}
-
-.botonF1:hover span {
-    transform: rotate(360deg);
-}
-
-.botonF1:active {
-    transform: scale(1.1);
-}
-
-.btn_radio {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: none;
-    color: #FFF;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size: 28px;
-    outline: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 26px;
-    transform: scale(0);
-}
-
-.botonF2 {
-    background: #e20613;
-    transition: .5s;
-    top: 65%;
-}
-
-.botonF3 {
-    background: #48b1f0;
-    transition: .7s;
-    top: 46%;
-}
-
-.botonF4 {
-    background: #0096f0;
-    transition: .9s;
-    top: 27%;
-}
-
-.animacionVer {
-    transform: scale(1);
-}
-
+/*#endregion*/
 
 
 /* SLIDES */

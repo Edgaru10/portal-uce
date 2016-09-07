@@ -7828,8 +7828,7 @@ span.date {
 
 /*#endregion*/
 
-/*#UCE en Cifras*/
-
+/*#region UCE en Cifras*/
 .contentwrap.cifras .full-title {
     position: relative;
     color: #4275b9;
@@ -7842,7 +7841,6 @@ span.date {
     text-align: left;
     border-bottom: 2px solid rgba(97, 95, 95, 0.54);
 }
-
 /*#endregion*/
 
 /*#region scroll*/
@@ -8040,7 +8038,6 @@ span.date {
 /*#endregion*/
 
 /*#region loader*/
-
 .spinner {
     margin: 10px auto 0;
     width: 70px;
@@ -8098,7 +8095,6 @@ span.date {
         -webkit-transform: scale(1.0);
     }
 }
-
 /*#endregion loader*/
 
 /*#region transition*/
@@ -8198,7 +8194,6 @@ span.date {
     margin-top: 40px;
     text-transform: uppercase;
 }
-
 
 .aui blockquote p {
     color: #616161 !important;
@@ -8384,9 +8379,8 @@ span.date {
 
 /*#endregion*/
 
-/*!
- *RADIO
- */ #kast-play, #kast.kast-minimized {
+/*#region RADIO KAST*/
+#kast-play, #kast.kast-minimized {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26),0 2px 10px 0 rgba(0,0,0,.16);
 }
 
@@ -8414,7 +8408,7 @@ span.date {
 }
 
 #kast-bar, #kast-top {
-    border-radius: 2px 2px 0 0;
+    /*border-radius: 2px 2px 0 0;*/
 }
 
 #kast, #kast-top {
@@ -9070,7 +9064,23 @@ i.kast-mdi-play:before {
 #kast-top, #kast.kast-transparent.kast-current {
     height: 90px;
     width: 90px;
+    margin-right: -90px;
+    -webkit-transition: margin-right 1s; /* Safari */
+    -moz-transition: margin-right 1s;
+    -o-transition: margin-right 1s;
+    -webkit-transition: margin-right 1s;
+    transition: margin-right 1s;
+    cursor: pointer;
+    -moz-transition-timing-function: cubic-bezier(1,0,0,0);
+    -o-transition-timing-function: cubic-bezier(1,0,0,0);
+    -webkit-transition-timing-function: inherit;
+    transition-timing-function: cubic-bezier(1,0,0,0);
+    
 }
+
+    #kast.kast-transparent.kast-current:hover {
+        margin-right: 0;
+    }
 
 .kast-transparent.kast-current #kast-play {
     bottom: 20px;
@@ -9093,7 +9103,7 @@ i.kast-mdi-play:before {
     height: 570px;
     position: fixed;
     bottom: 0;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    /*box-shadow: 0 0 10px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);*/
     z-index: 9999;
     border-radius: 2px;
     -webkit-animation: kastright .5s cubic-bezier(.4,0,.2,1) forwards;
@@ -9177,7 +9187,7 @@ i.kast-mdi-play:before {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    border-radius: 2px;
+    /*border-radius: 2px;*/
 }
 
     #kast-wrapper::-webkit-scrollbar {
@@ -9576,8 +9586,22 @@ p#kast-np-title {
 
 #kast .aplicacion {
     position: absolute;
+    top: 68%;
+    z-index: 9;
+    color: #0076bd;
+    right: 0%;    
+    background-color: #c6c6c6;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: left bottom 0;
+    /*position: absolute;
     top: -20%;
     z-index: 9;
     color: #0076BD;
-    right: 7%;
+    right: 7%;*/
 }
+
+   
+/*#endregion*/
