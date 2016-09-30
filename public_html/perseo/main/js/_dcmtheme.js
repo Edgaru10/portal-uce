@@ -3897,3 +3897,4 @@ function onloadX() {
 
 //youtube thumbail http://img.youtube.com/vi/qx89ylJyeKU/0.jpg
 console.log("dcmtheme reand execute; and porlets: " + typeof Liferay.allPortletsReady + ", and body: " + $('body').length);
+
