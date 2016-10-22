@@ -3823,7 +3823,11 @@ function initx() {
                     //$('#popup01').trigger("click");
                     //$("#popup-onload").trigger("click");
                     console.log("fin onloadX");
-
+                    //poner animacion nueva
+                    $('#kast').css('margin-right', 0);
+                    setTimeout(function () {
+                        $('#kast').css('margin-right', "");
+                    }, 3000)
                 }
             },
             error: function (xhr, textStatus, errorThrown) {
@@ -5052,7 +5056,7 @@ var NoticiasFull = (function () {
 //#region carreras Full
 //<editor-fold defaultstate="collpased" desc="carreras Full">
 var CarreraFull = (function () {
-    var $items = $('.carreraWrap li'),
+    var $items = $('.carreraWrap li, .aresWrap li'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',

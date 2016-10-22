@@ -5864,15 +5864,16 @@ html > body .metro .sidebar a.dropdown-toggle:after {
     -o-transform: rotate(0);
     transform: rotate(0);
 }
-
-.metro .sidebar > ul li a, .metro .sidebar > ul ul a {
+/*cambio center animacion padding*/ /*.metro .sidebar > ul li a,*/
+.direcWrap .sidebar > ul li a, .clubWrap .sidebar > ul li a, .metro .sidebar > ul ul a {
     -moz-transition: all 0.4s ease 0s;
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
-    .metro .sidebar > ul li a:hover, .metro .sidebar > ul ul a:hover {
+    /*.metro .sidebar > ul li a:hover,*/ 
+    .direcWrap .sidebar > ul li a:hover, .clubWrap .sidebar > ul li a:hover, .metro .sidebar > ul ul a:hover {
         padding-left: 45px !important;
     }
 

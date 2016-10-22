@@ -5864,15 +5864,16 @@ html > body .metro .sidebar a.dropdown-toggle:after {
     -o-transform: rotate(0);
     transform: rotate(0);
 }
-
-.metro .sidebar > ul li a, .metro .sidebar > ul ul a {
+/*cambio center animacion padding*/ /*.metro .sidebar > ul li a,*/
+.direcWrap .sidebar > ul li a, .clubWrap .sidebar > ul li a, .metro .sidebar > ul ul a {
     -moz-transition: all 0.4s ease 0s;
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
-    .metro .sidebar > ul li a:hover, .metro .sidebar > ul ul a:hover {
+    /*.metro .sidebar > ul li a:hover,*/ 
+    .direcWrap .sidebar > ul li a:hover, .clubWrap .sidebar > ul li a:hover, .metro .sidebar > ul ul a:hover {
         padding-left: 45px !important;
     }
 
@@ -14611,9 +14612,9 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     background-color: #575756;
 }*/
 
-    #slide4 .contentwrap {
-        min-height: 450px;
-    }
+#slide4 .contentwrap {
+    min-height: 450px;
+}
 /*#endregion*/
 
 /*#region Slide3*/
@@ -15014,6 +15015,337 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     margin: auto;
     max-width: 700px;
 }
+
+
+/* #region PROGRAMA ARES 
+========================*/
+.metro .ares-nav .sidebar ul > li a {
+    background-color: transparent;
+    padding: 0;
+}
+
+.metro .ares-nav .sidebar > ul li a:hover, .metro .ares-nav .sidebar > ul li.active a {
+    background: none;
+    /*background-color: #262626;*/
+    color: #ffffff;
+}
+
+#slide1.ares {
+    background-color: #636363;
+    height: 100vh;
+}
+
+    #slide1.ares .carousel {
+        height: 482px !important;
+        margin: 0;
+    }
+
+.ares .contentwrap {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+}
+
+.ares .rb-overlay {
+    border-width: 10px;
+}
+
+.ares .rb-week {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 0;
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.ares .sidebar.ares-navx {
+    padding: 50px 20px 5px;
+    background-color: #636363;
+}
+
+.ares .ares-title {
+    width: 100%;
+    margin: 7% 0 4%;
+    font-size: 3.5rem;
+}
+
+.ares-sellos {
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    margin-bottom: 6%;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ares-uce {
+    width: 300px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 10px;
+}
+
+.ares-be, .ares-ares {
+    width: 350px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 10px;
+}
+
+.ares-nav {
+    width: 100%;
+}
+
+    .ares-nav .aresWrap {
+        width: 71%;
+        margin: 0 auto 10px;
+        list-style: none;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+        .ares-nav .aresWrap .resultado {
+            width: 150px;
+            height: 150px;
+            background-color: #0096f0;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+            .ares-nav .aresWrap .resultado .a {
+                font-size: 12rem;
+                margin: -22% 0 0 auto;
+                width: 90px;
+                -moz-transition: font-size .3s;
+                -o-transition: font-size .3s;
+                -webkit-transition: font-size .3s;
+                transition: font-size .3s;
+            }
+
+            .ares-nav .aresWrap .resultado:hover .a {
+                font-size: 13.5rem;
+            }
+
+            .ares-nav .aresWrap .resultado .b {
+                font-size: 1rem;
+                width: 90px;
+                margin: 50% 0 0 5px;
+            }
+
+        .ares-nav .aresWrap .resultado1:last-child {
+            width: 350px;
+            background-color: #0076BD;
+            position: relative;
+            margin: 0 5px;
+        }
+
+            .ares-nav .aresWrap .resultado1:last-child .a {
+                font-size: 7.5rem;
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+                -moz-transition: font-size .3s;
+                -o-transition: font-size .3s;
+                -webkit-transition: font-size .3s;
+                transition: font-size .3s;
+            }
+
+            .ares-nav .aresWrap .resultado1:last-child:hover .a {
+                font-size: 8rem;
+            }
+
+            .ares-nav .aresWrap .resultado1:last-child .b1 {
+                font-size: 1.5rem;
+                position: absolute;
+                top: 15%;
+                margin: 23px;
+                right: 0;
+                letter-spacing: 1.5px;
+            }
+
+.ares .sidebar > ul {
+    width: 57%;
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+    .ares .sidebar > ul li {
+        width: 110px;
+        height: 100px;
+        background-color: #0096f0;
+        margin: 0 -8px;
+        cursor: pointer;
+    }
+
+        .ares .sidebar > ul li.active {
+            background-color: #fff;
+            color: #0096f0;
+        }
+
+        .ares .sidebar > ul li a {
+            display: flex;
+        }
+
+.metro .ares .sidebar > ul li a:hover {
+    padding: 0;
+}
+
+.ares .sidebar > ul li h1 {
+    font-size: 7rem;
+    margin: 30px 0 0 5px;
+    color: #fff;
+}
+
+.ares .sidebar > ul li h4 {
+    font-size: .8rem;
+    margin: 50px 0 0 5px;
+    width: 50%;
+    color: #fff;
+}
+
+.ares .sidebar > ul li.active h1, .ares .sidebar > ul li.active h4 {
+    color: #0076BD;
+}
+
+.ares .sidebar > ul li:last-child {
+    width: 200px;
+    background-color: #0076BD;
+    position: relative;
+    cursor: pointer;
+}
+
+.ares .sidebar > ul li.active:last-child {
+    background-color: #fff;
+}
+
+.ares .sidebar > ul li:last-child h1 {
+    font-size: 5rem;
+    margin: 40px 10px;
+    position: absolute;
+    right: 0;
+}
+
+.ares .sidebar > ul li:last-child h4 {
+    font-size: 1rem;
+    margin: 22px 10px 0;
+    position: absolute;
+    right: 0;
+    width: 80px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.ares .sidebar > ul li.active:last-child h4 {
+    color: #0076BD;
+}
+
+.ares-footer {
+    width: 100%;
+    display: flex;
+}
+
+.ares-universidades {
+    width: 60%;
+    height: 108px;
+    background-color: #1d1d1b;
+}
+
+.ares-contacto {
+    width: 40%;
+    height: 108px;
+    background-color: #48B1F0;
+    margin-left: 10px;
+    display: flex;
+    position: relative;
+}
+
+    .ares-contacto .copyright {
+        position: absolute;
+        font-size: 7px;
+        bottom: -20px;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    .ares-contacto .social {
+        width: 40%;
+        height: 67px;
+        border-right: 3px solid #fff;
+        margin-top: 15px;
+        position: relative;
+    }
+
+        .ares-contacto .social > h4 {
+            margin: 0 10px 10px;
+        }
+
+        .ares-contacto .social > ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            position: absolute;
+            bottom: 20%;
+            right: 3%;
+        }
+
+            .ares-contacto .social > ul > li {
+                background-color: #fff;
+                border-radius: 100%;
+                padding: 2px 1px 1px;
+                margin: 1px 8px;
+            }
+
+                .ares-contacto .social > ul > li a {
+                    border-radius: 100%;
+                    background-color: #48b1f0;
+                    padding: 5px 2px 4px;
+                }
+
+                    .ares-contacto .social > ul > li a i {
+                        padding: 0 3px;
+                    }
+
+    .ares-contacto .direccion {
+        width: 60%;
+        height: 70px;
+        margin-top: 15px;
+    }
+
+        .ares-contacto .direccion h5 {
+            margin: 0 10px 0;
+            font-size: 10px;
+        }
+
+        .ares-contacto .direccion h6 {
+            margin: 0 10px 3px;
+            font-size: 8px;
+        }
+
+/*#endregion*/
 
 /* #Media Queries================================================== */
 /*  Portrait size to standard 960 (devices and browsers) */

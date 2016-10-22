@@ -1062,7 +1062,7 @@ var NoticiasFull = (function () {
 //#region carreras Full
 //<editor-fold defaultstate="collpased" desc="carreras Full">
 var CarreraFull = (function () {
-    var $items = $('.carreraWrap li'),
+    var $items = $('.carreraWrap li, .aresWrap li'),
             transEndEventNames = {
                 'WebkitTransition': 'webkitTransitionEnd',
                 'MozTransition': 'transitionend',
