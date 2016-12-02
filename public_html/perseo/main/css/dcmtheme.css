@@ -5271,10 +5271,15 @@ body.metro {
     right: 40px;
     top: 10px;
     font-size: 90%;
-    text-align: right;
+    text-align: center;
     color: #fff;
     line-height: 1.2rem;
     font-family: 'Open Sans light';
+    cursor: pointer;
+}
+
+.metro .topBar-content .aplicacion:hover {
+    color: #ff0;
 }
 
 .metro .topBar-content span.todayX {
