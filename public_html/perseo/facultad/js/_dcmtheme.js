@@ -2618,7 +2618,7 @@ function onloadX() {
     //$('#logo3').removeClass("oculto zoomOut").addClass("animated zoomIn");
 
     //top banner rotator
-    $('.topBanner').slick({
+    $('.topBannerd').slick({
         centerMode: false,
         slidesToScroll: 1,
         centerPadding: '40px',

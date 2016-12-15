@@ -2188,6 +2188,10 @@ var DockPopUp = (function () {
     function init(options) {
         // apply fittext plugin
         //$items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
+        var biblioSidebar=$(".biblioWrap");
+        $.Metro.initDropdowns(biblioSidebar);
+        $.Metro.initPulls(biblioSidebar);
+        $.Metro.initSidebars(biblioSidebar);
         initEvents();
     }
     var reg = /.*\/.*\//g;
@@ -3819,11 +3823,13 @@ function initx() {
                     $.Metro.initAll($('body.metro'));
 
                     onloadX();
+
+                    initSlick();
                     //show popup
                     //$('#popup01').trigger("click");
                     //$("#popup-onload").trigger("click");
                     console.log("fin onloadX");
-                    //poner animacion nueva
+                    //poner animacion nueva radio
                     $('#kast').css('margin-right', 0);
                     setTimeout(function () {
                         $('#kast').css('margin-right', "");
@@ -3988,6 +3994,41 @@ $.fn.randomize = function (selector) {
 
     return this;
 };
+
+function initSlick() {
+    $('.topBanner').slick({
+        centerMode: false,
+        slidesToScroll: 1,
+        centerPadding: '40px',
+        slidesToShow: 1,
+        autoplay: !debug,
+        autoplaySpeed: 5000,
+        prevArrow: '<button type="button" class="slick-prev hidden">Previous</button>',
+        nextArrow: '<button type="button" class="slick-prev hidden">Previous</button>',
+        //responsive: [
+        //    {
+        //        breakpoint: 768,
+        //        settings: {
+        //            arrows: false,
+        //            centerMode: true,
+        //            centerPadding: '40px',
+        //            slidesToShow: 3
+        //        }
+        //    },
+        //    {
+        //        breakpoint: 480,
+        //        settings: {
+        //            arrows: false,
+        //            centerMode: true,
+        //            centerPadding: '40px',
+        //            slidesToShow: 1
+        //        }
+        //    }
+        //],
+        speed: 500
+
+    });
+}
 
 //$('ul').randomize();
 console.log("fin dcm_common, body: " + $('body').length);
@@ -6612,7 +6653,7 @@ function onloadX() {
     //$('#logo3').removeClass("oculto zoomOut").addClass("animated zoomIn");
 
     //top banner rotator
-    $('.topBanner').slick({
+    $('.topBannerd').slick({
         centerMode: false,
         slidesToScroll: 1,
         centerPadding: '40px',

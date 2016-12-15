@@ -1945,11 +1945,6 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     transform: rotate(180deg); /* Safari and Chrome */
 }
 
-/*#region RADIO*/
-
-/*#endregion*/
-
-
 /* SLIDES */
 #slide3:before, #slide2:after {
     content: '';
