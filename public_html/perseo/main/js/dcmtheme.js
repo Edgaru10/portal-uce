@@ -2236,6 +2236,7 @@ var DockPopUp = (function () {
                                     $.Metro.initPagination($item);
                                     initNotiAndvents($item);
                                     sidebarUpdate($item);
+                                    console.log("biblio cargada eventos");
                                 } break;
                                 default:
 
@@ -3824,7 +3825,7 @@ function initx() {
 
                     onloadX();
 
-                    initSlick();
+                    initSlick(); 
                     //show popup
                     //$('#popup01').trigger("click");
                     //$("#popup-onload").trigger("click");

@@ -9840,7 +9840,7 @@ p#kast-np-title {
 /*#region trasparencia*/
 .ley .divider {
     height: 3px !important;
-    margin-top: 30px !important;
+    /*margin-top: 30px !important;*/
 }
 
 .ley h1 {
@@ -11257,7 +11257,9 @@ p#kast-np-title {
     padding-right: 10px;
 }
 
-
+.centrosWrap .full-content.ley {
+    overflow-y: hidden;
+}
 
 /*.centrosWrap .pan-l .full-content .contentwrap p, .centrosWrap .pan-l .full-content .contentwrap h1, .centrosWrap .pan-l .full-content .contentwrap h2, .centrosWrap .pan-l .full-content .contentwrap h3, .centrosWrap .pan-l .full-content .contentwrap h4, .centrosWrap .pan-l .full-content .contentwrap h5, .centrosWrap .pan-l .full-content .contentwrap span {
     color: #000;

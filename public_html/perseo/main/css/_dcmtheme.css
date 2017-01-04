@@ -962,10 +962,7 @@ html > body .featured a.isobrick {
         }
 
 /*# nucleo de investigadores NUEVO NUEVO*/
-#slide5 .centrosWrap {
-    padding: 20px !important;
-    text-align: center;
-}
+
 
     /*#slide5 .centrosWrap > li {
         width: 100%;
@@ -1625,7 +1622,7 @@ html > body .featured a.isobrick {
 }
 
 .metro .club {
-    width: 210px;
+    width: 235px;
     height: 120px;
     background-color: #ffffff;
     position: relative;
