@@ -864,7 +864,8 @@
 }
 
     .centrosWrap .pan-l .full-content .slic {
-        height: auto;
+        /*height: auto;*/
+        height:100%;
         padding: 20px;
         color: #fff !important;
     }

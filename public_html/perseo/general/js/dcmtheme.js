@@ -2188,10 +2188,12 @@ var DockPopUp = (function () {
     function init(options) {
         // apply fittext plugin
         //$items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
-        var biblioSidebar=$(".biblioWrap");
+
+        var biblioSidebar = $(".biblioWrap");
         $.Metro.initDropdowns(biblioSidebar);
         $.Metro.initPulls(biblioSidebar);
         $.Metro.initSidebars(biblioSidebar);
+
         initEvents();
     }
     var reg = /.*\/.*\//g;
@@ -2231,10 +2233,15 @@ var DockPopUp = (function () {
                                     //init componentets
                                     console.log("biblio cargada con exito 4");
                                     $.Metro.initDropdowns($item);
+                                    console.log("biblio cargada 10");
                                     $.Metro.initPulls($item);
+                                    console.log("biblio cargada 11");
                                     $.Metro.initSidebars($item);
+                                    console.log("biblio cargada 12");
                                     $.Metro.initPagination($item);
+                                    console.log("biblio cargada 13");
                                     initNotiAndvents($item);
+                                    console.log("biblio cargada 14");
                                     sidebarUpdate($item);
                                     console.log("biblio cargada eventos");
                                 } break;
@@ -2260,7 +2267,6 @@ var DockPopUp = (function () {
 
                                 } break;
                                 default:
-
                             }
 
                         }
@@ -2377,7 +2383,6 @@ var DockPopUp = (function () {
             height: $item.outerHeight()
         };
     }
-
     function getWindowSize() {
         $body.css('overflow-y', 'hidden');
         var w = $window.width(), h = $window.height();
@@ -2386,7 +2391,6 @@ var DockPopUp = (function () {
         }
         return { width: w, height: h };
     }
-
     function sidebarUpdate(itemx) {
 
         //sidebar update
@@ -2418,7 +2422,6 @@ var DockPopUp = (function () {
 
             eventWrap = itemx.find('.eventosWrap'),
             event_items = eventWrap.find('.item-evento');
-
 
         notiWrap.find('[data-role=sharex]').each(function () {
             var that = $(this);
@@ -2470,9 +2473,6 @@ var DockPopUp = (function () {
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;
-
-
-
 
     }
     return { init: init };

@@ -10480,7 +10480,8 @@ p#kast-np-title {
 }
 
     .centrosWrap .pan-l .full-content .slic {
-        height: auto;
+        /*height: auto;*/
+        height:100%;
         padding: 20px;
         color: #fff !important;
     }
@@ -15413,7 +15414,7 @@ html > body .featured a.isobrick {
 /*#endregion*/
 
 /*#region direcs*/
-.metro .contentwrap.direcWrap, .metro .contentwrap.facWrap {
+.metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .contentwrap.investigacion {
     max-width: 1048px;
 }
 

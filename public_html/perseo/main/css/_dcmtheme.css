@@ -1515,7 +1515,7 @@ html > body .featured a.isobrick {
 /*#endregion*/
 
 /*#region direcs*/
-.metro .contentwrap.direcWrap, .metro .contentwrap.facWrap {
+.metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .contentwrap.investigacion {
     max-width: 1048px;
 }
 
