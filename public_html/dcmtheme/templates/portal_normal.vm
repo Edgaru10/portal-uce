@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 #set ($cdn = "http://aka-cdn.uce.edu.ec/ares/perseo")
-#set ($html-com = "$cdn/my_html")
+#set ($html-com = "$cdn/common")
 #set ($x3=$theme.getSetting("theme-type"))
 #set ($theme-type = "$cdn/$x3")
-#set ($verx = "?v=0.1.9")
+#set ($verx = "?v=0.2.59")
 
 #parse ($init)
 
@@ -52,14 +52,11 @@
 	<meta property="og:url" content="$urlx" />	
 	<meta name="twitter:url" content="$urlx" />	
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:site" content="@UCentralEcuador"/>
+	<meta name="twitter:site" content="@lacentralec"/>
 	#end
 
 	<link rel="stylesheet" href="$html-com/css/dcm-loader.min.css${verx}" type="text/css" id="loaderStyle" />	
-    <link rel="stylesheet" href="$theme-type/css/dcmtheme.min.css${verx}" type="text/css" />
-	<link rel="stylesheet" href="$html-com/css/printerx.min.css${verx}" type="text/css" media="print"/>	
-    	  	
-	<script src="$theme-type/js/dcmtheme.min.js${verx}" type="text/javascript" async="async"></script>
+    <link rel="stylesheet" href="$theme-type/css/theme-dtic.min.css${verx}" type="text/css" />		    	  
 
     
 </head>
@@ -121,6 +118,8 @@
 		
         $theme.include($body_bottom_include)
         $theme.include($bottom_include)
+
+		<script src="$theme-type/js/theme-dtic.min.js${verx}" type="text/javascript" async="async"></script>
 
     </div>
 </body>

@@ -1,0 +1,739 @@
+/* #Media Queries================================================== */
+/*  Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px)< {
+    /* #General Layout Changes ================================================== */
+    html.aui, html {
+        font-size: 60%;
+    }
+
+    .metro .container {
+        width: 754px;
+    }
+#slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6)
+    .metro .featuredcontainer {
+        width: 655px;
+    }
+
+    .featured .one_col {
+        width: 250px;
+        height: 246px;
+    }
+
+        .featured .one_col.half {
+            height: 122px;
+            width: 315px !important;
+        }
+
+    .one_col.half.comunicWraper.isobrick.va-container {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .featured .one_col.half, .one_col.half.comunicWraper.isobrick.va-container {
+        margin-top: 40px;
+    }
+
+    /* #Font Changes ================================================== */
+    .nivo-caption h3.title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    /* #Facultades================================================== */
+
+
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    /* #General Layout Changes
+    ================================================== */
+    html.aui, html {
+        font-size: 50%;
+    }
+
+    .metro .featuredcontainer {
+        width: 420px;
+        margin: 0 0 30px 0;
+        padding: 0;
+        margin: auto;
+    }
+
+    .metro .featured {
+        margin: 0;
+    }
+
+
+    /* #Featured Area 
+    ================================================== */
+    .featured .one_col {
+        width: 208px;
+        height: 204px;
+    }
+
+    /*.featured .one_col.double {
+        width: 418px;
+        height: 206px; }
+
+    .featured .one_col.half {
+        height: 101px; }*/
+    .metro .featured .one_col, .metro .featured .one_col.half, .metro .featured .one_col.quarterx {
+        width: 100%;
+    }
+
+    .featured .one_col.half, .one_col.half.comunicWraper.isobrick.va-container {
+        margin-top: 40px;
+    }
+
+    .featured h2, .featured h2 a {
+        font-size: 22px;
+        line-height: 24px;
+        left: 15px;
+        bottom: 8px;
+    }
+
+    .featured .half h2, .featured .half h2 a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .featured.articlecontainer.isotope#isofeatured {
+        width: 420px;
+    }
+
+    .nivo-caption {
+        position: static;
+        background: #222;
+    }
+
+        .nivo-caption h1, .nivo-caption h2, .nivo-caption h3, .nivo-caption h4, .nivo-caption h5, .nivo-caption h6, .nivo-caption p {
+            display: none;
+        }
+
+            .nivo-caption h3.title {
+                font-size: 22px;
+                line-height: 24px;
+                display: block;
+                padding-top: 0;
+            }
+
+    .theme-default .nivo-controlNav {
+        display: none;
+    }
+
+    .theme-default .nivo-directionNav a {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .theme-default a.nivo-nextNav {
+        right: 0;
+    }
+
+    .theme-default a.nivo-prevNav {
+        left: 0;
+    }
+
+    .one_col.half.comunicWraper.isobrick.va-container {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    /*facultades*/
+    .fac-title .title {
+        font-size: 4.8rem;
+    }
+
+    /*Sidebar*/
+    .metro .sidebarWrap .full-content .col1 {
+        width: 100%;
+        float: none;
+    }
+
+    .metro .sidebarWrap .full-content .col2 {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        float: none;
+    }
+
+    .metro .sidebarWrap .bannerCircle .big, .metro .sidebarWrap .bannerCircle .half, .metro .sidebarWrap .bannerCircle .small,
+    .metro .sidebarWrap .bannerCircle .caption {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+
+    .metro .sidebarWrap .row-cap .span7, .metro .sidebarWrap .row-cap .span5 {
+        float: left;
+        width: 49%;
+    }
+
+    .metro .sidebarWrap .bannerCircle {
+        max-width: 400px !important;
+    }
+}
+/* Mobile Landscape Size to Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    html.aui, html {
+        font-size: 50%;
+    }
+
+    .featured.articlecontainer.isotope#isofeatured {
+        width: 476px;
+    }
+
+
+    .metro .featuredcontainer {
+        width: 300px;
+        margin: 0 0 30px 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured .one_col.quarterx {
+        width: 147px;
+    }
+
+    .one_col.half.comunicWraper.isobrick.va-container {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    html.aui, html {
+        font-size: 50%;
+    }
+
+    .metro .no-phones {
+        display: none;
+    }
+
+    .metro .container {
+        width: 300px;
+    }
+
+    .featured.articlecontainer.isotope#isofeatured {
+        width: 476px;
+    }
+
+
+    .metro .featuredcontainer {
+        width: 300px;
+        margin: 0 0 30px 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured .one_col.quarterx {
+        width: 147px;
+    }
+
+    .one_col.half.comunicWraper.isobrick.va-container {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 1169px) {
+    /*direcciones*/
+    .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .centrosWrap {
+        max-width: 800px;
+    }
+
+    #slide5 .centrosWrap {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    /*direcciones*/
+    .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .centrosWrap {
+        max-width: 610px;
+        text-align: center;
+    }
+
+        .metro .contentwrap.direcWrap .og-grid, .metro .contentwrap.facWrap .og-grid, .metro .og-grid {
+            text-align: center;
+            justify-content: space-around;
+        }
+
+            .metro .og-grid.fac .og-a, .metro .direc, .centrosWrap .centro {
+                width: 200px !important;
+            }
+
+                .centrosWrap .centro:hover > div {
+                    width: 190px;
+                }
+
+    .metro .direc {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .fac-title .title {
+        /*-webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;*/
+        /*top: 335px /* 46.8rem*/
+        font-size: 4.8rem /* 7rem*/;
+        text-indent: -9999999px;
+    }
+
+    .fac-title.span1 {
+        float: left !important;
+        height: 100%;
+        margin-left: 10% !important;
+        margin-right: 8%;
+        width: 6.3% !important;
+        text-align: left;
+    }
+
+        .fac-title.span1 .title:before {
+            position: absolute;
+            content: 'facultades y sedes';
+            left: 1.5rem;
+            top: 13rem;
+            display: block;
+            height: 1rem;
+            text-align: right;
+            white-space: nowrap;
+            direction: ltr;
+            width: 12.5rem;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+
+    .og-grid.fac {
+        float: left;
+    }
+
+    .carrearWrap {
+        text-align: left;
+    }
+
+    .metro .sidebarWrap .navx h1 .abbr {
+        display: none;
+    }
+
+    .metro .sidebarWrap .navx h1 a {
+        display: block;
+    }
+}
+
+@media (max-width: 979px) {
+    .noticiesWrap .lfr-pagination .lfr-pagination-buttons {
+        float: none;
+        margin: auto;
+    }
+
+    #boletinx {
+        float: none !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .metro .topBar-content > a, .metro .topBar-content .dock-popup {
+        margin-right: 0;
+    }
+
+    .metro .topBar-content #popup-ley-trans {
+        right: 2%;
+    }
+    .metro .topBar-content #autoridades {
+        right: 1%;
+    }
+    .metro .topBar-content #historica {
+        right: 0;
+    }
+    .metro .topBar-content i {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .centrosWrap .rb-week {
+        max-width: 100%;
+    }
+
+    .metro .rb-overlay .full-content {
+        height: 90%;
+        top: 8%;
+    }
+
+    .centrosWrap .pan-l .full-content {
+        margin-bottom: 70px;
+    }
+
+    .dock-popup .rb-close, .has-full-view-content .rb-close {
+        color: #000;
+        font-size: 2rem;
+    }
+
+    .rb-close {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .metro .sidebar .pull-menu {
+        display: block !important;
+        top: 0;
+        left: 0;
+    }
+
+    .metro .sidebarWrap .navx .date {
+        display: none;
+    }
+
+    .metro .sidebar, .metro .sidebarWrap .navx {
+        min-height: 40px;
+        height: auto;
+        max-height: 100%;
+        position: absolute;
+        left: 0px;
+        z-index: 999;
+        top: 0px;
+        width: 100%;
+        padding: 0 0 30px 0;
+        background-color: rgba(0,118,189,.93);
+    }
+
+    .metro .sidebarWrap .sidebar.opened .ps-scrollbar-y-rail {
+        opacity: 0;
+    }
+
+    .metro .sidebar .element-menu {
+        display: none;
+        margin-top: 45px;
+        width: 96%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .metro .sidebar .element-menu li.lineas, .metro .sidebar .element-menu li.lineas1, .metro .sidebar .element-menu li.lineas2 {
+            width: 100% !important;
+        }
+
+        .metro .sidebar .element-menu li a {
+            text-align: center !important;
+        }
+
+    .metro .sidebarWrap .full-content .slic {
+        padding-top: 20px !important;
+    }
+
+    .metro .sidebarWrap .navx h1 {
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 0px;
+        font-size: 20px;
+        float: left;
+        height: 45px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+        .metro .sidebarWrap .navx h1 .abbr {
+            display: block;
+            font-size: 20px;
+        }
+
+        .metro .sidebarWrap .navx h1 a {
+            display: none;
+        }
+
+    .metro .sidebarWrap {
+        padding: 0 !important;
+    }
+
+        .metro .sidebarWrap .bannerCircle {
+            padding: 20px !important;
+            max-width: 800px;
+        }
+
+    /*nucleo de investigadores sidebar*/
+    #slide5 .centrosWrap .rb-close {
+        color: #fff;
+    }
+
+    #slide5 .centrosWrap .sidebar.nucleo > ul {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #slide5 .centrosWrap .pan-l .full-content .slic {
+        padding: 0 10px 0 0;
+    }
+
+    #slide5 .centrosWrap .sidebar.nucleo > ul li {
+        border-bottom: 1px solid black;
+    }
+
+    /*#slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6) {
+        width: 100% !important;
+    }*/
+
+    #slide5 .centrosWrap .sidebar > ul li a {
+        padding: 7px 5px;
+    }
+
+        #slide5 .centrosWrap .sidebar > ul li a:hover {
+            padding: 20px;
+        }
+
+    #slide5 .centrosWrap .lineas1, #slide5 .centrosWrap .lineas2 {
+        padding: 20px 0 15px 0 !important;
+    }
+
+    .ndi-mv > ul {
+        justify-content: space-around;
+    }
+
+    .ndi-mv ul > li {
+        max-width: 100% !important;
+    }
+
+    .investigador1, .investigador2 {
+        width: 100%;
+    }
+
+        .investigador2 > ul, .investigador2 ul > li {
+            margin: 0 0 30px 0;
+        }
+
+    /*centros sidebar*/
+    .centrosWrap .sidebar > ul li a {
+        font-size: 14px;
+        line-height: 40px;
+        text-indent: 0;
+    }
+
+        .centrosWrap .sidebar > ul li a:before {
+            content: none;
+        }
+
+    .centrosWrap .sidebar > ul li {
+        float: none;
+        width: 100% !important;
+        height: 40px;
+        border: none;
+        text-align: center;
+    }
+
+    .centrosWrap .sidebar, .centrosWrap .sidebar > ul li {
+        background-image: none !important;
+        width: 100% !important;
+    }
+
+        .centrosWrap .sidebar > ul li.active a {
+            width: 100% !important;
+        }
+
+        .centrosWrap .sidebar .element-menu, .nucleoWrap .sidebar .element-menu {
+            display: none;
+            margin-top: 45px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+    /*direc uni_acade*/
+    .metro .sidebarWrap .contentwrap {
+        padding-right: 20px;
+    }
+}
+
+/*<editor-fold defaultstate="collapsed" desc=" menu figure ">*/
+/**experiments
+http://tympanus.net/Development/HoverEffectIdeas/*/
+/* Common style */
+figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block !important;
+    overflow: hidden;
+    margin: -0.135em;
+    width: 100%;
+    height: 200px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+    figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        opacity: 0.8;
+    }
+
+    figure figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+        figure figcaption::before,
+        figure figcaption::after {
+            pointer-events: none;
+        }
+
+    figure figcaption,
+    figure a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Anchor will cover the whole item by default */
+    /* For some effects it will show as a button */
+    figure a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+    }
+
+    figure h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+    }
+
+        figure h2 span {
+            font-weight: 800;
+        }
+
+    figure h2,
+    figure p {
+        margin: 0;
+    }
+
+    figure p {
+        letter-spacing: 1px;
+        font-size: 68.5%;
+    }
+    /*---------------*/
+    /***** Layla *****/
+    /*---------------*/
+
+    figure.effect-layla {
+        background: #18a367;
+    }
+
+        figure.effect-layla img {
+            min-width: 100%;
+            height: -webkit-calc(100% + 40px);
+            height: calc(100% + 40px);
+        }
+
+        figure.effect-layla figcaption {
+            padding: 2em;
+        }
+
+            figure.effect-layla figcaption::before,
+            figure.effect-layla figcaption::after {
+                position: absolute;
+                content: '';
+                opacity: 0;
+            }
+
+            figure.effect-layla figcaption::before {
+                top: 50px;
+                right: 30px;
+                bottom: 50px;
+                left: 30px;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                -webkit-transform: scale(0,1);
+                transform: scale(0,1);
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+            }
+
+            figure.effect-layla figcaption::after {
+                top: 30px;
+                right: 50px;
+                bottom: 30px;
+                left: 50px;
+                border-right: 1px solid #fff;
+                border-left: 1px solid #fff;
+                -webkit-transform: scale(1,0);
+                transform: scale(1,0);
+                -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+            }
+
+        figure.effect-layla h2 {
+            color: white;
+            padding-top: 20%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+        }
+
+        figure.effect-layla p {
+            padding: 0.5em 2em;
+            text-transform: none;
+            opacity: 0;
+            -webkit-transform: translate3d(0,-10px,0);
+            transform: translate3d(0,-10px,0);
+        }
+
+        figure.effect-layla img,
+        figure.effect-layla h2 {
+            -webkit-transform: translate3d(0,-30px,0);
+            transform: translate3d(0,-30px,0);
+        }
+
+        figure.effect-layla img,
+        figure.effect-layla figcaption::before,
+        figure.effect-layla figcaption::after,
+        figure.effect-layla p {
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        }
+
+        figure.effect-layla:hover img {
+            opacity: 0.7;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        figure.effect-layla:hover figcaption::before,
+        figure.effect-layla:hover figcaption::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-layla:hover h2,
+        figure.effect-layla:hover p {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        figure.effect-layla:hover figcaption::after,
+        figure.effect-layla:hover h2,
+        figure.effect-layla:hover p,
+        figure.effect-layla:hover img {
+            -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+        }
+/*</editor-fold>*/

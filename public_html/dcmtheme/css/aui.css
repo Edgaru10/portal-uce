@@ -1,4 +1,4 @@
-$FontAwesomePath: "http://aka-cdn.uce.edu.ec/ares/perseo/my_html/css/fonts/alloy-font" !default;
+$FontAwesomePath: "http://aka-cdn.uce.edu.ec/ares/perseo/common/css/lib/fonts/alloy-font" !default;
 
 @import "aui/alloy-font-awesome/scss/variables";
 @import "aui/alloy-font-awesome/scss/mixins-alloy";

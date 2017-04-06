@@ -163,13 +163,13 @@
                 ##no se encontró el articulo solicitado, poner cards por defecto
                 no se encontró el articulo solicitado<br />
                 #set($site_namex=$htmlUtil.escape($themeDisplay.getLayout().getGroup().getDescriptiveName()))
-                #metatags( "UCE-$site_namex" "http://aka-cdn.uce.edu.ec/ares/perseo/my_html/images/logo.png" "Noticias")
+                #metatags( "UCE-$site_namex" "http://aka-cdn.uce.edu.ec/ares/perseo/common/images/logo.png" "Noticias")
 
                 #else
 
                 ##no se solicitó ningun articulo, poner cards por defectox
                 #set($site_namex=$htmlUtil.escape($themeDisplay.getLayout().getGroup().getDescriptiveName()))
-                #metatags( "UCE-$site_namex" "http://aka-cdn.uce.edu.ec/ares/perseo/my_html/images/logo.png" "Noticias")
+                #metatags( "UCE-$site_namex" "http://aka-cdn.uce.edu.ec/ares/perseo/common/images/logo.png" "Noticias")
                 #end
 
                 ##resto de noticias
@@ -287,10 +287,7 @@
                 
                 <h2 class="text-center">Ninguna noticia en este mes...</h2>
                 #end
-
-
             </div>
-
         </div>
     </div>
 </div>
