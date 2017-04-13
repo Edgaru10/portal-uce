@@ -13538,7 +13538,7 @@ span.date {
 .proyecto2 {
     width: 100%;
     height: auto;
-    background-color: #0096F0;
+    background-color: rgba(177,177,175,.3);
     position: relative;
     display: none;
 }
@@ -13575,14 +13575,18 @@ span.date {
 
 .pro > h3 {
     text-align: center;
-    color: #fff;
+    color: #000;
+    opacity: .7;
+    padding: 2rem 0 5rem;
+    margin: 0;
 }
 
 .proyecto2 .fa-uce_cerrar {
     float: right;
     cursor: pointer;
     font-size: 20px;
-    margin-right: 20px;
+    padding: 20px;
+    color: #000;
 }
 
 .span6.inv .pro .fa-uce_proyectos_en, .span6.inv .pro .fa-uce_proyectos_eje {
