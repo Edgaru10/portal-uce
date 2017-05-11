@@ -1,0 +1,15 @@
+[
+    {
+        "outputFileName": "public_html/perseo/main/css/theme-dtic.css",
+        "inputFiles": [
+            "public_html/perseo/main/css/_responsive.css",
+            "public_html/perseo/main/css/_main.css",
+            "public_html/perseo/common/css/font-dcm-uce.css",
+            "public_html/perseo/common/css/lib/libs.css",
+            "public_html/perseo/common/css/common.css",
+            "public_html/perseo/common/css/dockbar.css",
+            "public_html/perseo/main/css/_main.css",
+            "public_html/perseo/main/css/_responsive.css"
+        ]
+    }
+]

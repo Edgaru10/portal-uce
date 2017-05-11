@@ -9326,13 +9326,13 @@ body.metro {
 /* #Sidebar
 ================================================== */
 .metro .grilla, .metro .grilla-dark {
-    background-image: url(../i../../common/images/grilla.png    background-size: cover;
+    background-image: url('../../../common/images/grilla.png    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 .metro .grilla-dark {
-    background-image: url(../i../../common/images/grilla_dark.jpgmportant;
+    background-image: url('../../../common/images/grilla_dark.jpgmportant;
 }
 
 .docs .doc {
