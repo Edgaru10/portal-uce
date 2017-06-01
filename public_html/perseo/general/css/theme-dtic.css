@@ -5988,6 +5988,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 /*#endregion </editor-fold>*/
 
+
 /*#region MM menu*/
 /*<editor-fold defaultstate="collapsed" desc="MM menu">*/
 /*
@@ -6604,6 +6605,7 @@ html.mm-opening #hamburger:after {
     bottom: 15px;
 }
 /*#endregion </editor-fold>*/
+
 
 /* #region Metro copy&paste*/
 /*<editor-fold defaultstate="collapsed" desc="Metro copy&paste">*/
@@ -7231,6 +7233,7 @@ a {
 /*#endregion
 </editor-fold>*/
 
+
 /*#region font*/
 /*<editor-fold defaultstate="collpased" desc="font styles">*/
 @font-face {
@@ -7547,6 +7550,7 @@ a {
     }
 /*#endregion*/
 
+
 /*#region scroll*/
 /*#Scroll
 ================================================== */
@@ -7715,6 +7719,7 @@ a {
     background-color: blue;
 }
 /*#endregion*/
+
 
 /*#region RADIO KAST*/
 #kast-play, #kast.kast-minimized {
@@ -9326,13 +9331,13 @@ body.metro {
 /* #Sidebar
 ================================================== */
 .metro .grilla, .metro .grilla-dark {
-    background-image: url('../../../common/images/grilla.png    background-size: cover;
+    background-image: url(../i../../common/images/grilla.png    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 .metro .grilla-dark {
-    background-image: url('../../../common/images/grilla_dark.jpgmportant;
+    background-image: url(../i../../common/images/grilla_dark.jpgmportant;
 }
 
 .docs .doc {
@@ -11879,15 +11884,14 @@ span.date {
     display: none;
 }
 
-.metro .slidecollapse .panel-header .fa-plus-circle:before {
-    content: "\f056";
-    /*content: "\f078";*/
+.metro .slidecollapse .panel-header .stat:after {
+    /*content: "\f138";*/
+    content: "\f078";
 }
 
-.metro .slidecollapse.collapsed .panel-header .fa-plus-circle:before {
+.metro .slidecollapse.collapsed .panel-header .stat:after {
     /*content: "\f13a";*/
-    /*content: "\f054";*/
-    content: "\f055";
+    content: "\f054";
 }
 
 .metro .slidecollapse .contentwrap {
@@ -12715,80 +12719,6 @@ span.date {
 .og-details {
     padding: 0 40px 0 20px;
 }
-
-/*TRANSPARENCIA II*/
-.og-trans1 {
-    list-style: none;
-    margin: 0 !important;
-}
-  
-.og-trans1 .panel .panel-header {
-    background-color: #0076BD;
-    border: 1px solid white;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    display: flex;
-}
-
-.og-trans2 {
-    list-style: none;
-    margin: 0 0 0 25px;
-}
-
-.og-trans2 .panel .panel-header {
-    background-color: #0096F0;
-    border: 1px solid white;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    display: flex;
-}
-
-.og-trans3 {
-    list-style: none;
-}
-.og-trans3 .panel .panel-header {
-    background-color: #9C9B9B;
-    border: 1px solid white;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.panel .panel-header .fa.fa-plus-circle {
-    color: #fff;
-    margin: 12px -5px 12px 12px;
-}
-
-.panel .panel-header .trans-links {
-    display: flex;
-}
-
-.panel .panel-header .trans-links .fa.fa-uce_pdf {
-    font-size: 40px;
-    margin: 5px 5px;
-}
-
-.panel .panel-header .trans-links a {
-    margin: -5px 15px;
-}
-
-.panel .panel-header .trans-links a h6 {
-    color: #575756;
-}
-
-.panel .panel-header .trans-links a h6:hover {
-    color: #000;
-}
-
-.og-trans1 > panel-content {
-    display: block;
-    background-color:rgba(156, 155, 155, 0.0666667);
-    margin: 5px 0px;
-}
 /*#endregion*/
 
 /*#region abc-list*/
@@ -13538,7 +13468,7 @@ span.date {
 .proyecto2 {
     width: 100%;
     height: auto;
-    background-color: rgba(177,177,175,.3);
+    background-color: #0096F0;
     position: relative;
     display: none;
 }
@@ -13575,18 +13505,14 @@ span.date {
 
 .pro > h3 {
     text-align: center;
-    color: #000;
-    opacity: .7;
-    padding: 2rem 0 5rem;
-    margin: 0;
+    color: #fff;
 }
 
 .proyecto2 .fa-uce_cerrar {
     float: right;
     cursor: pointer;
     font-size: 20px;
-    padding: 20px;
-    color: #000;
+    margin-right: 20px;
 }
 
 .span6.inv .pro .fa-uce_proyectos_en, .span6.inv .pro .fa-uce_proyectos_eje {
