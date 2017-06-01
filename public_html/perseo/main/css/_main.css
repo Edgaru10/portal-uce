@@ -1798,7 +1798,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
     #navBar li {
         width: 110px; 
-        height: 38px /*45px*/;
+        height: 38px /*45px*/; 
         margin: 2px;
     }
 
