@@ -4,12 +4,58 @@
     </span>
     <a id="hamburger" class="" href="#dcmmenu"><span></span></a>
 
-    <a class="fg-white animated zoomIn" href="http://www.uce.edu.ec" id="logo3" style="float: none;position: absolute;left: calc(50% - 28px);padding: 5px;"><i class="fa fa-uce_sello" style="font-size: 40px;"></i></a>
-    
-    <a class="fg-white dropdown-toggle" href="#" id="dock"><i class="fa fa-uce_aplicaciones" style="font-size: 40px;"></i><span class="aplicacion">Sistemas Informáticos</span></a>
+    <a class="fg-white animated zoomIn no-phones" href="http://www.uce.edu.ec" id="logo3" style="float: none;position: absolute;left: calc(50% - 28px);padding: 5px;"><i class="fa fa-uce_sello" style="font-size: 40px;"></i></a>
+
+    <a class="fg-white dropdown-toggle" href="#" id="dock">
+        <i class="fa fa-uce_aplicaciones" style="font-size:40px;display:none"></i>
+        <span class="aplicacion no-phones visible-desktop" style="width:125px;right:-40px;margin:6px 0">Sistemas Informáticos</span>
+    </a>
+
+    <div class="dock-popup">
+        <div class="tile-content iconic">
+            <a class="fg-white">
+                <i class="fa fa-uce_biblioteca" style="font-size:40px;height:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:82px">Biblioteca</span>
+            </a>
+        </div>
+        <div class="rb-overlay centrosWrap biblioWrap">
+            <div class="row-fluid rb-week">
+                <span class="rb-close fg-black"></span>
+                <div class="pan-l ajax-content" data-role="sidebar" data-sidebar-typex="1" data-ajax-artid="291378" data-ajax-groupid="10181" data-func="biblio"></div>
+            </div>
+        </div>
+    </div>
+
+    <a class="fg-white has-full-view" href="#full-view-01" id="historica">
+        <i class="fa fa-uce_resena" style="font-size:40px;display:none"></i>
+        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;width:95px;right:87px">Reseña Histórica</span>
+    </a>
+    <a class="fg-white has-full-view" href="#full-view-07" id="autoridades">
+        <i class="fa fa-uce_autoridades" style="font-size:40px;display:none"></i>
+        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:95px">Autoridades</span>
+    </a>
+
+    <div class="dock-popup" id="popup-ley-trans">
+        <div class="tile-content iconic">
+            <a class="fg-white">
+                <i class="fa fa-uce_ley_transparencia" style="font-size:40px;height:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:90px">Transparencia</span>
+            </a>
+        </div>
+        <div class="rb-overlay">
+            <div class="row-fluid rb-week" style="max-width:98%;border-width:10px">
+                <span class="rb-close">close</span> <img src="http://aka-cdn.uce.edu.ec/ares/tmp/PagConst.png" style="width:100%;height:100%;padding-top:12px">
+            </div>
+        </div>
+    </div>
+
+    <a class="fg-white" href="http://admisionpregrado.uce.edu.ec/uce" id="admision" target="_blank">
+        <i class="fa fa-uce_registro" style="font-size:40px;display:none"></i>
+        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:33rem;width:95px">Admisión SNNA</span>
+    </a>
 
     <div class="app-bar-drop-container dropdown-menu place-right" data-role="dropdown" style="width: 324px;  float: right;">
-        <ul class="tile-container og-grid">
+        <!--<ul class="tile-container og-grid">
             <li>
                 <div class="tile-small dock-popup" id="popup-ley-trans">
                     <div class="tile-content iconic">
@@ -19,21 +65,12 @@
                     <div class="rb-overlay">
                         <div class="row-fluid rb-week" style="max-width:90%; border-width: 10px;">
                             <span class="rb-close">close</span>
-                            <div class="full-content ley ajax-content" data-ajax-artid="252921" data-ajax-groupid="10181" data-func="years">
+                            <div class="full-content ley ajax-content" data-ajax-artid="37159" data-ajax-groupid="10181" data-func="years">
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </li>
-
-            <li>
-                <a class="tile-small has-full-view" href="#full-view-01">
-                    <div class="tile-content iconic">
-                        <span class="icon fa fa-uce_resena"></span>
-                        <span class="tile-label">Reseña Histórica UCE</span>
-                    </div>
-                </a>
             </li>
 
             <li>
@@ -46,32 +83,23 @@
                         <div class="row-fluid rb-week">
                             <span class="rb-close"></span>
 
-                            <!--dddd-->         
-
                             <div class="pan-l ajax-content" data-role="sidebar" data-sidebar-typex="1" data-ajax-artid="87857" data-ajax-groupid="10181" data-func="biblio">
-                            </div>  
-
-                            <!--dddd-->
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </li>
-                       
+        </ul>-->
+        <!--<span class="dock-more">Aplicaciones UCE</span>-->
+        <ul class="tile-container og-grid">
+
             <li>
-                <a class="tile-small has-full-view" href="#full-view-03">
+                <!--<a class="tile-small" href="http://docentespostulantes.uce.edu.ec/" target="_blank">-->
+                <a class="tile-small has-full-view" href="#full-view-06">
                     <div class="tile-content iconic">
-                        <span class="icon fa fa-uce_mail"></span>
-                        <span class="tile-label">Mail</span>
-                    </div>
-                </a>
-            </li>
-                       
-            <li>
-                <a class="tile-small has-full-view" href="#full-view-04">
-                    <div class="tile-content iconic">
-                        <span class="icon fa fa-uce_en_cifras"></span>
-                        <span class="tile-label">UCE en Cifras</span>
+                        <span class="icon fa fa-uce_docente_postulante"></span>
+                        <span class="tile-label">Docentes Postulantes</span>
                     </div>
                 </a>
             </li>
@@ -84,10 +112,34 @@
                     </div>
                 </a>
             </li>
-            
-        </ul>
-        <span class="dock-more">Aplicaciones UCE</span>
-        <ul class="tile-container og-grid">
+
+            <li>
+                <a class="tile-small" href="http://facturacion.uce.edu.ec/scgate/inbox/login" target="_blank">
+                    <div class="tile-content iconic">
+                        <span class="icon fa fa-uce_facturacion"></span>
+                        <span class="tile-label">Facturación Electrónica</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="tile-small has-full-view" href="#full-view-04">
+                    <div class="tile-content iconic">
+                        <span class="icon fa fa-uce_registro"></span>
+                        <span class="tile-label">Formularios UCE</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="tile-small has-full-view" href="#full-view-03">
+                    <div class="tile-content iconic">
+                        <span class="icon fa fa-uce_mail"></span>
+                        <span class="tile-label">Mail</span>
+                    </div>
+                </a>
+            </li>
+
             <li>
                 <a class="tile-small" href="http://registrofuncionarios.uce.edu.ec/" target="_blank">
                     <div class="tile-content iconic">
@@ -98,10 +150,10 @@
             </li>
 
             <li>
-                <a class="tile-small" href="http://facturacion.uce.edu.ec/scgate/inbox/login" target="_blank">
+                <a class="tile-small" href="http://revistadigital.uce.edu.ec" target="_blank">
                     <div class="tile-content iconic">
-                        <span class="icon fa fa-uce_facturacion"></span>
-                        <span class="tile-label">Facturación Electrónica</span>
+                        <span class="icon fa fa-uce_revista_digital"></span>
+                        <span class="tile-label">Revista Digital</span>
                     </div>
                 </a>
             </li>
@@ -125,34 +177,35 @@
             </li>
 
             <li>
-                <a class="tile-small" href="http://revistadigital.uce.edu.ec" target="_blank">
+                <a class="tile-small" href="http://reportes.uce.edu.ec/Matriculados/Matriculados.aspx" target="_blank">
                     <div class="tile-content iconic">
-                        <span class="icon fa fa-uce_revista_digital"></span>
-                        <span class="tile-label">Revista Digital</span>
+                        <span class="icon fa fa-uce_en_cifras"></span>
+                        <span class="tile-label">UCE en Cifras</span>
                     </div>
                 </a>
             </li>
 
-            <!--<li>
-                <a class="tile-small" href="http://encuestas.uce.edu.ec" target="_blank">
+            <li>
+                <a class="tile-small has-full-view" href="#full-view-05">
                     <div class="tile-content iconic">
-                        <span class="icon fa"></span>
-                        <span class="tile-label">Encuestas</span>
+                        <span class="icon fa fa-uce_biblioteca"></span>
+                        <span class="tile-label">Normativa UCE</span>
+                    </div>
+                </a>
+            </li>
+            <!--<li>
+                <a class="tile-small has-full-view" href="#full-view-01">
+                    <div class="tile-content iconic">
+                        <span class="icon fa fa-uce_resena"></span>
+                        <span class="tile-label">Reseña Histórica UCE</span>
                     </div>
                 </a>
             </li>-->
-            <li>
-                <!--<a class="tile-small" href="http://docentespostulantes.uce.edu.ec/" target="_blank">-->
-                    <a class="tile-small has-full-view" href="#full-view-06">
-                        <div class="tile-content iconic">
-                            <span class="icon fa fa-uce_docente_postulante"></span>
-                            <span class="tile-label">Docentes Postulantes</span>
-                        </div>
-                    </a>
-            </li>
 
         </ul>
     </div>
+
+    <a class="fg-white has-full-view" href="#full-view-00" id="popup-onload"></a>
 </div>
 
 <!--mmMenu nav content-->
