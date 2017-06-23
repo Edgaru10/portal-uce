@@ -294,6 +294,39 @@ body.metro {
     margin: auto;
 }
 
+.metro .topBar-content .nav-content {
+    list-style: none;
+    position: fixed;
+    right: 9rem;
+    margin: 0;
+    width: 35%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.metro .topBar-content .nav-content .nav-items {
+    width: 100px;
+    height: 45px;
+}
+
+.metro .topBar-content .nav-content li .dock-popup {
+    width: 100px;
+    height: 45px;
+}
+
+.metro .topBar-content .nav-content li .dock-popup span, .metro .topBar-content .nav-content li #autoridades span {
+    margin: 6px 3px;
+}
+
+.metro .topBar-content .nav-content li .dock-popup:hover {
+    
+}
+
+/*.metro .topBar-content .nav-content li span {
+    margin: 0;
+}
+
 .topBar-content #popup-ley-trans {
     right: 17%;
 }
@@ -304,7 +337,7 @@ body.metro {
 
 .topBar-content #historica {
     right: 4%;
-}
+}*/
 
 .metro .topBar-content span.todayX, .metro .topBar-content > a {
     height: 45px;
@@ -319,11 +352,11 @@ body.metro {
     line-height: 15px;
     color: inherit;
     font-size: 14px;
-    position: relative;
-    float: right;
+    /*position: relative;
+    float: right;*/
     /*padding-left: 10px;*/
     /*padding-right: 10px;*/
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
     .metro .topBar-content > a:hover, .metro .topBar-content .dock-popup:hover {
@@ -349,7 +382,7 @@ body.metro {
 
 .metro .topBar-content .aplicacion {
     position: absolute;
-    right: 40px;
+    width: 95px;
     top: 10px;
     font-size: 90%;
     text-align: center;

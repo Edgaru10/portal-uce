@@ -388,7 +388,7 @@ var ClubFull = (function () {
 //</editor-fold>
 //#endregion 
 
-//#region nucleo de investigadores
+//#region INVESTIGACIÓN
 
 //Desplegar Noticias Especiales
 function initNotiEspecial() {

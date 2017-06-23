@@ -6,53 +6,64 @@
 
     <a class="fg-white animated zoomIn no-phones" href="http://www.uce.edu.ec" id="logo3" style="float: none;position: absolute;left: calc(50% - 28px);padding: 5px;"><i class="fa fa-uce_sello" style="font-size: 40px;"></i></a>
 
-    <a class="fg-white dropdown-toggle" href="#" id="dock">
+    <ul class="nav-content">
+        <li class="nav-items">
+            <div class="dock-popup" id="popup-ley-trans">
+                <div class="tile-content iconic">
+                    <a class="fg-white">
+                        <i class="fa fa-uce_ley_transparencia" style="font-size:40px;height:40px;display:none"></i>
+                        <span class="aplicacion no-phones visible-desktop">Transparencia</span>
+                    </a>
+                </div>
+                <div class="rb-overlay">
+                    <div class="row-fluid rb-week" style="max-width:98%;border-width:10px">
+                        <span class="rb-close fg-black"></span>
+                        <div class="full-content ley ajax-content" data-ajax-artid="252921" data-ajax-groupid="10181" data-func="years"></div>
+                        <!--<span class="rb-close">close</span> <img src="http://aka-cdn.uce.edu.ec/ares/tmp/PagConst.png" style="width:100%;height:100%;padding-top:12px">-->
+                    </div>
+                </div>
+            </div>
+        </li>  
+        <li class="nav-items">
+            <div class="dock-popup">
+                <div class="tile-content iconic">
+                    <a class="fg-white">
+                        <i class="fa fa-uce_biblioteca" style="font-size:40px;height:40px;display:none"></i>
+                        <span class="aplicacion no-phones visible-desktop">Biblioteca</span>
+                    </a>
+                </div>
+                <div class="rb-overlay centrosWrap biblioWrap">
+                    <div class="row-fluid rb-week">
+                        <span class="rb-close fg-black"></span>
+                        <div class="pan-l ajax-content" data-role="sidebar" data-sidebar-typex="1" data-ajax-artid="291378" data-ajax-groupid="10181" data-func="biblio"></div>
+                    </div>
+                </div>
+            </div>
+        </li>        
+        <li class="nav-items">
+            <a class="fg-white has-full-view" href="#full-view-07" id="autoridades">
+                <i class="fa fa-uce_autoridades" style="font-size:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop">Autoridades</span>
+            </a>
+        </li>
+        <li class="nav-items">
+            <a class="fg-white has-full-view" href="#full-view-01" id="historica">
+                <i class="fa fa-uce_resena" style="font-size:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop">Reseña Histórica</span>
+            </a>
+        </li>
+        <li class="nav-items">
+            <a class="fg-white" href="http://admisionpregrado.uce.edu.ec/uce" id="admision" target="_blank">
+                <i class="fa fa-uce_registro" style="font-size:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop">Admisión SNNA</span>
+            </a>
+        </li>
+    </ul>
+
+    <a class="fg-white dropdown-toggle" href="#" id="dock" style="position: absolute;right: 0;width: 100px;height: 45px;margin: 0;padding: 0;z-index: -2;">
         <i class="fa fa-uce_aplicaciones" style="font-size:40px;display:none"></i>
-        <span class="aplicacion no-phones visible-desktop" style="width:125px;right:-40px;margin:6px 0">Sistemas Informáticos</span>
-    </a>
-
-    <div class="dock-popup">
-        <div class="tile-content iconic">
-            <a class="fg-white">
-                <i class="fa fa-uce_biblioteca" style="font-size:40px;height:40px;display:none"></i>
-                <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:82px">Biblioteca</span>
-            </a>
-        </div>
-        <div class="rb-overlay centrosWrap biblioWrap">
-            <div class="row-fluid rb-week">
-                <span class="rb-close fg-black"></span>
-                <div class="pan-l ajax-content" data-role="sidebar" data-sidebar-typex="1" data-ajax-artid="291378" data-ajax-groupid="10181" data-func="biblio"></div>
-            </div>
-        </div>
-    </div>
-
-    <a class="fg-white has-full-view" href="#full-view-01" id="historica">
-        <i class="fa fa-uce_resena" style="font-size:40px;display:none"></i>
-        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;width:95px;right:87px">Reseña Histórica</span>
-    </a>
-    <a class="fg-white has-full-view" href="#full-view-07" id="autoridades">
-        <i class="fa fa-uce_autoridades" style="font-size:40px;display:none"></i>
-        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:95px">Autoridades</span>
-    </a>
-
-    <div class="dock-popup" id="popup-ley-trans">
-        <div class="tile-content iconic">
-            <a class="fg-white">
-                <i class="fa fa-uce_ley_transparencia" style="font-size:40px;height:40px;display:none"></i>
-                <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:90px">Transparencia</span>
-            </a>
-        </div>
-        <div class="rb-overlay">
-            <div class="row-fluid rb-week" style="max-width:98%;border-width:10px">
-                <span class="rb-close">close</span> <img src="http://aka-cdn.uce.edu.ec/ares/tmp/PagConst.png" style="width:100%;height:100%;padding-top:12px">
-            </div>
-        </div>
-    </div>
-
-    <a class="fg-white" href="http://admisionpregrado.uce.edu.ec/uce" id="admision" target="_blank">
-        <i class="fa fa-uce_registro" style="font-size:40px;display:none"></i>
-        <span class="aplicacion no-phones visible-desktop" style="margin:6px 0;right:33rem;width:95px">Admisión SNNA</span>
-    </a>
+        <span class="aplicacion visible-desktop" style="width: 100px;right: 0;">Sistemas Informáticos</span>
+    </a> 
 
     <div class="app-bar-drop-container dropdown-menu place-right" data-role="dropdown" style="width: 324px;  float: right;">
         <!--<ul class="tile-container og-grid">

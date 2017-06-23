@@ -1033,6 +1033,7 @@ html > body .featured a.isobrick {
                     padding: 16px 5px;
                     text-align: center;
                     text-rendering: auto;
+                    line-height: 1.2;
                     -moz-box-shadow: 0 0 0 !important;
                     -webkit-box-shadow: 0 0 0 !important;
                     box-shadow: 0 0 0 !important;
@@ -1789,7 +1790,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     left: -15px;
     top: 50%;
     margin-top: -150px;
-    z-index: 9999;
+    z-index: 99;
     font-size: 9px; /* 18px - 10px */
     font-family: Arial, sans-serif;
     text-transform: uppercase;
