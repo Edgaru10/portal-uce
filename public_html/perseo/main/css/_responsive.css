@@ -341,7 +341,8 @@
         width: 100%;
         text-align: center;
     }
-        
+    
+     
 }
 
 @media (max-width:1200px) {
@@ -362,7 +363,8 @@
     }
     .visible-desktop {
         display: none !important;
-    }
+    }   
+    
     .centrosWrap .rb-week {
         max-width: 100%;
     }

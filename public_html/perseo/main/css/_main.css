@@ -725,9 +725,9 @@ html > body .featured a.isobrick {
 
 /*#endregion*/
 
-/*#region nucleo de investigadores*/
+/*#region INVESTIGACIÓN*/
 /*NDI Inicio*/
-#slide5 .contentwrap .rb-overlay .text-center.adequate {
+.unidades-investigacion .contentwrap .rb-overlay .text-center.adequate {
     width: 80%;
     margin: 30px auto;
     line-height: 1.1em;
@@ -739,14 +739,14 @@ html > body .featured a.isobrick {
     margin: auto;
 }
 
-#slide5 .centrosWrap .pan-l .full-content .contentwrap p,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap h1,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap h2,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap h3,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap h4,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap h5,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap span,
-#slide5 .centrosWrap .pan-l .full-content .contentwrap div {
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap p,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap h1,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap h2,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap h3,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap h4,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap h5,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap span,
+.unidades-investigacion .centrosWrap .pan-l .full-content .contentwrap div {
     color: #000;
 }
 
@@ -837,7 +837,7 @@ html > body .featured a.isobrick {
     background-position: 50% 50%;
 }
 
-#slide5 .facultad-in, #slide5 .detail {
+.unidades-investigacion .facultad-in, .unidades-investigacion .detail {
     vertical-align: top;
     text-align: left;
     width: auto;
@@ -963,36 +963,36 @@ html > body .featured a.isobrick {
 /*# nucleo de investigadores NUEVO NUEVO*/
 
 
-    /*#slide5 .centrosWrap > li {
+    /*.unidades-investigacion .centrosWrap > li {
         width: 100%;
     }*/
 
-    #slide5 .centrosWrap .panelRight {
+    .unidades-investigacion .centrosWrap .panelRight {
         margin-top: 0;
         margin: 9px;
         margin-right: -6px;
         overflow: hidden;
     }
 
-        #slide5 .centrosWrap .panelRight .row-fluid {
+        .unidades-investigacion .centrosWrap .panelRight .row-fluid {
             background-color: rgba(177,177,175,.3);
         }
 
-    #slide5 .centrosWrap .contentwrap {
+    .unidades-investigacion .centrosWrap .contentwrap {
         background-color: rgba(177,177,175,.3);
         margin-left: 13px;
         width: 98.5%;
     }
 
-    #slide5 .centrosWrap .pan-l, #slide5 .centrosWrap .pan-l .full-content {
+    .unidades-investigacion .centrosWrap .pan-l, .unidades-investigacion .centrosWrap .pan-l .full-content {
         background-color: #fff !important;
     }
 
-    #slide5 .centrosWrap .rb-close {
+    .unidades-investigacion .centrosWrap .rb-close {
         color: #000000;
     }
 
-    #slide5 .centrosWrap .divider {
+    .unidades-investigacion .centrosWrap .divider {
         height: 2px;
         margin-bottom: 20px;
         background-color: #0076bd !important;
@@ -1000,28 +1000,28 @@ html > body .featured a.isobrick {
         margin: auto;
     }
 
-    #slide5 .centrosWrap .sidebar {
+    .unidades-investigacion .centrosWrap .sidebar {
         width: 100%;
         margin: auto;
     }
 
-        #slide5 .centrosWrap .sidebar > ul {
+        .unidades-investigacion .centrosWrap .sidebar > ul {
             width: 94%;
             height: 50px;
             margin: 3% auto 0 auto;
         }
 
-            #slide5 .centrosWrap .sidebar > ul li {
+            .unidades-investigacion .centrosWrap .sidebar > ul li {
                 width: 13%;
                 height: 50px;
             }
 
-                #slide5 .centrosWrap .sidebar > ul li.active a {
+                .unidades-investigacion .centrosWrap .sidebar > ul li.active a {
                     background-color: #0076BD !important;
                     color: #FFFFFF !important;
                 }
 
-                #slide5 .centrosWrap .sidebar > ul li a {
+                .unidades-investigacion .centrosWrap .sidebar > ul li a {
                     width: 100%;
                     height: 100%;
                     font-size: 1.2rem;
@@ -1039,49 +1039,49 @@ html > body .featured a.isobrick {
                     box-shadow: 0 0 0 !important;
                 }
 
-                    #slide5 .centrosWrap .sidebar > ul li a:hover {
+                    .unidades-investigacion .centrosWrap .sidebar > ul li a:hover {
                         background-color: #dedede !important;
                         color: white;
                         padding: 20px !important;
                     }
 
-                    #slide5 .centrosWrap .sidebar > ul li a.lineas1:hover, #slide5 .centrosWrap .sidebar > ul li a.lineas2:hover {
+                    .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas1:hover, .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas2:hover {
                         background-color: #dedede !important;
                         color: white;
                         padding: 12px !important;
                     }
 
-    #slide5 .centrosWrap .lineas {
+    .unidades-investigacion .centrosWrap .lineas {
         line-height: 1.5rem;
         padding: 16px 0 15px 0 !important;
     }
 
-    #slide5 .centrosWrap .lineas1 {
+    .unidades-investigacion .centrosWrap .lineas1 {
         padding: 8px 0 15px 0 !important;
         line-height: 1.5rem;
         width: 17%;
     }
 
-    #slide5 .centrosWrap .lineas2 {
+    .unidades-investigacion .centrosWrap .lineas2 {
         padding: 8px 0 15px 0 !important;
         line-height: 1.5rem;
         width: 14%;
     }
 
-    #slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(3) {
+    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(3) {
         width: 17%;
     }
 
-    #slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(4) {
+    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(4) {
         width: 17%;
     }
 
-    #slide5 .centrosWrap .sidebar.nucleo > ul li:nth-child(6) {
+    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(6) {
         width: 14%;
     }
 
 /*# noticias NUEVO*/
-#slide5 .sharex i {
+.unidades-investigacion .sharex i {
     background-color: #fff;
     font-size: 25px;
     width: 35px;
@@ -1089,21 +1089,21 @@ html > body .featured a.isobrick {
     padding: 5px;
 }
 
-#slide5 .centrosWrap .noti-divider {
+.unidades-investigacion .centrosWrap .noti-divider {
     border-bottom: 2px solid rgba(0,118,189,.34);
 }
 
-#slide5 .sharex i:hover {
+.unidades-investigacion .sharex i:hover {
     background-color: #0af;
 }
 
-#slide5 .centrosWrap .noti-item {
+.unidades-investigacion .centrosWrap .noti-item {
     margin: 0 auto 10px auto;
     height: 160px;
     border-bottom: 2px solid rgba(0,118,189,.34);
 }
 
-    #slide5 .centrosWrap .noti-item .adequate {
+    .unidades-investigacion .centrosWrap .noti-item .adequate {
         height: 36px;
         overflow: hidden;
         margin: 14px auto 10px auto;
@@ -1119,30 +1119,30 @@ html > body .featured a.isobrick {
     margin: auto;
 }
 
-#slide5 .contentwrap .span8 {
+.unidades-investigacion .contentwrap .span8 {
     padding: 0 25px;
     margin: 0;
     border-right: 2px solid #fff;
 }
 
-#slide5 .contentwrap .span4 {
+.unidades-investigacion .contentwrap .span4 {
     margin: 0 0 0 12px;
 }
 
-#slide5 .contentwrap .span8 h2 {
+.unidades-investigacion .contentwrap .span8 h2 {
     text-align: center;
     text-transform: uppercase;
 }
 
 /*region Noticias Especiales nucleo de investigadores*/
-#slide5 .noticias .noti .contentwrap {
+.unidades-investigacion .noticias .noti .contentwrap {
     padding-top: 50px;
     width: 95%;
     margin: auto;
     background-color: transparent;
 }
 
-#slide5 .contenedor-noticias .noticias .noti .contentwrap .page .divider {
+.unidades-investigacion .contenedor-noticias .noticias .noti .contentwrap .page .divider {
     width: 100%;
     margin: 10px 0;
 }
@@ -1163,7 +1163,7 @@ html > body .featured a.isobrick {
         position: relative;
     }
 
-#slide5 .noticias .noti.paginacion .controls {
+.unidades-investigacion .noticias .noti.paginacion .controls {
     position: fixed;
     top: 60%;
 }
@@ -1302,23 +1302,23 @@ html > body .featured a.isobrick {
     }
 
 /*# grupos d investigacion NUEVO*/
-#slide5 .eventosWrap .fg-yellow {
+.unidades-investigacion .eventosWrap .fg-yellow {
     color: #0076bd !important;
 }
 
-#slide5 .eventosWrap .item-evento.row-fluid {
+.unidades-investigacion .eventosWrap .item-evento.row-fluid {
     border-bottom: 2px solid #0076bd;
 }
 
 /*# seminarios NUEVO*/
-#slide5 .seminario {
+.unidades-investigacion .seminario {
     width: 99%;
     height: auto;
     list-style: none;
     margin: auto;
 }
 
-    #slide5 .seminario > li {
+    .unidades-investigacion .seminario > li {
         width: auto;
         height: 100%;
         background-color: #e8e8e7;
@@ -1327,7 +1327,7 @@ html > body .featured a.isobrick {
         padding: 5px 0;
     }
 
-    #slide5 .seminario .panel .panel-header {
+    .unidades-investigacion .seminario .panel .panel-header {
         background-color: #0076BD;
         color: #fff !important;
         font-size: 35px;
@@ -1335,13 +1335,13 @@ html > body .featured a.isobrick {
         padding: 12px;
     }
 
-    #slide5 .seminario .panel .panel-content .contentwrap {
+    .unidades-investigacion .seminario .panel .panel-content .contentwrap {
         width: 100%;
         margin: auto;
         padding-top: 25px;
     }
 
-        #slide5 .seminario .panel .panel-content .contentwrap > li {
+        .unidades-investigacion .seminario .panel .panel-content .contentwrap > li {
             padding: 6px 15px 20px 18px;
         }
 
@@ -1456,37 +1456,37 @@ html > body .featured a.isobrick {
 }
 
 /*Eventos Cientificos*/
-#slide5 .contentwrap .eventosWrap.cientificos .noti-detail {
+.unidades-investigacion .contentwrap .eventosWrap.cientificos .noti-detail {
     float: right;
     width: calc(100% - 170px);
     overflow: hidden;
 }
 
-#slide5 .contentwrap .eventosWrap.cientificos .item-evento.active .noti-detail {
+.unidades-investigacion .contentwrap .eventosWrap.cientificos .item-evento.active .noti-detail {
     width: 100%;
 }
 
-#slide5 .contentwrap .eventosWrap.cientificos .item-evento.active .img-full, #slide5 .contentwrap .eventosWrap.cientificos .item-evento.active h5, #slide5 .contentwrap .eventosWrap.cientificos .item-evento.active span {
+.unidades-investigacion .contentwrap .eventosWrap.cientificos .item-evento.active .img-full, .unidades-investigacion .contentwrap .eventosWrap.cientificos .item-evento.active h5, .unidades-investigacion .contentwrap .eventosWrap.cientificos .item-evento.active span {
     display: none;
 }
 
 /*Contacto Nucleo de Investigadores*/
-#slide5 .contentwrap.row-fluid .info {
+.unidades-investigacion .contentwrap.row-fluid .info {
     border-right: 2px solid #fff;
     padding-right: 30px;
     width: 48%;
 }
 
-#slide5 .contentwrap.row-fluid .social {
+.unidades-investigacion .contentwrap.row-fluid .social {
     width: 42%;
     margin-left: 80px;
 }
 
-    #slide5 .contentwrap.row-fluid .social ul {
+    .unidades-investigacion .contentwrap.row-fluid .social ul {
         text-align: center;
     }
 
-    #slide5 .contentwrap.row-fluid .social li {
+    .unidades-investigacion .contentwrap.row-fluid .social li {
         font-size: 30px;
         border-radius: 50%;
         background-color: #fff;
@@ -1494,17 +1494,17 @@ html > body .featured a.isobrick {
         margin: 0 25px;
     }
 
-        #slide5 .contentwrap.row-fluid .social li i {
+        .unidades-investigacion .contentwrap.row-fluid .social li i {
             color: rgba(47, 47, 46, 0.97);
         }
 
-            #slide5 .contentwrap.row-fluid .social li:hover, #slide5 .contentwrap.row-fluid .social li i:hover {
+            .unidades-investigacion .contentwrap.row-fluid .social li:hover, .unidades-investigacion .contentwrap.row-fluid .social li i:hover {
                 border-radius: 50%;
                 background-color: #d5d5d5;
                 color: #0076BD;
             }
 
-    #slide5 .contentwrap.row-fluid .social .img-contacto {
+    .unidades-investigacion .contentwrap.row-fluid .social .img-contacto {
         width: 100%;
         height: 150px;
         background-position: 50% 50%;
@@ -1845,6 +1845,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
             width: 12px;
             margin-left: -1px;
         }
+
 
 
 /* FOR ALL SLIDES */

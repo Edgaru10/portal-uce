@@ -213,8 +213,9 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
             height: 25px;
             vertical-align: middle;
             margin-top: 10px;
-            margin-left: 0px;
-            opacity: 0;
+            margin-left: 15px;
+            opacity: .8;
+            color: #000;
             transition: all 0.4s linear;
             -ms-transition: all 0.4s linear;
             -moz-transition: all 0.4s linear;

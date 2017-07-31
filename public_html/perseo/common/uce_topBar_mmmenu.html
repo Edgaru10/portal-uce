@@ -4,7 +4,7 @@
     </span>
     <a id="hamburger" class="" href="#dcmmenu"><span></span></a>
 
-    <a class="fg-white animated zoomIn no-phones" href="http://www.uce.edu.ec" id="logo3" style="float: none;position: absolute;left: calc(50% - 28px);padding: 5px;"><i class="fa fa-uce_sello" style="font-size: 40px;"></i></a>
+    <!--<a class="fg-white animated zoomIn no-phones" href="http://www.uce.edu.ec" id="logo3" style="float: none;position: absolute;left: calc(50% - 28px);padding: 5px;"><i class="fa fa-uce_sello" style="font-size: 40px;"></i></a>-->
 
     <ul class="nav-content">
         <li class="nav-items">
@@ -23,7 +23,13 @@
                     </div>
                 </div>
             </div>
-        </li>  
+        </li>                
+        <li class="nav-items">
+            <a class="fg-white has-full-view" href="#full-view-07" id="autoridades">
+                <i class="fa fa-uce_autoridades" style="font-size:40px;display:none"></i>
+                <span class="aplicacion no-phones visible-desktop">Autoridades</span>
+            </a>
+        </li>
         <li class="nav-items">
             <div class="dock-popup">
                 <div class="tile-content iconic">
@@ -39,13 +45,23 @@
                     </div>
                 </div>
             </div>
-        </li>        
-        <li class="nav-items">
-            <a class="fg-white has-full-view" href="#full-view-07" id="autoridades">
-                <i class="fa fa-uce_autoridades" style="font-size:40px;display:none"></i>
-                <span class="aplicacion no-phones visible-desktop">Autoridades</span>
-            </a>
         </li>
+        <li class="nav-items">
+            <div class="dock-popup">
+                <div class="tile-content iconic">
+                    <a class="fg-white">
+                        <i class="fa fa-uce_biblioteca" style="font-size:40px;height:40px;display:none"></i>
+                        <span class="aplicacion no-phones visible-desktop">Museo</span>
+                    </a>
+                </div>
+                <div class="rb-overlay centrosWrap biblioWrap">
+                    <div class="row-fluid rb-week">
+                        <span class="rb-close fg-black"></span>
+                        <div class="pan-l ajax-content" data-role="sidebar" data-sidebar-typex="1" data-ajax-artid="291378" data-ajax-groupid="10181" data-func="biblio"></div>
+                    </div>
+                </div>
+            </div>
+        </li>     
         <li class="nav-items">
             <a class="fg-white has-full-view" href="#full-view-01" id="historica">
                 <i class="fa fa-uce_resena" style="font-size:40px;display:none"></i>
@@ -53,9 +69,9 @@
             </a>
         </li>
         <li class="nav-items">
-            <a class="fg-white" href="http://admisionpregrado.uce.edu.ec/uce" id="admision" target="_blank">
+            <a class="fg-white" href="http://www.serbachiller.ec" id="admision" target="_blank">
                 <i class="fa fa-uce_registro" style="font-size:40px;display:none"></i>
-                <span class="aplicacion no-phones visible-desktop">Admisión SNNA</span>
+                <span class="aplicacion no-phones visible-desktop" style="width: 105px;">Postulación 2do semestre 2017</span>
             </a>
         </li>
     </ul>
@@ -188,12 +204,12 @@
             </li>
 
             <li>
-                <a class="tile-small" href="http://reportes.uce.edu.ec/Matriculados/Matriculados.aspx" target="_blank">
+                <a class="tile-small has-full-view" href="#full-view-08">
                     <div class="tile-content iconic">
                         <span class="icon fa fa-uce_en_cifras"></span>
                         <span class="tile-label">UCE en Cifras</span>
                     </div>
-                </a>
+                </a>                
             </li>
 
             <li>
@@ -204,6 +220,7 @@
                     </div>
                 </a>
             </li>
+
             <!--<li>
                 <a class="tile-small has-full-view" href="#full-view-01">
                     <div class="tile-content iconic">

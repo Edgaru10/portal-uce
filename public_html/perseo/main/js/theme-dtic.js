@@ -6793,28 +6793,40 @@ var centrosInvestigacion = (function () {
         var panelWrap = $(".proyectosWrap");
         var showProyectos1 = $(".showProyectos1");
         var showProyectos2 = $(".showProyectos2");
+        var showProyectos3 = $(".showProyectos3");
 
         var panelProyecto1 = $(".panelProyecto1");
         var panelProyecto2 = $(".panelProyecto2");
+        var panelProyecto3 = $(".panelProyecto3");
 
         var hidex = $(".hide-proyectos");
 
         hidex.click(function (e) {
             panelProyecto1.removeClass("visible").fadeOut();
             panelProyecto2.removeClass("visible").fadeOut();
+            panelProyecto3.removeClass("visible").fadeOut();
             panelWrap.fadeIn();
         });
 
         showProyectos1.click(function (e) {
             panelProyecto2.removeClass("visible animated fadeInLeftBig").fadeOut();
+            panelProyecto3.removeClass("visible animated fadeInLeftBig").fadeOut();
             panelWrap.fadeOut();
             panelProyecto1.addClass("visible animated fadeInRightBig").fadeIn();
         });
 
         showProyectos2.click(function (e) {
             panelProyecto1.removeClass("visible animated fadeInRightBig").fadeOut();
+            panelProyecto3.removeClass("visible animated fadeInLeftBig").fadeOut();
             panelWrap.fadeOut();
-            panelProyecto2.addClass("visible animated fadeInLeftBig").fadeIn();
+            panelProyecto2.addClass("visible animated fadeInUpBig").fadeIn();
+        });
+
+        showProyectos3.click(function (e) {
+            panelProyecto1.removeClass("visible animated fadeInRightBig").fadeOut();
+            panelProyecto2.removeClass("visible animated fadeInLeftBig").fadeOut();
+            panelWrap.fadeOut();
+            panelProyecto3.addClass("visible animated fadeInLeftBig").fadeIn();
         });
 
         noti_items = eventWrap = event_items = notiWrap = null;

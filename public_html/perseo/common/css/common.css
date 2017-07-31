@@ -296,13 +296,13 @@ body.metro {
 
 .metro .topBar-content .nav-content {
     list-style: none;
-    position: fixed;
+    position: absolute;
     right: 9rem;
     margin: 0;
-    width: 35%;
+    width: 48%;
     height: 45px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .metro .topBar-content .nav-content .nav-items {
@@ -382,7 +382,7 @@ body.metro {
 
 .metro .topBar-content .aplicacion {
     position: absolute;
-    width: 95px;
+    width: 90px;
     top: 10px;
     font-size: 90%;
     text-align: center;

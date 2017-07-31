@@ -9237,13 +9237,13 @@ body.metro {
 
 .metro .topBar-content .nav-content {
     list-style: none;
-    position: fixed;
+    position: absolute;
     right: 9rem;
     margin: 0;
-    width: 35%;
+    width: 48%;
     height: 45px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .metro .topBar-content .nav-content .nav-items {
@@ -9323,7 +9323,7 @@ body.metro {
 
 .metro .topBar-content .aplicacion {
     position: absolute;
-    width: 95px;
+    width: 90px;
     top: 10px;
     font-size: 90%;
     text-align: center;
@@ -14216,8 +14216,9 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
             height: 25px;
             vertical-align: middle;
             margin-top: 10px;
-            margin-left: 0px;
-            opacity: 0;
+            margin-left: 15px;
+            opacity: .8;
+            color: #000;
             transition: all 0.4s linear;
             -ms-transition: all 0.4s linear;
             -moz-transition: all 0.4s linear;

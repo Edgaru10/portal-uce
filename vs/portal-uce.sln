@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "portal_uce_final(1)", "http://localhost:49976", "{C34BD9F7-BE7E-4FE9-AF4F-E67129F70275}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "portal-uce", "http://localhost:49976", "{C34BD9F7-BE7E-4FE9-AF4F-E67129F70275}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
