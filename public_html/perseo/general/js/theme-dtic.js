@@ -6706,6 +6706,6 @@ function onloadX() {
         that.trigger('click');
         that = null;
     });
-}
+} 
 
 
