@@ -87,7 +87,8 @@ function fixedUrls(that) {
     } else {
         var qq = Liferay.ThemeDisplay.getLayoutURL();
     }
-    var portal = qq.match(reg)[0] + "archive_noticias?artID=";
+    //var portal = qq.match(reg)[0] + "archive_noticias?artID=";
+    var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_nucleoinvestigadores?month=" : "archive_noticias?month=")));
     var icox = '<i class="fa fa-share-alt"></i>';
     var t1 = 'https://twitter.com/intent/tweet?text=%E2%80%9C';
     var t2 = '%E2%80%9D&url=';
