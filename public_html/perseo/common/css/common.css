@@ -299,45 +299,20 @@ body.metro {
     position: absolute;
     right: 9rem;
     margin: 0;
-    width: 48%;
+    width: 35%;
     height: 45px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .metro .topBar-content .nav-content .nav-items {
-    width: 100px;
-    height: 45px;
+    padding: 10px 0;
 }
 
 .metro .topBar-content .nav-content li .dock-popup {
-    width: 100px;
-    height: 45px;
+    /*width: 100px;*/
+    /*height: 45px;*/
 }
-
-.metro .topBar-content .nav-content li .dock-popup span, .metro .topBar-content .nav-content li #autoridades span {
-    margin: 6px 3px;
-}
-
-.metro .topBar-content .nav-content li .dock-popup:hover {
-    
-}
-
-/*.metro .topBar-content .nav-content li span {
-    margin: 0;
-}
-
-.topBar-content #popup-ley-trans {
-    right: 17%;
-}
-
-.topBar-content #autoridades {
-    right: 11%;
-}
-
-.topBar-content #historica {
-    right: 4%;
-}*/
 
 .metro .topBar-content span.todayX, .metro .topBar-content > a {
     height: 45px;
@@ -348,20 +323,18 @@ body.metro {
 
 .metro .topBar-content > a, .metro .topBar-content .dock-popup {
     /*padding-top: 11px;*/
-    padding-top: 4px;
+
+    /*padding-top: 4px;
     line-height: 15px;
     color: inherit;
-    font-size: 14px;
+    font-size: 14px;*/
+
     /*position: relative;
     float: right;*/
     /*padding-left: 10px;*/
     /*padding-right: 10px;*/
     /*margin-right: 10px;*/
 }
-
-    .metro .topBar-content > a:hover, .metro .topBar-content .dock-popup:hover {
-        background-color: #004671;
-    }
 
 .metro .topBar-content i {
     height: 45px;
@@ -381,10 +354,10 @@ body.metro {
 }
 
 .metro .topBar-content .aplicacion {
-    position: absolute;
+    /*position: absolute;
     width: 90px;
-    top: 10px;
-    font-size: 90%;
+    top: 10px;*/
+    font-size: 80%;
     text-align: center;
     color: #fff;
     line-height: 1.2rem;
