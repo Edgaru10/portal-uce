@@ -44,6 +44,11 @@
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+     /*topbar*/
+    .metro .topBar-content .nav-content {
+        width: 35% !important;
+        right: 6rem !important;
+    }
     /* #General Layout Changes
     ================================================== */
     html.aui, html {
@@ -231,6 +236,12 @@
         margin-left: 0px !important;
         padding-left: 0px !important;
     }
+    
+    /*topbar*/
+    .metro .topBar-content .nav-content {
+        width: 33% !important;
+        right: 11rem !important;
+    }
 }
 
 @media (max-width: 1169px) {
@@ -245,6 +256,10 @@
 }
 
 @media only screen and (max-width: 878px) {
+    /*topbar*/
+    .metro .topBar-content .nav-content {
+        width: 30% !important;
+    }
     /*direcciones*/
     .metro .contentwrap.direcWrap, .metro .contentwrap.facWrap, .metro .centrosWrap {
         max-width: 610px;
@@ -331,6 +346,10 @@
 }
 
 @media (max-width: 979px) {
+    /*topbar*/
+    .metro .topBar-content .nav-content {
+        width: 25%;
+    }
     .noticiesWrap .lfr-pagination .lfr-pagination-buttons {
         float: none;
         margin: auto;
@@ -345,25 +364,27 @@
      
 }
 
-@media (max-width:1200px) {
-    .metro .topBar-content > a, .metro .topBar-content .dock-popup {
-        margin-right: 0;
-    }
-    .metro .topBar-content #popup-ley-trans {
-        right: 2%;
-    }
-    .metro .topBar-content #autoridades {
-        right: 1%;
-    }
-    .metro .topBar-content #historica {
-        right: 0;
-    }
+@media (max-width:1200px) {    
     .metro .topBar-content i {
         display: inline-block !important;
     }
     .visible-desktop {
         display: none !important;
-    }   
+    }
+    .metro .topBar-content .nav-content {
+        width: 20%;
+        right: 4rem;
+    }
+    .metro .topBar-content .nav-content .nav-items {
+        padding: 2px 0;
+    }
+    .metro .topBar .dropdown-toggle {
+        width: 45px;
+        padding: 3px;
+    }
+    .app-bar .app-bar-drop-container.place-right {
+        right: 0.5%;
+    }
     
     .centrosWrap .rb-week {
         max-width: 100%;

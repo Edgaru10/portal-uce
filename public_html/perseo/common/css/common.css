@@ -309,31 +309,11 @@ body.metro {
     padding: 10px 0;
 }
 
-.metro .topBar-content .nav-content li .dock-popup {
-    /*width: 100px;*/
-    /*height: 45px;*/
-}
-
 .metro .topBar-content span.todayX, .metro .topBar-content > a {
     height: 45px;
     line-height: 45px;
     vertical-align: middle;
     font-family: "Open Sans","Segoe UI";
-}
-
-.metro .topBar-content > a, .metro .topBar-content .dock-popup {
-    /*padding-top: 11px;*/
-
-    /*padding-top: 4px;
-    line-height: 15px;
-    color: inherit;
-    font-size: 14px;*/
-
-    /*position: relative;
-    float: right;*/
-    /*padding-left: 10px;*/
-    /*padding-right: 10px;*/
-    /*margin-right: 10px;*/
 }
 
 .metro .topBar-content i {
@@ -364,7 +344,15 @@ body.metro {
     font-family: 'Open Sans light';
     cursor: pointer;
 }
-
+.metro .topBar .dropdown-toggle {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+}
     .metro .topBar-content .aplicacion:hover {
         color: #ff0;
     }
