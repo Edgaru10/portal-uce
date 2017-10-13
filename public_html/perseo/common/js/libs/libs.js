@@ -2963,7 +2963,7 @@ $.fn.randomize = function (selector) {
         // Cache the given element and height of the browser
         var $elem = this;
         var windowSize = (!options.scrollHorizontal) ? $(window).height() : $(window).width(),
-                scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+                scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'html' : 'html');
 
         options.checkElements = function () {
             var $obj = $($elem);

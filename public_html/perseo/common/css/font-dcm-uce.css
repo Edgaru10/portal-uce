@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'dcmuce';
-  src:  url('lib/fonts/dcmuce.eot?7iowoc');
-  src:  url('lib/fonts/dcmuce.eot?7iowoc#iefix') format('embedded-opentype'),
-    url('lib/fonts/dcmuce.ttf?7iowoc') format('truetype'),
-    url('lib/fonts/dcmuce.woff?7iowoc') format('woff'),
-    url('lib/fonts/dcmuce.svg?7iowoc#dcmuce') format('svg');
+  src:  url('lib/fonts/dcmuce.eot?4tb40c');
+  src:  url('lib/fonts/dcmuce.eot?4tb40c#iefix') format('embedded-opentype'),
+    url('lib/fonts/dcmuce.ttf?4tb40c') format('truetype'),
+    url('lib/fonts/dcmuce.woff?4tb40c') format('woff'),
+    url('lib/fonts/dcmuce.svg?4tb40c#dcmuce') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-uce_formularios:before {
+  content: "\e916";
+}
+.fa-uce_hospital:before {
+  content: "\e917";
+}
+.fa-uce_normativa:before {
+  content: "\e918";
+}
+.fa-uce_posgrado:before {
+  content: "\e919";
+}
+.fa-uce_posgrado_relleno:before {
+  content: "\e91a";
+}
 .fa-uce_museo:before {
   content: "\e914";
 }

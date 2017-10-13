@@ -950,7 +950,7 @@ function onloadX() {
         click: function (m, y) {
             //alert(m + "/" + y);
             var qq = Liferay.ThemeDisplay.getLayoutURL();
-            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_nucleoinvestigadores?month=" : "archive_noticias?month=")));
+            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_investigacion?month=" : "archive_noticias?month=")));
             var srcx = portal + m + "&year=" + y;
             window.location = srcx;
 

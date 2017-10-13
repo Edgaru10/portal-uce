@@ -2964,7 +2964,7 @@ $.fn.randomize = function (selector) {
         // Cache the given element and height of the browser
         var $elem = this;
         var windowSize = (!options.scrollHorizontal) ? $(window).height() : $(window).width(),
-                scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+                scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'html' : 'html');
 
         options.checkElements = function () {
             var $obj = $($elem);
@@ -4842,8 +4842,9 @@ function fixedUrls(that) {
     } else {
         var qq = Liferay.ThemeDisplay.getLayoutURL();
     }
-    //var portal = qq.match(reg)[0] + "archive_noticias?artID="; Linea comentada para validar nocticias
-    var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_nucleoinvestigadores?month=" : "archive_noticias?month=")));
+    //var portal = qq.match(reg)[0] + "archive_noticias?artID="; //Linea comentada para validar nocticias
+    //Linea en common es para identificar el rol de cada una de las noticias artID
+    var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?artID=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?artID=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_investigacion?artID=" : "archive_noticias?artID=")));
     var icox = '<i class="fa fa-share-alt"></i>';
     var t1 = 'https://twitter.com/intent/tweet?text=%E2%80%9C';
     var t2 = '%E2%80%9D&url=';
@@ -5072,10 +5073,12 @@ function initx() {
 
                     //inicializa el slick (banner de facultades, etc)
                     initSlick();
+
                     //show popup para cuando se quiere abrir un pop apenas se abre la pagina
                     //$('#popup01').trigger("click");
                     //$("#popup-onload").trigger("click");
-
+                    $('#full-view-onload-btn').trigger('click');
+                   
                     //inicializa lazyloads
                     initLazyLoad();
 
@@ -6692,7 +6695,7 @@ function onloadX() {
         click: function (m, y) {
             //alert(m + "/" + y);
             var qq = Liferay.ThemeDisplay.getLayoutURL();
-            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_nucleoinvestigadores?month=" : "archive_noticias?month=")));
+            var portal = qq.match(reg)[0] + ($("#calendar").data('func') == 'boletin' ? "archive_boletines?month=" : ($("#calendar").data('func') == 'etica' ? "noticias_ce?month=" : ($("#calendar").data('func') == 'nucleo' ? "noticias_investigacion?month=" : "archive_noticias?month=")));
             var srcx = portal + m + "&year=" + y;
             window.location = srcx;
 
