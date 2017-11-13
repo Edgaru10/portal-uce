@@ -870,7 +870,7 @@ function onloadX() {
         var buttons = taglib.find(".lfr-pagination-buttons li a");
         $(buttons[0]).html('<i class="fa fa-uce_anterior"></i>');
         $(buttons[1]).html('<i class="fa fa-uce_siguiente"></i>');
-        $((buttons[1])).parent().before('<li><a href="' + Liferay.ThemeDisplay.getLayoutURL().match(reg)[0] + 'archive_noticias" target="_blank"><i class="fa fa-uce_repositorio"></i></a></li>');
+        $((buttons[1])).parent().before('<li><a href="' + Liferay.ThemeDisplay.getLayoutURL().match(reg)[0] + 'archive_noticias" target="_blank"><i class="fa fa-uce_repositorio"></i> <h5 class="tile-label" style="font-size: 9px;margin: -15px;color: #009ae5;">REPOSITORIO</h5> </a></li>');
         var boletinx = $('#boletinx');
         taglib.find(".lfr-pagination-buttons").before(boletinx);
         boletinx = taglib = null;

@@ -828,9 +828,10 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 ===================================================*/
 #slide3 .detail .jefes {
     border-left: 1px solid #000;
-    padding-left: 10px;
+    padding: 0 0 0 5px;
     width: 48%;
     float: left;
+    min-height: 140px;
 }
 
 #slide3 .detail h3 {
@@ -890,13 +891,17 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
             }
 
             #slide3.postgradox .detail .slic .docs .doc i.fa-uce_pdf {
-                font-size: 125px;
+                /*font-size: 125px;
                 padding: 0;
-                color: black;
+                color: black;*/
             }
 
         #slide3.postgradox .detail .slic .content1 {
-            padding: 0 10% 20px 0;
+            margin: 0 10% 25px 0;
+            min-height: 140px;
+            max-height: 140px;
+            overflow: hidden;
+            padding: 0;
         }
 
 .postgradox .carreraWrap .carrera {
