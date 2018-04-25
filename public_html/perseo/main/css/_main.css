@@ -75,7 +75,7 @@
     height: 100%;
 }
 
-.featuredoverlay {
+/*.featuredoverlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -90,14 +90,13 @@
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: rgba(0,0,0,.5);
-}
-/*.featuredoverlay {
+}*/
+.featuredoverlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 300px;
-    /*background-image: url(../images/linebg-fade.png);*/
     background-position: top;
     background-repeat: repeat-x;
     z-index: 8;
@@ -106,7 +105,7 @@
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: rgba(0,0,0,.5);
-}*/
+}
 
 .metro .featuredinner:hover .featuredoverlay {
     opacity: 0;
@@ -195,37 +194,40 @@ span.date a.bubble, span.date a.bubble:hover {
 }
 
     /*cambios para panel noticias*/
-    .featured .one_col.double {
+    /*.featured .one_col.double {
         height: 250px;
         width: 640px;
         margin-top: 0px;
-    }
-    /*.featured .one_col.double {
+    }*/
+    .featured .one_col.double {
         height: 300px;
         width: 100%;
         margin-top: 0px;
-    }*/
+    }
 
-    .featured .one_col.half {
+    /*.featured .one_col.half {
         height: 124px;
         width: 320px;
-    }
-    /*.featured .one_col.half {
+    }*/
+    .featured .one_col.half {
         height: 150px;
         width: 300px;
         margin-bottom: 10px;
-    }*/
+    }
 
-    .featured .one_col.quarterx {
+    /*.featured .one_col.quarterx {
         height: 124px;
         width: 155px;
-    }
-    /*.featured .one_col.quarterx {
+    }*/
+    .featured .one_col.quarterx {
         height: 150px;
         width: 170px;
         margin-right: 1px;
         margin-bottom: 10px;
-    }*/
+    }
+    .featured .one_col.quarterx:last-child {
+        margin-right: 0;
+    }
 
 /****/
 
@@ -249,21 +251,22 @@ span.date a.bubble, span.date a.bubble:hover {
     /*padding-right: 4px !important;*/
     margin-top: 0;
     overflow: visible;
+    display: none;
 }
 
 html > body .featured a.isobrick {
     background: none;
 }
 
-.featuredcontainer .homeslider img {
-    max-width: 120%;
-}
 /*.featuredcontainer .homeslider img {
+    max-width: 120%;
+}*/
+.featuredcontainer .homeslider img {
     width: 100%;
     height: 100%;
     max-width: 120%;    
     min-height: 150px;
-}*/
+}
 
 .metro .og-grid.noti-links {
     margin-top: 75px !important;
