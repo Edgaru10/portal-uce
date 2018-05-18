@@ -355,13 +355,17 @@ html > body .featured a.isobrick {
         background-color: #004671;       
     }
 
-#slider .one_col.half1 {
-    width: 272px;
-    margin-right: 4px;
-    overflow: hidden;
-    background-color: #004671;
-    transition: all ease 1s;
-}
+    #slider .one_col.half1 {
+        width: 272px;
+        margin-right: 4px;
+        overflow: hidden;
+        background-color: #004671;
+        -moz-transition: inherit;
+        -o-transition: inherit;
+        -webkit-transition: inherit;
+        transition: inherit;
+        : all ease 1s;
+    }
 
 #slider .one_col.half1:hover {
     background-color: #0076bd;
