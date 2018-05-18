@@ -41,6 +41,7 @@
 
 .isotope {
     min-width: 300px !important;
+    min-height: 460px;
 }
 
 .home .two_third, .home .one_third {
@@ -145,8 +146,8 @@
     position: absolute;
     /* bottom: 15px;*/
     /*top: 15px;*/ /*comentada para cambio en noticias*/
-    top: 5px;
-    left: 20px;
+    top: 0;
+    left: 15px;
     width: 80%;
     z-index: 9;
 }
@@ -221,19 +222,22 @@ span.date a.bubble, span.date a.bubble:hover {
     }*/
     .featured .one_col.quarterx {
         height: 150px;
-        width: 170px;
-        margin-right: 1px;
+        width: 171px;
+        /*margin-right: 1px;*/ /*Margen antes de comunicados new*/
+        margin-right: 4px;
         margin-bottom: 10px;
     }
-    .featured .one_col.quarterx:last-child {
-        margin-right: 0;
-    }
+
+.featured .quarterx:last-child {
+    margin-right: 0;
+}
 
 /****/
 
 .featured .one_col, .featured .two_col {
     /*margin: 1px;*/
-    margin-right: 1px;
+    /*margin-right: 1px;*/ /*Margen antes de comunicados new*/
+    margin-right: 4px;
     margin-bottom: 1px;
     margin-top: 3px;
 }
@@ -244,6 +248,7 @@ span.date a.bubble, span.date a.bubble:hover {
     margin: auto;
 }
 
+/*CSS param ocultar panel de Comunicados*/
 .one_col.half.comunicWraper {
     height: 378px !important;
     background: transparent;
@@ -264,7 +269,7 @@ html > body .featured a.isobrick {
 .featuredcontainer .homeslider img {
     width: 100%;
     height: 100%;
-    max-width: 120%;    
+    max-width: 120%;
     min-height: 150px;
 }
 
@@ -320,6 +325,76 @@ html > body .featured a.isobrick {
         text-align: left;
     }
 /*#endregion*/
+
+#c-slider {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+#slider {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+    #slider section {
+        background-color: #0076bd;
+        /*width: 25%;*/
+        height: 60px;
+        margin-right: 4px;
+        padding: 0;
+        overflow: hidden;
+        transition: all ease 1s;
+    }
+
+    #slider section:hover {
+        background-color: #004671;       
+    }
+
+#slider .one_col.half1 {
+    width: 272px;
+    margin-right: 4px;
+    overflow: hidden;
+    background-color: #004671;
+    transition: all ease 1s;
+}
+
+#slider .one_col.half1:hover {
+    background-color: #0076bd;
+}
+
+#slider section:last-child {
+    margin-right: 0;
+}
+
+#slider section .comun-title {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin: 12px 0px 12px 40px;
+    width: 73%;
+    z-index: 9;
+    top: 30%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+#slider section a {
+    display: flex;
+    position: relative;
+}
+
+#slider section span {
+    font-size: 30px;
+    color: #fff;
+    padding: 15px 0 15px 8px;
+}
 
 /* #region Vacordion*/
 /* Vertical Accordion Style */
@@ -1005,122 +1080,122 @@ html > body .featured a.isobrick {
 /*# nucleo de investigadores NUEVO NUEVO*/
 
 
-    /*.unidades-investigacion .centrosWrap > li {
+/*.unidades-investigacion .centrosWrap > li {
         width: 100%;
     }*/
 
-    .unidades-investigacion .centrosWrap .panelRight {
-        margin-top: 0;
-        margin: 9px;
-        margin-right: -6px;
-        overflow: hidden;
-    }
+.unidades-investigacion .centrosWrap .panelRight {
+    margin-top: 0;
+    margin: 9px;
+    margin-right: -6px;
+    overflow: hidden;
+}
 
-        .unidades-investigacion .centrosWrap .panelRight .row-fluid {
-            background-color: rgba(177,177,175,.3);
-        }
-
-    .unidades-investigacion .centrosWrap .contentwrap {
+    .unidades-investigacion .centrosWrap .panelRight .row-fluid {
         background-color: rgba(177,177,175,.3);
-        margin-left: 13px;
-        width: 98.5%;
     }
 
-    .unidades-investigacion .centrosWrap .pan-l, .unidades-investigacion .centrosWrap .pan-l .full-content {
-        background-color: #fff !important;
-    }
+.unidades-investigacion .centrosWrap .contentwrap {
+    background-color: rgba(177,177,175,.3);
+    margin-left: 13px;
+    width: 98.5%;
+}
 
-    .unidades-investigacion .centrosWrap .rb-close {
-        color: #000000;
-    }
+.unidades-investigacion .centrosWrap .pan-l, .unidades-investigacion .centrosWrap .pan-l .full-content {
+    background-color: #fff !important;
+}
 
-    .unidades-investigacion .centrosWrap .divider {
-        height: 2px;
-        margin-bottom: 20px;
-        background-color: #0076bd !important;
+.unidades-investigacion .centrosWrap .rb-close {
+    color: #000000;
+}
+
+.unidades-investigacion .centrosWrap .divider {
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: #0076bd !important;
+    width: 94%;
+    margin: auto;
+}
+
+.unidades-investigacion .centrosWrap .sidebar {
+    width: 100%;
+    margin: auto;
+}
+
+    .unidades-investigacion .centrosWrap .sidebar > ul {
         width: 94%;
-        margin: auto;
+        height: 50px;
+        margin: 3% auto 0 auto;
     }
 
-    .unidades-investigacion .centrosWrap .sidebar {
-        width: 100%;
-        margin: auto;
-    }
-
-        .unidades-investigacion .centrosWrap .sidebar > ul {
-            width: 94%;
+        .unidades-investigacion .centrosWrap .sidebar > ul li {
+            width: 13%;
             height: 50px;
-            margin: 3% auto 0 auto;
         }
 
-            .unidades-investigacion .centrosWrap .sidebar > ul li {
-                width: 13%;
-                height: 50px;
+            .unidades-investigacion .centrosWrap .sidebar > ul li.active a {
+                background-color: #0076BD !important;
+                color: #FFFFFF !important;
             }
 
-                .unidades-investigacion .centrosWrap .sidebar > ul li.active a {
-                    background-color: #0076BD !important;
-                    color: #FFFFFF !important;
+            .unidades-investigacion .centrosWrap .sidebar > ul li a {
+                width: 100%;
+                height: 100%;
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                font-family: "Adequate ExtraLight";
+                text-indent: 0;
+                color: black;
+                padding: 16px 5px;
+                text-align: center;
+                text-rendering: auto;
+                line-height: 1.2;
+                -moz-box-shadow: 0 0 0 !important;
+                -webkit-box-shadow: 0 0 0 !important;
+                box-shadow: 0 0 0 !important;
+            }
+
+                .unidades-investigacion .centrosWrap .sidebar > ul li a:hover {
+                    background-color: #dedede !important;
+                    color: white;
+                    padding: 20px !important;
                 }
 
-                .unidades-investigacion .centrosWrap .sidebar > ul li a {
-                    width: 100%;
-                    height: 100%;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    cursor: pointer;
-                    font-family: "Adequate ExtraLight";
-                    text-indent: 0;
-                    color: black;
-                    padding: 16px 5px;
-                    text-align: center;
-                    text-rendering: auto;
-                    line-height: 1.2;
-                    -moz-box-shadow: 0 0 0 !important;
-                    -webkit-box-shadow: 0 0 0 !important;
-                    box-shadow: 0 0 0 !important;
+                .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas1:hover, .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas2:hover {
+                    background-color: #dedede !important;
+                    color: white;
+                    padding: 12px !important;
                 }
 
-                    .unidades-investigacion .centrosWrap .sidebar > ul li a:hover {
-                        background-color: #dedede !important;
-                        color: white;
-                        padding: 20px !important;
-                    }
+.unidades-investigacion .centrosWrap .lineas {
+    line-height: 1.5rem;
+    padding: 16px 0 15px 0 !important;
+}
 
-                    .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas1:hover, .unidades-investigacion .centrosWrap .sidebar > ul li a.lineas2:hover {
-                        background-color: #dedede !important;
-                        color: white;
-                        padding: 12px !important;
-                    }
+.unidades-investigacion .centrosWrap .lineas1 {
+    padding: 8px 0 15px 0 !important;
+    line-height: 1.5rem;
+    width: 17%;
+}
 
-    .unidades-investigacion .centrosWrap .lineas {
-        line-height: 1.5rem;
-        padding: 16px 0 15px 0 !important;
-    }
+.unidades-investigacion .centrosWrap .lineas2 {
+    padding: 8px 0 15px 0 !important;
+    line-height: 1.5rem;
+    width: 14%;
+}
 
-    .unidades-investigacion .centrosWrap .lineas1 {
-        padding: 8px 0 15px 0 !important;
-        line-height: 1.5rem;
-        width: 17%;
-    }
+.unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(3) {
+    width: 17%;
+}
 
-    .unidades-investigacion .centrosWrap .lineas2 {
-        padding: 8px 0 15px 0 !important;
-        line-height: 1.5rem;
-        width: 14%;
-    }
+.unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(4) {
+    width: 17%;
+}
 
-    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(3) {
-        width: 17%;
-    }
-
-    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(4) {
-        width: 17%;
-    }
-
-    .unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(6) {
-        width: 14%;
-    }
+.unidades-investigacion .centrosWrap .sidebar.nucleo > ul li:nth-child(6) {
+    width: 14%;
+}
 
 /*# noticias NUEVO*/
 .unidades-investigacion .sharex i {
@@ -2035,4 +2110,3 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     color: #0076bd;
     font-weight: bold;
 }
-

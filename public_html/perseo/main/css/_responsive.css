@@ -9,8 +9,8 @@
     .metro .container {
         width: 754px;
     }
-#slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6)
-    .metro .featuredcontainer {
+
+    #slide5 .centrosWrap > li:nth-child(3), #slide5 .centrosWrap > li:nth-child(4), #slide5 .centrosWrap > li:nth-child(6) .metro .featuredcontainer {
         width: 655px;
     }
 
@@ -44,11 +44,16 @@
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-     /*topbar*/
+    /*topbar*/
     .metro .topBar-content .nav-content {
         width: 35% !important;
         right: 6rem !important;
     }
+    /*NOticias texto comunicados*/
+    #slider section .comun-title {
+        bottom: auto;
+    }
+
     /* #General Layout Changes
     ================================================== */
     html.aui, html {
@@ -184,7 +189,7 @@
     .featured.articlecontainer.isotope#isofeatured {
         width: 476px;
     }
-    
+
     .metro .featuredcontainer {
         width: 300px;
         margin: 0 0 30px 0;
@@ -219,7 +224,7 @@
     .featured.articlecontainer.isotope#isofeatured {
         width: 476px;
     }
-    
+
     .metro .featuredcontainer {
         width: 300px;
         margin: 0 0 30px 0;
@@ -236,11 +241,20 @@
         margin-left: 0px !important;
         padding-left: 0px !important;
     }
-    
+
     /*topbar*/
     .metro .topBar-content .nav-content {
         width: 33% !important;
         right: 11rem !important;
+    }
+    /*Noticias Comunicados*/
+    #slider {
+        display: block;
+    }
+
+    .featured #slider .one_col.half1 {
+        margin-right: 16px;
+        margin-bottom: 12px;
     }
 }
 
@@ -350,6 +364,7 @@
     .metro .topBar-content .nav-content {
         width: 25%;
     }
+
     .noticiesWrap .lfr-pagination .lfr-pagination-buttons {
         float: none;
         margin: auto;
@@ -360,32 +375,35 @@
         width: 100%;
         text-align: center;
     }
-    
-     
 }
 
-@media (max-width:1200px) {    
+@media (max-width:1200px) {
     .metro .topBar-content i {
         display: inline-block !important;
     }
+
     .visible-desktop {
         display: none !important;
     }
+
     .metro .topBar-content .nav-content {
         width: 20%;
         right: 4rem;
     }
-    .metro .topBar-content .nav-content .nav-items {
-        padding: 2px 0;
-    }
+
+        .metro .topBar-content .nav-content .nav-items {
+            padding: 2px 0;
+        }
+
     .metro .topBar .dropdown-toggle {
         width: 45px;
         padding: 3px;
     }
+
     .app-bar .app-bar-drop-container.place-right {
         right: 0.5%;
     }
-    
+
     .centrosWrap .rb-week {
         max-width: 100%;
     }
