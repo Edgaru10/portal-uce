@@ -384,7 +384,7 @@ html > body .featured a.isobrick {
         margin: 12px 0 12px 40px;
         width: 73%;
         z-index: 9; 
-        top: 30%;
+        top: 30%; 
         -moz-transform: inherit;
         -ms-transform: inherit;
         -o-transform: inherit;
