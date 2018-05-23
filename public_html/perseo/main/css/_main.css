@@ -375,19 +375,24 @@ html > body .featured a.isobrick {
     margin-right: 0;
 }
 
-#slider section .comun-title {
-    font-size: 13px;
-    line-height: 14px;
-    margin-bottom: 10px;
-    color: #fff;
-    text-decoration: none;
-    margin: 12px 0px 12px 40px;
-    width: 73%;
-    z-index: 9;
-    top: 30%;
-    transform: translateY(-50%);
-    position: absolute;
-}
+    #slider section .comun-title {
+        font-size: 13px;
+        line-height: 14px;
+        margin-bottom: 10px;
+        color: #fff;
+        text-decoration: none;
+        margin: 12px 0 12px 40px;
+        width: 73%;
+        z-index: 9;
+        top: 30%;
+        -moz-transform: inherit;
+        -ms-transform: inherit;
+        -o-transform: inherit;
+        -webkit-transform: inherit;
+        transform: inherit;
+        : translateY(-50%);
+        position: absolute;
+    }
 
 #slider section a {
     display: flex;
