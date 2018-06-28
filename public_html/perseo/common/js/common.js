@@ -974,7 +974,7 @@ var yearGrid = (function () {
 
 //#region document ready
 /**
- *  esto se ejecuta cuando se ha leido el docmuento completo (HTML parse) no cuando se a cargado todo
+ *  esto se ejecuta cuando se ha leido el documento completo (HTML parse) no cuando se a cargado todo
  */
 
 $(function () {

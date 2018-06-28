@@ -6107,7 +6107,7 @@ var yearGrid = (function () {
 
 //#region document ready
 /**
- *  esto se ejecuta cuando se ha leido el docmuento completo (HTML parse) no cuando se a cargado todo
+ *  esto se ejecuta cuando se ha leido el documento completo (HTML parse) no cuando se a cargado todo
  */
 
 $(function () {
@@ -6902,7 +6902,7 @@ function onloadX() {
         $('#logo2').addClass("animated zoomIn");
 
     }, 4500);
-
+    
     NoticiasFull().init();
     ClubFull().init();
     centrosInvestigacion().init();
@@ -6913,7 +6913,7 @@ function onloadX() {
 
     });
 
-    //featured isotope
+    ////featured isotope
     //var $container3 = jQuery('div.isofeatured');
     //if ($container3.length) {
     //    $container3.isotope({
@@ -6926,31 +6926,31 @@ function onloadX() {
     //    $container3 = null;
     //}
 
-    //jQuery(window).resize(function () {
-    //    var $container3 = $('div.isofeatured');
-    //    if ($container3.length) {
-    //        $container3.isotope({
-    //            // options
-    //            itemSelector: '.isobrick',
-    //            layoutMode: 'masonry', masonry: {
-    //                columnWidth: 5, isFitWidth: true
-    //            }
-    //        });
-    //        $('.va-container').css({ width: $($('.one_col.half .featuredinner')[0]).width(), height: $('.va-container').height() });
-    //    }
-    //    $container3 = null;
-    //});
+    jQuery(window).resize(function () {
+        var $container3 = $('div.isofeatured');
+        if ($container3.length) {
+            $container3.isotope({
+                // options
+                itemSelector: '.isobrick',
+                layoutMode: 'masonry', masonry: {
+                    columnWidth: 5, isFitWidth: true
+                }
+            });
+            $('.va-container').css({ width: $($('.one_col.half .featuredinner')[0]).width(), height: $('.va-container').height() });
+        }
+        $container3 = null;
+    });
 
-    //if ($('.va-container').length) {
-    //    $('.va-container').vaccordion({
-    //        expandedHeight: 270,
-    //        //animSpeed: 400,
-    //        animOpacity: 0.7,
-    //        visibleSlices: 4,
-    //        accordionW: $('.va-container').outerWidth(),
-    //        accordionH: $('.va-container').outerHeight(),
-    //    });
-    //}
+    if ($('.va-container').length) {
+        $('.va-container').vaccordion({
+            expandedHeight: 270,
+            //animSpeed: 400,
+            animOpacity: 0.7,
+            visibleSlices: 4,
+            accordionW: $('.va-container').outerWidth(),
+            accordionH: $('.va-container').outerHeight(),
+        });
+    }
 
 
     $('.has-full-view').each(function () {

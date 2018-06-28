@@ -779,7 +779,7 @@ function onloadX() {
         $('#logo2').addClass("animated zoomIn");
 
     }, 4500);
-
+    
     NoticiasFull().init();
     ClubFull().init();
     centrosInvestigacion().init();
@@ -790,18 +790,18 @@ function onloadX() {
 
     });
 
-    //featured isotope
-    var $container3 = jQuery('div.isofeatured');
-    if ($container3.length) {
-        $container3.isotope({
-            // options
-            itemSelector: '.isobrick',
-            layoutMode: 'masonry', masonry: {
-                columnWidth: 5, isFitWidth: true
-            }
-        });
-        $container3 = null;
-    }
+    ////featured isotope
+    //var $container3 = jQuery('div.isofeatured');
+    //if ($container3.length) {
+    //    $container3.isotope({
+    //        // options
+    //        itemSelector: '.isobrick',
+    //        layoutMode: 'masonry', masonry: {
+    //            columnWidth: 5, isFitWidth: true
+    //        }
+    //    });
+    //    $container3 = null;
+    //}
 
     jQuery(window).resize(function () {
         var $container3 = $('div.isofeatured');

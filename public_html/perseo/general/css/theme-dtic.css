@@ -8553,8 +8553,8 @@ body.metro {
     position: relative;
     width: 90%;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 90px;
+    padding-bottom: 120px;
     height: auto;
     min-height: 500px;
     overflow: hidden;
@@ -8564,8 +8564,8 @@ body.metro {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-top: 120px;
-        padding-bottom: 45px;
+        padding-top: 90px;
+        padding-bottom: 120px;
         height: auto;
         min-height: 400px;
         overflow: hidden;
@@ -8575,7 +8575,7 @@ body.metro {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-top: 40px;
+        padding-top: 90px;
         padding-bottom: 120px;
         height: auto;
         min-height: 400px;
@@ -11422,7 +11422,7 @@ span.date {
     text-transform: none;
     text-align: justify;
     -webkit-font-smoothing: antialiased;
-    padding: 20px 10% 10px 40px;
+    padding: 10px 10% 10px 40px;
     font-family: "Open Sans Light",Verdana,Arial,Helvetica,sans-serif;
     font-size: 16px;
     font-weight: normal;

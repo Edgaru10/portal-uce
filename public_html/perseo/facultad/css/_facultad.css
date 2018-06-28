@@ -487,7 +487,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 /* Dots */
 .slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .slick-dots {
@@ -590,10 +590,10 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 #slide1 .membrete {
     height: 100%;
-    margin-left: 200px;
+    margin-left: 150px;
     float: none !important;
     background-image: url(../images/facultades_p1_membreta.png);
-    width: 320px !important;
+    width: 370px !important;
     max-width: 90%;
     position: absolute;
     background-size: cover;
@@ -602,7 +602,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     padding-top: 150px;
     text-transform: uppercase;
     font-family: 'Open Sans Light';
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     text-align: center;
     color: #fff;
     font-size: 2rem;
@@ -618,6 +618,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     #slide1 .membrete h3, #slide1 .membrete h2 {
         font-weight: normal;
         padding: 10px;
+        font-size: 2.3rem;
     }
 
 .topBanner .banx, .topBanner .banx img {

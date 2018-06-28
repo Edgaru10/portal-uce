@@ -27,5 +27,5 @@ if ($('#kast').length > 0) {
     $('#kast').css('margin-right', 0);
     setTimeout(function () {
         $('#kast').css('margin-right', "");
-    }, 800)
+    }, 1500)
 }

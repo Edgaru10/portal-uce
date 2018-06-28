@@ -8553,8 +8553,8 @@ body.metro {
     position: relative;
     width: 90%;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 90px;
+    padding-bottom: 120px;
     height: auto;
     min-height: 500px;
     overflow: hidden;
@@ -8564,8 +8564,8 @@ body.metro {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-top: 120px;
-        padding-bottom: 45px;
+        padding-top: 90px;
+        padding-bottom: 120px;
         height: auto;
         min-height: 400px;
         overflow: hidden;
@@ -8575,7 +8575,7 @@ body.metro {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-top: 40px;
+        padding-top: 90px;
         padding-bottom: 120px;
         height: auto;
         min-height: 400px;
@@ -11422,7 +11422,7 @@ span.date {
     text-transform: none;
     text-align: justify;
     -webkit-font-smoothing: antialiased;
-    padding: 20px 10% 10px 40px;
+    padding: 10px 10% 10px 40px;
     font-family: "Open Sans Light",Verdana,Arial,Helvetica,sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -13959,7 +13959,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 /* Dots */
 .slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .slick-dots {
@@ -14062,10 +14062,10 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
 
 #slide1 .membrete {
     height: 100%;
-    margin-left: 200px;
+    margin-left: 150px;
     float: none !important;
     background-image: url(../images/facultades_p1_membreta.png);
-    width: 320px !important;
+    width: 370px !important;
     max-width: 90%;
     position: absolute;
     background-size: cover;
@@ -14074,7 +14074,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     padding-top: 150px;
     text-transform: uppercase;
     font-family: 'Open Sans Light';
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     text-align: center;
     color: #fff;
     font-size: 2rem;
@@ -14090,6 +14090,7 @@ html, body, #wrapperscroll, #porletwrap, .metro .mm-page {
     #slide1 .membrete h3, #slide1 .membrete h2 {
         font-weight: normal;
         padding: 10px;
+        font-size: 2.3rem;
     }
 
 .topBanner .banx, .topBanner .banx img {
