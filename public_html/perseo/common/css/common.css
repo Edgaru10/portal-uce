@@ -3105,6 +3105,80 @@ span.date {
 }
 /*#endregion*/
 
+/*#region dependencias*/
+
+.metro .depen {
+    width: 348px;
+    height: 200px;
+    position: relative;
+    background: #0076bd;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .metro .depen .fa {
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: inherit;
+        transform: translateX(-50%);        
+        top: 2rem;
+        -moz-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        -webkit-transition: inherit;
+        transition: all .6s ease;
+    }
+
+    .metro .depen .title {
+        color: #fff;
+        padding: 7rem 15px 15px;
+        margin: 0;
+        -moz-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        -webkit-transition: inherit;
+        transition: all .6s ease;        
+    }
+
+.metro .depen:hover .title {
+    color: #fff;
+    padding: 10rem 15px 15px;
+    margin: 0;
+}
+
+.metro .depen .desc {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+    .metro .depen .hover {
+        position: absolute;
+        width: 348px;
+        height: 200px;
+        background-color: rgba(0,0,0,0.8);
+        top: 200px;
+        -moz-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        -webkit-transition:  all 1s ease;
+        transition: all .6s ease;        
+    }
+
+        .metro .depen:hover .hover {
+            top: 0;
+        }
+
+        .metro .depen:hover .fa {
+            font-size: 80px;
+            z-index:999;
+        }
+      
+/*#endregion*/
+
 .metro .slide .normal, .metro .slide .slic .content1 {
     text-transform: none;
     text-align: justify;
