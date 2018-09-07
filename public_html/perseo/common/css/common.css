@@ -3144,11 +3144,12 @@ span.date {
         transition: all .6s ease;        
     }
 
-.metro .depen:hover .title {
-    color: #fff;
-    padding: 10rem 15px 15px;
-    margin: 0;
-}
+    .metro .depen:hover .title {
+        color: #fff;
+        padding: 10rem 15px 15px;
+        margin: 0;
+        font-size: 20px;
+    }
 
 .metro .depen .desc {
     color: #fff;
@@ -3157,7 +3158,7 @@ span.date {
 }
 
     .metro .depen .hover {
-        position: absolute;
+        position: absolute; 
         width: 348px;
         height: 200px;
         background-color: rgba(0,0,0,0.8);
